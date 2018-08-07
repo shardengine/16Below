@@ -1561,7 +1561,7 @@
     <Compile Include="Systems\Mobiles\Normal\Pixie.cs" />
     <Compile Include="Systems\Mobiles\NPCs\Farmer.cs" />
     <Compile Include="Systems\Mobiles\NPCs\Mage.cs" />
-    <Compile Include="Systems\Mobiles\PlayerMobile.cs" />
+    <Compile Include="Systems\Mobiles\Players\PlayerMobile.cs" />
     <Compile Include="Systems\Mobiles\Normal\PoisonElemental.cs" />
     <Compile Include="Systems\Mobiles\Normal\PolarBear.cs" />
     <Compile Include="Systems\Mobiles\Normal\PredatorHellCat.cs" />
@@ -4375,10 +4375,10 @@
     <Compile Include="Systems\Administration\Broadcasts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\BuffIcons.cs">
+    <Compile Include="Systems\Mobiles\Players\BuffIcons.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\CharacterCreation.cs">
+    <Compile Include="Systems\Mobiles\Players\CharacterCreation.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Administration\Cleanup.cs">
@@ -4498,7 +4498,7 @@
     <Compile Include="Systems\Administration\ProfanityProtection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\Profile.cs">
+    <Compile Include="Systems\Mobiles\Players\Profile.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Misc\ProtocolExtensions.cs">

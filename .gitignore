@@ -11,6 +11,10 @@
 *.csproj.user
 *.suo
 *.log
+*.cache
+*.bin
+*.log
+*.config
 *.DotSettings.user
 /Honesty
 staffHistory.xml
