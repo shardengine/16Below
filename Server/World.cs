@@ -39,20 +39,20 @@ namespace Server
 		public static bool Loaded { get { return m_Loaded; } }
 		public static bool Loading { get { return m_Loading; } }
 
-		public static readonly string MobileIndexPath = Path.Combine("Bin/Saves/Mobiles/", "Mobiles.idx");
-		public static readonly string MobileTypesPath = Path.Combine("Bin/Saves/Mobiles/", "Mobiles.tdb");
-		public static readonly string MobileDataPath = Path.Combine("Bin/Saves/Mobiles/", "Mobiles.bin");
+		public static readonly string MobileIndexPath = Path.Combine("Saves/Mobiles/", "Mobiles.idx");
+		public static readonly string MobileTypesPath = Path.Combine("Saves/Mobiles/", "Mobiles.tdb");
+		public static readonly string MobileDataPath = Path.Combine("Saves/Mobiles/", "Mobiles.bin");
 
-		public static readonly string ItemIndexPath = Path.Combine("Bin/Saves/Items/", "Items.idx");
-		public static readonly string ItemTypesPath = Path.Combine("Bin/Saves/Items/", "Items.tdb");
-		public static readonly string ItemDataPath = Path.Combine("Bin/Saves/Items/", "Items.bin");
+		public static readonly string ItemIndexPath = Path.Combine("Saves/Items/", "Items.idx");
+		public static readonly string ItemTypesPath = Path.Combine("Saves/Items/", "Items.tdb");
+		public static readonly string ItemDataPath = Path.Combine("Saves/Items/", "Items.bin");
 
-		public static readonly string GuildIndexPath = Path.Combine("Bin/Saves/Guilds/", "Guilds.idx");
-		public static readonly string GuildDataPath = Path.Combine("Bin/Saves/Guilds/", "Guilds.bin");
+		public static readonly string GuildIndexPath = Path.Combine("Saves/Guilds/", "Guilds.idx");
+		public static readonly string GuildDataPath = Path.Combine("Saves/Guilds/", "Guilds.bin");
 
-		public static readonly string DataIndexPath = Path.Combine("Bin/Saves/Customs/", "SaveData.idx");
-		public static readonly string DataTypesPath = Path.Combine("Bin/Saves/Customs/", "SaveData.tdb");
-		public static readonly string DataBinaryPath = Path.Combine("Bin/Saves/Customs/", "SaveData.bin");
+		public static readonly string DataIndexPath = Path.Combine("Saves/Customs/", "SaveData.idx");
+		public static readonly string DataTypesPath = Path.Combine("Saves/Customs/", "SaveData.tdb");
+		public static readonly string DataBinaryPath = Path.Combine("Saves/Customs/", "SaveData.bin");
 
 		public static void NotifyDiskWriteComplete()
 		{
@@ -1008,19 +1008,19 @@ namespace Server
 
 		private static void SaveIndex<T>(List<T> list, string path) where T : IEntityEntry
 		{
-			if (!Directory.Exists("Bin/Saves/Mobiles/"))
+			if (!Directory.Exists("Saves/Mobiles/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Mobiles/");
+				Directory.CreateDirectory("Saves/Mobiles/");
 			}
 
-			if (!Directory.Exists("Bin/Saves/Items/"))
+			if (!Directory.Exists("Saves/Items/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Items/");
+				Directory.CreateDirectory("Saves/Items/");
 			}
 
-			if (!Directory.Exists("Bin/Saves/Guilds/"))
+			if (!Directory.Exists("Saves/Guilds/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Guilds/");
+				Directory.CreateDirectory("Saves/Guilds/");
 			}
 
 			using (FileStream idx = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None))
@@ -1045,9 +1045,9 @@ namespace Server
 
 		private static void SaveIndex<T>(string path, List<T> list) where T : ICustomsEntry
 		{
-			if (!Directory.Exists("Bin/Saves/Customs/"))
+			if (!Directory.Exists("Saves/Customs/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Customs/");
+				Directory.CreateDirectory("Saves/Customs/");
 			}
 
 			using (FileStream indexStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None))
@@ -1107,21 +1107,21 @@ namespace Server
 
 			Stopwatch watch = Stopwatch.StartNew();
 
-			if (!Directory.Exists("Bin/Saves/Mobiles/"))
+			if (!Directory.Exists("Saves/Mobiles/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Mobiles/");
+				Directory.CreateDirectory("Saves/Mobiles/");
 			}
-			if (!Directory.Exists("Bin/Saves/Items/"))
+			if (!Directory.Exists("Saves/Items/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Items/");
+				Directory.CreateDirectory("Saves/Items/");
 			}
-			if (!Directory.Exists("Bin/Saves/Guilds/"))
+			if (!Directory.Exists("Saves/Guilds/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Guilds/");
+				Directory.CreateDirectory("Saves/Guilds/");
 			}
-			if (!Directory.Exists("Bin/Saves/Customs/"))
+			if (!Directory.Exists("Saves/Customs/"))
 			{
-				Directory.CreateDirectory("Bin/Saves/Customs/");
+				Directory.CreateDirectory("Saves/Customs/");
 			}
 
 			/*using ( SaveMetrics metrics = new SaveMetrics() ) {*/

@@ -105,7 +105,7 @@ namespace Server.Misc
 
 		public static string[] IPServices =
 		{
-			/*"http://services.ServUO.com/ip.php",*/ "http://api.ipify.org",
+			"http://services.ServUO.com/ip.php", "http://api.ipify.org",
 			"http://checkip.dyndns.org/"
 		};
 

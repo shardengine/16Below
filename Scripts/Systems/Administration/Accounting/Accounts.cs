@@ -59,7 +59,7 @@ namespace Server.Accounting
         {
             m_Accounts = new Dictionary<string, IAccount>(32, StringComparer.OrdinalIgnoreCase);
 
-            string filePath = Path.Combine("Bin/Saves/Accounts", "accounts.xml");
+            string filePath = Path.Combine("Saves/Accounts", "accounts.xml");
 
             if (!File.Exists(filePath))
                 return;
@@ -84,10 +84,10 @@ namespace Server.Accounting
 
         public static void Save(WorldSaveEventArgs e)
         {
-            if (!Directory.Exists("Bin/Saves/Accounts"))
-                Directory.CreateDirectory("Bin/Saves/Accounts");
+            if (!Directory.Exists("Saves/Accounts"))
+                Directory.CreateDirectory("Saves/Accounts");
 
-            string filePath = Path.Combine("Bin/Saves/Accounts", "accounts.xml");
+            string filePath = Path.Combine("Saves/Accounts", "accounts.xml");
 
             using (StreamWriter op = new StreamWriter(filePath))
             {

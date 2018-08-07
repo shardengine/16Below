@@ -5541,7 +5541,7 @@ public static void _TraceEnd(int index)
 			if (e.Arguments.Length >= 1)
 			{
 				string filename = e.GetString(0);
-				string filePath = Path.Combine("Bin/Saves/Spawners", filename);
+				string filePath = Path.Combine("Saves/Spawners", filename);
 				if (File.Exists(filePath))
 				{
 					XmlDocument doc = new XmlDocument();
