@@ -1,0 +1,17 @@
+/Bin/Output
+/Bin/Logs
+/Bin/Backups
+/Bin/Saves
+/Bin/Web
+/Bin/Docs
+*.pdb
+*.exe
+*.sh
+*.mdb
+*.csproj.user
+*.suo
+*.log
+*.DotSettings.user
+/Honesty
+staffHistory.xml
+reportHistory.xml

@@ -1,0 +1,334 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scripts", "Scripts\Scripts.csproj", "{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3} = {AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D} = {61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF956787-B078-4D19-B03B-4A8F2A4841AD}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultima", "Ultima\Ultima.csproj", "{E08CFBE4-E013-44EE-8829-426D05BC083F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{C5617425-8E28-4835-8C1C-80F43E47BCA6}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Assemblies.cfg = Bin\Data\Assemblies.cfg
+		Bin\Data\bodyTable.cfg = Bin\Data\bodyTable.cfg
+		Bin\Data\Common.map = Bin\Data\Common.map
+		Bin\Data\containers.cfg = Bin\Data\containers.cfg
+		Bin\Data\items.cfg = Bin\Data\items.cfg
+		Bin\Data\mobiles.cfg = Bin\Data\mobiles.cfg
+		Bin\Data\models.txt = Bin\Data\models.txt
+		Bin\Data\names.xml = Bin\Data\names.xml
+		Bin\Data\objects.xml = Bin\Data\objects.xml
+		Bin\Data\pageresponse.cfg = Bin\Data\pageresponse.cfg
+		Bin\Data\Regions.xml = Bin\Data\Regions.xml
+		Bin\Data\shrink.cfg = Bin\Data\shrink.cfg
+		Bin\Data\signs.cfg = Bin\Data\signs.cfg
+		Bin\Data\SpawnDefinitions.xml = Bin\Data\SpawnDefinitions.xml
+		Bin\Data\teleporters.csv = Bin\Data\teleporters.csv
+		Bin\Data\teleportersOld.csv = Bin\Data\teleportersOld.csv
+		Bin\Data\treasure.cfg = Bin\Data\treasure.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binary", "Binary", "{D230B2A8-D044-4EAB-8509-27C64289950C}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Binary\Bounds.bin = Bin\Data\Binary\Bounds.bin
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bulk Orders", "Bulk Orders", "{766611FA-14D8-4711-8346-275A30C30173}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blacksmith", "Blacksmith", "{8CBB59F7-4A5C-446B-9B2C-3FC0B890314D}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Bulk Orders\Blacksmith\armor.cfg = Bin\Data\Bulk Orders\Blacksmith\armor.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largeaxes.cfg = Bin\Data\Bulk Orders\Blacksmith\largeaxes.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largechain.cfg = Bin\Data\Bulk Orders\Blacksmith\largechain.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largefencing.cfg = Bin\Data\Bulk Orders\Blacksmith\largefencing.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largemaces.cfg = Bin\Data\Bulk Orders\Blacksmith\largemaces.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largeplate.cfg = Bin\Data\Bulk Orders\Blacksmith\largeplate.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largepolearms.cfg = Bin\Data\Bulk Orders\Blacksmith\largepolearms.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largering.cfg = Bin\Data\Bulk Orders\Blacksmith\largering.cfg
+		Bin\Data\Bulk Orders\Blacksmith\largeswords.cfg = Bin\Data\Bulk Orders\Blacksmith\largeswords.cfg
+		Bin\Data\Bulk Orders\Blacksmith\weapons.cfg = Bin\Data\Bulk Orders\Blacksmith\weapons.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tailoring", "Tailoring", "{CA2AE348-361A-4546-A40D-5B1B7D7340BC}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Bulk Orders\Tailoring\boneset.cfg = Bin\Data\Bulk Orders\Tailoring\boneset.cfg
+		Bin\Data\Bulk Orders\Tailoring\cloth.cfg = Bin\Data\Bulk Orders\Tailoring\cloth.cfg
+		Bin\Data\Bulk Orders\Tailoring\farmer.cfg = Bin\Data\Bulk Orders\Tailoring\farmer.cfg
+		Bin\Data\Bulk Orders\Tailoring\femaleleatherset.cfg = Bin\Data\Bulk Orders\Tailoring\femaleleatherset.cfg
+		Bin\Data\Bulk Orders\Tailoring\fishergirl.cfg = Bin\Data\Bulk Orders\Tailoring\fishergirl.cfg
+		Bin\Data\Bulk Orders\Tailoring\gypsy.cfg = Bin\Data\Bulk Orders\Tailoring\gypsy.cfg
+		Bin\Data\Bulk Orders\Tailoring\hatset.cfg = Bin\Data\Bulk Orders\Tailoring\hatset.cfg
+		Bin\Data\Bulk Orders\Tailoring\jester.cfg = Bin\Data\Bulk Orders\Tailoring\jester.cfg
+		Bin\Data\Bulk Orders\Tailoring\lady.cfg = Bin\Data\Bulk Orders\Tailoring\lady.cfg
+		Bin\Data\Bulk Orders\Tailoring\leather.cfg = Bin\Data\Bulk Orders\Tailoring\leather.cfg
+		Bin\Data\Bulk Orders\Tailoring\maleleatherset.cfg = Bin\Data\Bulk Orders\Tailoring\maleleatherset.cfg
+		Bin\Data\Bulk Orders\Tailoring\pirate.cfg = Bin\Data\Bulk Orders\Tailoring\pirate.cfg
+		Bin\Data\Bulk Orders\Tailoring\shoeset.cfg = Bin\Data\Bulk Orders\Tailoring\shoeset.cfg
+		Bin\Data\Bulk Orders\Tailoring\studdedset.cfg = Bin\Data\Bulk Orders\Tailoring\studdedset.cfg
+		Bin\Data\Bulk Orders\Tailoring\towncrier.cfg = Bin\Data\Bulk Orders\Tailoring\towncrier.cfg
+		Bin\Data\Bulk Orders\Tailoring\wizard.cfg = Bin\Data\Bulk Orders\Tailoring\wizard.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{9B4E9C39-1E75-40BD-88AF-19561330E896}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Components\doors.txt = Bin\Data\Components\doors.txt
+		Bin\Data\Components\floors.txt = Bin\Data\Components\floors.txt
+		Bin\Data\Components\misc.txt = Bin\Data\Components\misc.txt
+		Bin\Data\Components\roof.txt = Bin\Data\Components\roof.txt
+		Bin\Data\Components\stairs.txt = Bin\Data\Components\stairs.txt
+		Bin\Data\Components\suppinfo.txt = Bin\Data\Components\suppinfo.txt
+		Bin\Data\Components\teleprts.txt = Bin\Data\Components\teleprts.txt
+		Bin\Data\Components\walls.txt = Bin\Data\Components\walls.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decoration", "Decoration", "{E1A1751B-A017-496D-914F-0822E6E5763A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Britannia", "Britannia", "{8C79F7D9-AECF-40AC-80F0-D3C48D864640}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Decoration\Britannia\_covetous.cfg = Bin\Data\Decoration\Britannia\_covetous.cfg
+		Bin\Data\Decoration\Britannia\_deceit.cfg = Bin\Data\Decoration\Britannia\_deceit.cfg
+		Bin\Data\Decoration\Britannia\_despise.cfg = Bin\Data\Decoration\Britannia\_despise.cfg
+		Bin\Data\Decoration\Britannia\_destard.cfg = Bin\Data\Decoration\Britannia\_destard.cfg
+		Bin\Data\Decoration\Britannia\_fire.cfg = Bin\Data\Decoration\Britannia\_fire.cfg
+		Bin\Data\Decoration\Britannia\_hedgemaze.cfg = Bin\Data\Decoration\Britannia\_hedgemaze.cfg
+		Bin\Data\Decoration\Britannia\_hythloth.cfg = Bin\Data\Decoration\Britannia\_hythloth.cfg
+		Bin\Data\Decoration\Britannia\_ice.cfg = Bin\Data\Decoration\Britannia\_ice.cfg
+		Bin\Data\Decoration\Britannia\_orccave.cfg = Bin\Data\Decoration\Britannia\_orccave.cfg
+		Bin\Data\Decoration\Britannia\_shame.cfg = Bin\Data\Decoration\Britannia\_shame.cfg
+		Bin\Data\Decoration\Britannia\_terathankeep.cfg = Bin\Data\Decoration\Britannia\_terathankeep.cfg
+		Bin\Data\Decoration\Britannia\_wrong.cfg = Bin\Data\Decoration\Britannia\_wrong.cfg
+		Bin\Data\Decoration\Britannia\britain.cfg = Bin\Data\Decoration\Britannia\britain.cfg
+		Bin\Data\Decoration\Britannia\bucs.cfg = Bin\Data\Decoration\Britannia\bucs.cfg
+		Bin\Data\Decoration\Britannia\bucsportal.cfg = Bin\Data\Decoration\Britannia\bucsportal.cfg
+		Bin\Data\Decoration\Britannia\cove.cfg = Bin\Data\Decoration\Britannia\cove.cfg
+		Bin\Data\Decoration\Britannia\delucia.cfg = Bin\Data\Decoration\Britannia\delucia.cfg
+		Bin\Data\Decoration\Britannia\despise.cfg = Bin\Data\Decoration\Britannia\despise.cfg
+		Bin\Data\Decoration\Britannia\destard.cfg = Bin\Data\Decoration\Britannia\destard.cfg
+		Bin\Data\Decoration\Britannia\hythloth.cfg = Bin\Data\Decoration\Britannia\hythloth.cfg
+		Bin\Data\Decoration\Britannia\jhelom.cfg = Bin\Data\Decoration\Britannia\jhelom.cfg
+		Bin\Data\Decoration\Britannia\magincia.cfg = Bin\Data\Decoration\Britannia\magincia.cfg
+		Bin\Data\Decoration\Britannia\minoc.cfg = Bin\Data\Decoration\Britannia\minoc.cfg
+		Bin\Data\Decoration\Britannia\moonglow.cfg = Bin\Data\Decoration\Britannia\moonglow.cfg
+		Bin\Data\Decoration\Britannia\nujelm.cfg = Bin\Data\Decoration\Britannia\nujelm.cfg
+		Bin\Data\Decoration\Britannia\papua.cfg = Bin\Data\Decoration\Britannia\papua.cfg
+		Bin\Data\Decoration\Britannia\patches.cfg = Bin\Data\Decoration\Britannia\patches.cfg
+		Bin\Data\Decoration\Britannia\serpent pillars.cfg = Bin\Data\Decoration\Britannia\serpent pillars.cfg
+		Bin\Data\Decoration\Britannia\serpentshold.cfg = Bin\Data\Decoration\Britannia\serpentshold.cfg
+		Bin\Data\Decoration\Britannia\shame.cfg = Bin\Data\Decoration\Britannia\shame.cfg
+		Bin\Data\Decoration\Britannia\shrines.cfg = Bin\Data\Decoration\Britannia\shrines.cfg
+		Bin\Data\Decoration\Britannia\skara.cfg = Bin\Data\Decoration\Britannia\skara.cfg
+		Bin\Data\Decoration\Britannia\solen matriarch quest.cfg = Bin\Data\Decoration\Britannia\solen matriarch quest.cfg
+		Bin\Data\Decoration\Britannia\study of solen quest.cfg = Bin\Data\Decoration\Britannia\study of solen quest.cfg
+		Bin\Data\Decoration\Britannia\trinsic.cfg = Bin\Data\Decoration\Britannia\trinsic.cfg
+		Bin\Data\Decoration\Britannia\vesper.cfg = Bin\Data\Decoration\Britannia\vesper.cfg
+		Bin\Data\Decoration\Britannia\wind.cfg = Bin\Data\Decoration\Britannia\wind.cfg
+		Bin\Data\Decoration\Britannia\witch apprentice quest.cfg = Bin\Data\Decoration\Britannia\witch apprentice quest.cfg
+		Bin\Data\Decoration\Britannia\yew.cfg = Bin\Data\Decoration\Britannia\yew.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Felucca", "Felucca", "{C07413F9-65C4-4E58-B77D-A6A8375FE15E}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Decoration\Felucca\_champion teleporters.cfg = Bin\Data\Decoration\Felucca\_champion teleporters.cfg
+		Bin\Data\Decoration\Felucca\_star room.cfg = Bin\Data\Decoration\Felucca\_star room.cfg
+		Bin\Data\Decoration\Felucca\ambitious solen queen quest.cfg = Bin\Data\Decoration\Felucca\ambitious solen queen quest.cfg
+		Bin\Data\Decoration\Felucca\khaldun entrance.cfg = Bin\Data\Decoration\Felucca\khaldun entrance.cfg
+		Bin\Data\Decoration\Felucca\khaldun.cfg = Bin\Data\Decoration\Felucca\khaldun.cfg
+		Bin\Data\Decoration\Felucca\ocllo.cfg = Bin\Data\Decoration\Felucca\ocllo.cfg
+		Bin\Data\Decoration\Felucca\solen matriarch quest.cfg = Bin\Data\Decoration\Felucca\solen matriarch quest.cfg
+		Bin\Data\Decoration\Felucca\yew.cfg = Bin\Data\Decoration\Felucca\yew.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ilshenar", "Ilshenar", "{56CF4545-A736-4F90-8907-4073C8C4230B}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Decoration\Ilshenar\_blood.cfg = Bin\Data\Decoration\Ilshenar\_blood.cfg
+		Bin\Data\Decoration\Ilshenar\_central.cfg = Bin\Data\Decoration\Ilshenar\_central.cfg
+		Bin\Data\Decoration\Ilshenar\_exodus.cfg = Bin\Data\Decoration\Ilshenar\_exodus.cfg
+		Bin\Data\Decoration\Ilshenar\_gwenno.cfg = Bin\Data\Decoration\Ilshenar\_gwenno.cfg
+		Bin\Data\Decoration\Ilshenar\_ratcave.cfg = Bin\Data\Decoration\Ilshenar\_ratcave.cfg
+		Bin\Data\Decoration\Ilshenar\_regvolom.cfg = Bin\Data\Decoration\Ilshenar\_regvolom.cfg
+		Bin\Data\Decoration\Ilshenar\_serpentine.cfg = Bin\Data\Decoration\Ilshenar\_serpentine.cfg
+		Bin\Data\Decoration\Ilshenar\_sheepfarm.cfg = Bin\Data\Decoration\Ilshenar\_sheepfarm.cfg
+		Bin\Data\Decoration\Ilshenar\_sorcerers.cfg = Bin\Data\Decoration\Ilshenar\_sorcerers.cfg
+		Bin\Data\Decoration\Ilshenar\_terortskitas.cfg = Bin\Data\Decoration\Ilshenar\_terortskitas.cfg
+		Bin\Data\Decoration\Ilshenar\_twinoaks.cfg = Bin\Data\Decoration\Ilshenar\_twinoaks.cfg
+		Bin\Data\Decoration\Ilshenar\camp.cfg = Bin\Data\Decoration\Ilshenar\camp.cfg
+		Bin\Data\Decoration\Ilshenar\camp2.cfg = Bin\Data\Decoration\Ilshenar\camp2.cfg
+		Bin\Data\Decoration\Ilshenar\enslavedgargs.cfg = Bin\Data\Decoration\Ilshenar\enslavedgargs.cfg
+		Bin\Data\Decoration\Ilshenar\gargoylecity.cfg = Bin\Data\Decoration\Ilshenar\gargoylecity.cfg
+		Bin\Data\Decoration\Ilshenar\golemsandjukas.cfg = Bin\Data\Decoration\Ilshenar\golemsandjukas.cfg
+		Bin\Data\Decoration\Ilshenar\lakeshire.cfg = Bin\Data\Decoration\Ilshenar\lakeshire.cfg
+		Bin\Data\Decoration\Ilshenar\meercatacombs.cfg = Bin\Data\Decoration\Ilshenar\meercatacombs.cfg
+		Bin\Data\Decoration\Ilshenar\misc.cfg = Bin\Data\Decoration\Ilshenar\misc.cfg
+		Bin\Data\Decoration\Ilshenar\mistas.cfg = Bin\Data\Decoration\Ilshenar\mistas.cfg
+		Bin\Data\Decoration\Ilshenar\patches.cfg = Bin\Data\Decoration\Ilshenar\patches.cfg
+		Bin\Data\Decoration\Ilshenar\ratfortress.cfg = Bin\Data\Decoration\Ilshenar\ratfortress.cfg
+		Bin\Data\Decoration\Ilshenar\savagecamp.cfg = Bin\Data\Decoration\Ilshenar\savagecamp.cfg
+		Bin\Data\Decoration\Ilshenar\shrines.cfg = Bin\Data\Decoration\Ilshenar\shrines.cfg
+		Bin\Data\Decoration\Ilshenar\vinculuminn.cfg = Bin\Data\Decoration\Ilshenar\vinculuminn.cfg
+		Bin\Data\Decoration\Ilshenar\wispdungeon.cfg = Bin\Data\Decoration\Ilshenar\wispdungeon.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trammel", "Trammel", "{2FB2CDFA-B4A7-4540-98F5-10FEA05C284A}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Decoration\Trammel\_haven additions.cfg = Bin\Data\Decoration\Trammel\_haven additions.cfg
+		Bin\Data\Decoration\Trammel\_minoc camp.cfg = Bin\Data\Decoration\Trammel\_minoc camp.cfg
+		Bin\Data\Decoration\Trammel\ambitious solen queen quest.cfg = Bin\Data\Decoration\Trammel\ambitious solen queen quest.cfg
+		Bin\Data\Decoration\Trammel\collector quest.cfg = Bin\Data\Decoration\Trammel\collector quest.cfg
+		Bin\Data\Decoration\Trammel\haven.cfg = Bin\Data\Decoration\Trammel\haven.cfg
+		Bin\Data\Decoration\Trammel\magincia.cfg = Bin\Data\Decoration\Trammel\magincia.cfg
+		Bin\Data\Decoration\Trammel\solen matriarch quest.cfg = Bin\Data\Decoration\Trammel\solen matriarch quest.cfg
+		Bin\Data\Decoration\Trammel\yew.cfg = Bin\Data\Decoration\Trammel\yew.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Guide", "Guide", "{3EC11591-4C48-43CB-95D3-C284DD7A0021}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Guide\Britain.graph = Bin\Data\Guide\Britain.graph
+		Bin\Data\Guide\Buccaneer's Den.graph = Bin\Data\Guide\Buccaneer's Den.graph
+		Bin\Data\Guide\Cove.graph = Bin\Data\Guide\Cove.graph
+		Bin\Data\Guide\Definitions.cfg = Bin\Data\Guide\Definitions.cfg
+		Bin\Data\Guide\Delucia.graph = Bin\Data\Guide\Delucia.graph
+		Bin\Data\Guide\Gargoyle City.graph = Bin\Data\Guide\Gargoyle City.graph
+		Bin\Data\Guide\Haven Island.graph = Bin\Data\Guide\Haven Island.graph
+		Bin\Data\Guide\Jhelom.graph = Bin\Data\Guide\Jhelom.graph
+		Bin\Data\Guide\Luna.graph = Bin\Data\Guide\Luna.graph
+		Bin\Data\Guide\Minoc.graph = Bin\Data\Guide\Minoc.graph
+		Bin\Data\Guide\Moonglow.graph = Bin\Data\Guide\Moonglow.graph
+		Bin\Data\Guide\New Haven.graph = Bin\Data\Guide\New Haven.graph
+		Bin\Data\Guide\Nujel'm.graph = Bin\Data\Guide\Nujel'm.graph
+		Bin\Data\Guide\Papua.graph = Bin\Data\Guide\Papua.graph
+		Bin\Data\Guide\Serpent's Hold.graph = Bin\Data\Guide\Serpent's Hold.graph
+		Bin\Data\Guide\Skara Brae.graph = Bin\Data\Guide\Skara Brae.graph
+		Bin\Data\Guide\Trinsic.graph = Bin\Data\Guide\Trinsic.graph
+		Bin\Data\Guide\Umbra.graph = Bin\Data\Guide\Umbra.graph
+		Bin\Data\Guide\Vesper.graph = Bin\Data\Guide\Vesper.graph
+		Bin\Data\Guide\Wind.graph = Bin\Data\Guide\Wind.graph
+		Bin\Data\Guide\Yew.graph = Bin\Data\Guide\Yew.graph
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{A4D44630-5D1E-48B2-9583-945018518DFC}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Locations\felucca.xml = Bin\Data\Locations\felucca.xml
+		Bin\Data\Locations\ilshenar.xml = Bin\Data\Locations\ilshenar.xml
+		Bin\Data\Locations\trammel.xml = Bin\Data\Locations\trammel.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spawns", "Spawns", "{38E20955-4372-40A4-A044-540C35917EAF}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\Spawns\felucca.xml = Bin\Data\Spawns\felucca.xml
+		Bin\Data\Spawns\ilshenar.xml = Bin\Data\Spawns\ilshenar.xml
+		Bin\Data\Spawns\trammel.xml = Bin\Data\Spawns\trammel.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Config\Config.csproj", "{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3} = {AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin", "Bin", "{1FE546D7-19B4-486F-8544-1003E9CB4E51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|x64.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|x64.Build.0 = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|x86.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Debug|x86.Build.0 = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Release|x64.ActiveCfg = Release|Any CPU
+		{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|x64.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|x64.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|x86.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Debug|x86.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|x64.Build.0 = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE4A9EAA-E0EB-4DC9-9604-BE4289F9F6C3}.Release|x86.Build.0 = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|x64.ActiveCfg = Release|x64
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|x64.Build.0 = Release|x64
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|x86.ActiveCfg = Release|x86
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Debug|x86.Build.0 = Release|x86
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|x64.ActiveCfg = Release|x64
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|x64.Build.0 = Release|x64
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|x86.ActiveCfg = Release|x86
+		{E08CFBE4-E013-44EE-8829-426D05BC083F}.Release|x86.Build.0 = Release|x86
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|Mixed Platforms.Build.0 = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|x64.Build.0 = Debug|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Debug|x86.Build.0 = Debug|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|x64.ActiveCfg = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|x64.Build.0 = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|x86.ActiveCfg = Release|Any CPU
+		{61BAFEAE-9A03-4C02-BB82-F1CD3A44771D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C5617425-8E28-4835-8C1C-80F43E47BCA6} = {1FE546D7-19B4-486F-8544-1003E9CB4E51}
+		{D230B2A8-D044-4EAB-8509-27C64289950C} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{766611FA-14D8-4711-8346-275A30C30173} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{8CBB59F7-4A5C-446B-9B2C-3FC0B890314D} = {766611FA-14D8-4711-8346-275A30C30173}
+		{CA2AE348-361A-4546-A40D-5B1B7D7340BC} = {766611FA-14D8-4711-8346-275A30C30173}
+		{9B4E9C39-1E75-40BD-88AF-19561330E896} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{E1A1751B-A017-496D-914F-0822E6E5763A} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{8C79F7D9-AECF-40AC-80F0-D3C48D864640} = {E1A1751B-A017-496D-914F-0822E6E5763A}
+		{C07413F9-65C4-4E58-B77D-A6A8375FE15E} = {E1A1751B-A017-496D-914F-0822E6E5763A}
+		{56CF4545-A736-4F90-8907-4073C8C4230B} = {E1A1751B-A017-496D-914F-0822E6E5763A}
+		{2FB2CDFA-B4A7-4540-98F5-10FEA05C284A} = {E1A1751B-A017-496D-914F-0822E6E5763A}
+		{3EC11591-4C48-43CB-95D3-C284DD7A0021} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{A4D44630-5D1E-48B2-9583-945018518DFC} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{38E20955-4372-40A4-A044-540C35917EAF} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{1FE546D7-19B4-486F-8544-1003E9CB4E51} = {EF956787-B078-4D19-B03B-4A8F2A4841AD}
+	EndGlobalSection
+EndGlobal
