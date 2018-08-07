@@ -4393,7 +4393,7 @@
     <Compile Include="Systems\Administration\Console\Timestamp.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\CrashGuard.cs">
+    <Compile Include="Systems\Utilities\CrashGuard.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Administration\DataPath.cs">
@@ -4420,7 +4420,7 @@
     <Compile Include="Systems\World\FoodDecay.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\Geometry.cs">
+    <Compile Include="Systems\Utilities\Geometry.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Items\Decorative\DecorativeTopiary.cs">
@@ -4483,7 +4483,7 @@
     <Compile Include="Systems\Administration\NameList.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\NameVerification.cs">
+    <Compile Include="Systems\Mobiles\Players\NameVerification.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Mobiles\Notoriety.cs">
@@ -4510,7 +4510,7 @@
     <Compile Include="Systems\Mobiles\RegenRates.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\RenameRequests.cs">
+    <Compile Include="Systems\Mobiles\Players\RenameRequests.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\World\ResourceInfo.cs">
