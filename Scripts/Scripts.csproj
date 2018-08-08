@@ -927,7 +927,7 @@
     <Compile Include="Systems\Items\Consumables\Firebomb.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\FiveOvercapStatScroll.cs">
+    <Compile Include="Definitions\Items\Custom\FiveOvercapStatScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Items\Internal\FlipableAddonAttribute.cs">
@@ -1147,14 +1147,14 @@
     <Compile Include="Systems\Items\Addons\TerMurDresserSouthAddon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\SwarmOfFlies.cs">
+    <Compile Include="Definitions\Items\Custom\SwarmOfFlies.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Items\Internal\Teleporter.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Items\Internal\TeleportRope.cs" />
-    <Compile Include="Items\Custom\TenMurdererKillRemoverDeed.cs">
+    <Compile Include="Definitions\Items\Custom\TenMurdererKillRemoverDeed.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Items\Decorative\TravestysCollectionOfShells.cs">
@@ -4411,7 +4411,7 @@
     <Compile Include="Systems\Administration\Email.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\Emitter.cs">
+    <Compile Include="Systems\Utilities\Emitter.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Utilities\Fastwalk.cs">
@@ -4453,22 +4453,22 @@
     <Compile Include="Systems\Administration\Client\HardwareInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\IDynamicEnum.cs">
+    <Compile Include="Systems\Utilities\IDynamicEnum.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Mobiles\AI\InhumanSpeech.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\Keywords.cs">
+    <Compile Include="Systems\Mobiles\Players\Keywords.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\LanguageStatistics.cs">
+    <Compile Include="Systems\Utilities\LanguageStatistics.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\World\LightCycle.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\LoginStats.cs">
+    <Compile Include="Systems\Administration\LoginStats.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Mobiles\Loot.cs">
@@ -4477,7 +4477,7 @@
     <Compile Include="Systems\Mobiles\LootPack.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\MapDefinitions.cs">
+    <Compile Include="Systems\Administration\MapDefinitions.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Administration\NameList.cs">
@@ -4492,7 +4492,7 @@
     <Compile Include="Systems\Mobiles\Paperdoll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\Poison.cs">
+    <Compile Include="Systems\Utilities\Poison.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Administration\ProfanityProtection.cs">
@@ -4501,7 +4501,7 @@
     <Compile Include="Systems\Mobiles\Players\Profile.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\ProtocolExtensions.cs">
+    <Compile Include="Systems\Mobiles\Players\ProtocolExtensions.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Mobiles\RaceDefinitions.cs">
@@ -4519,7 +4519,7 @@
     <Compile Include="Systems\Administration\ServerList.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\ShardPoller.cs">
+    <Compile Include="Systems\Administration\ShardPoller.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Mobiles\ShrinkTable.cs">
@@ -4528,25 +4528,25 @@
     <Compile Include="Systems\Mobiles\SkillCheck.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\SocketOptions.cs">
+    <Compile Include="Systems\Administration\SocketOptions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\TextDefinition.cs">
+    <Compile Include="Systems\Utilities\TextDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Mobiles\Titles.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\ToggleItem.cs">
+    <Compile Include="Systems\Items\ToggleItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\TreasureMapProtection.cs">
+    <Compile Include="Systems\World\Regions\TreasureMapProtection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\ValidationQueue.cs">
+    <Compile Include="Systems\Utilities\ValidationQueue.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Misc\WeakEntityCollection.cs" />
+    <Compile Include="Systems\Utilities\WeakEntityCollection.cs" />
     <Compile Include="Systems\World\Weather.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4740,13 +4740,13 @@
     <Compile Include="Systems\World\Regions\NoHousingRegion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\World\Regions\Spawning\SpawnDefinition.cs">
+    <Compile Include="Systems\Spawning\SpawnDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\World\Regions\Spawning\SpawnEntry.cs">
+    <Compile Include="Systems\Spawning\SpawnEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\World\Regions\Spawning\SpawnPersistence.cs">
+    <Compile Include="Systems\Spawning\SpawnPersistence.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\World\Regions\TownRegion.cs">
@@ -6176,26 +6176,26 @@
     <Compile Include="Systems\Items\Internal\ResGate.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\AlchemyStone.cs">
+    <Compile Include="Definitions\Items\Custom\AlchemyStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\GamblingStone.cs">
+    <Compile Include="Definitions\Items\Custom\GamblingStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\GMStone.cs" />
-    <Compile Include="Items\Custom\IngotStone.cs">
+    <Compile Include="Definitions\Items\Custom\GMStone.cs" />
+    <Compile Include="Definitions\Items\Custom\IngotStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\RegStone.cs">
+    <Compile Include="Definitions\Items\Custom\RegStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\ScribeStone.cs">
+    <Compile Include="Definitions\Items\Custom\ScribeStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\SmithStone.cs">
+    <Compile Include="Definitions\Items\Custom\SmithStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Custom\TailorStone.cs">
+    <Compile Include="Definitions\Items\Custom\TailorStone.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Items\Containers\AlchemyBag.cs">
@@ -6542,17 +6542,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Items\LBR\" />
-    <Folder Include="Items\T2A\" />
-    <Folder Include="Items\UO3D\" />
-    <Folder Include="Items\UOR\" />
-    <Folder Include="Items\UO\" />
-    <Folder Include="Mobiles\Custom\" />
-    <Folder Include="Mobiles\LBR\" />
-    <Folder Include="Mobiles\T2A\" />
-    <Folder Include="Mobiles\UO3D\" />
-    <Folder Include="Mobiles\UOR\" />
-    <Folder Include="Mobiles\UO\" />
+    <Folder Include="Definitions\Items\LBR\" />
+    <Folder Include="Definitions\Items\T2A\" />
+    <Folder Include="Definitions\Items\UO3D\" />
+    <Folder Include="Definitions\Items\UOR\" />
+    <Folder Include="Definitions\Items\UO\" />
+    <Folder Include="Definitions\Mobiles\Custom\" />
+    <Folder Include="Definitions\Mobiles\LBR\" />
+    <Folder Include="Definitions\Mobiles\T2A\" />
+    <Folder Include="Definitions\Mobiles\UO3D\" />
+    <Folder Include="Definitions\Mobiles\UOR\" />
+    <Folder Include="Definitions\Mobiles\UO\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
