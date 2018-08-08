@@ -1,9 +1,10 @@
-
+/Bin/Output
 /Bin/Logs
 /Bin/Backups
 /Bin/Saves
 /Bin/Web
 /Bin/Docs
+*.dll
 *.pdb
 *.exe
 *.sh
