@@ -220,9 +220,9 @@ namespace Server.Misc
                 newChar.BankBox.DropItem(ticket);
             }
 
-            CityInfo city = GetStartLocation(args, young);
+        //    CityInfo city = GetStartLocation(args, young); // Temp Fix -Fraz
 
-            city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca); // FOR FIRST TIME CHARACTER YOUNG STATUS IN DEV -Fraz
+            CityInfo city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca); // FOR FIRST TIME CHARACTER YOUNG STATUS IN DEV -Fraz
 
             newChar.MoveToWorld(city.Location, city.Map);
 

@@ -12024,6 +12024,9 @@ namespace Server
         ///     Overridable. Event invoked when <paramref name="from" /> wants to see this Mobile's stats.
         /// </summary>
         /// <param name="from"></param>
+        /// 
+        // This will require an update to check if old client is enforced or used -Fraz
+        // Then the packet need sent according to the correct era
         public virtual void OnSkillsQuery(Mobile from)
         {
             if (from == this)

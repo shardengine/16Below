@@ -270,7 +270,7 @@ namespace Server.Network
 
 			m_Stream.Write((short)0x0018);
 
-			m_Stream.Write(4);
+			m_Stream.Write(3);
 
 			m_Stream.Write(Map.Felucca.Tiles.Patch.StaticBlocks);
 			m_Stream.Write(Map.Felucca.Tiles.Patch.LandBlocks);
@@ -281,8 +281,11 @@ namespace Server.Network
 			m_Stream.Write(Map.Ilshenar.Tiles.Patch.StaticBlocks);
 			m_Stream.Write(Map.Ilshenar.Tiles.Patch.LandBlocks);
 
+            // Needs set to the right amount of map for the selected era -Fraz
+            /*
 			m_Stream.Write(Map.Malas.Tiles.Patch.StaticBlocks);
 			m_Stream.Write(Map.Malas.Tiles.Patch.LandBlocks);
+            */
 
 			//TODO: Should this include newer facets?
 		}

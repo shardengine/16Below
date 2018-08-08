@@ -13,11 +13,17 @@ namespace Server.Misc
             * 3) Map 0xFF is reserved for core use.
             * 4) Changing or removing any predefined maps may cause server instability.
             */
+
+            // This will need to check expansion and client enforcement to determine the corrrect map sizes and definitions -Fraz
+
             /*
             RegisterMap(0, 0, 0, 7168, 4096, 4, "Felucca", MapRules.FeluccaRules);
             RegisterMap(1, 1, 1, 7168, 4096, 0, "Trammel", MapRules.TrammelRules);
             RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);
             */
+
+
+
             RegisterMap(0, 0, 0, 6144, 4096, 4, "Felucca", MapRules.FeluccaRules);
             RegisterMap(1, 1, 1, 6144, 4096, 0, "Trammel", MapRules.TrammelRules);
             RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);

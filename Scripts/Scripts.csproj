@@ -252,22 +252,22 @@
     <Compile Include="Administration\Commands\Wipe.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Context Menus\AddToParty.cs">
+    <Compile Include="Systems\ContextMenus\AddToParty.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Context Menus\AddToSpellbookEntry.cs">
+    <Compile Include="Systems\ContextMenus\AddToSpellbookEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Context Menus\EatEntry.cs">
+    <Compile Include="Systems\ContextMenus\EatEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Context Menus\EjectPlayer.cs">
+    <Compile Include="Systems\ContextMenus\EjectPlayer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Context Menus\OpenBankEntry.cs">
+    <Compile Include="Systems\ContextMenus\OpenBankEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Context Menus\TeachEntry.cs">
+    <Compile Include="Systems\ContextMenus\TeachEntry.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Gumps\AddDoorGump.cs">
@@ -2300,7 +2300,7 @@
     <Compile Include="Items\Base\Functional\BaseSliding.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Base\Functional\BaseDesItem.cs">
+    <Compile Include="Items\Base\Decoration\BaseDesItem.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\DesCityWall.cs">
@@ -6441,13 +6441,13 @@
     <Compile Include="Systems\Magic\UnsummonTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Targetting\BladedItemTarget.cs">
+    <Compile Include="Systems\Targeting\BladedItemTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Targetting\MoveTarget.cs">
+    <Compile Include="Systems\Targeting\MoveTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Targetting\PickMoveTarget.cs">
+    <Compile Include="Systems\Targeting\PickMoveTarget.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\Systems\VendorInfo\AnimalBuy.cs" />
