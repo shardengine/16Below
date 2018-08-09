@@ -213,7 +213,6 @@
     <Compile Include="Items\VirtualCheck.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="servuo.ico" />
     <Content Include="ShardEngine.ico" />
   </ItemGroup>
   <ItemGroup>

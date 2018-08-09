@@ -1103,9 +1103,6 @@
     <Compile Include="Systems\Item Systems\Decorative\Static.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Functional\ChickenCoop.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Systems\Item Systems\Decorative\GargishBanner.cs">
       <SubType>Code</SubType>
     </Compile>
