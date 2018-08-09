@@ -4,6 +4,7 @@
 /Bin/Saves
 /Bin/Web
 /Bin/Docs
+/Docs
 *.dll
 *.pdb
 *.exe
