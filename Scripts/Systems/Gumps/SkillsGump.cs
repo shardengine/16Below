@@ -433,7 +433,7 @@ namespace Server.Gumps
                 SkillName.Inscribe,
                 SkillName.Tailoring,
                 SkillName.Tinkering,
-                SkillName.Imbuing
+            //    SkillName.Imbuing
             }),
             new SkillsGumpGroup("Bardic", new SkillName[]
             {
@@ -444,23 +444,23 @@ namespace Server.Gumps
             }),
             new SkillsGumpGroup("Magical", new SkillName[]
             {
-                SkillName.Chivalry,
+            //    SkillName.Chivalry,
                 SkillName.EvalInt,
                 SkillName.Magery,
                 SkillName.MagicResist,
                 SkillName.Meditation,
-                SkillName.Necromancy,
+            //    SkillName.Necromancy,
                 SkillName.SpiritSpeak,
-                SkillName.Ninjitsu,
-                SkillName.Bushido,
-                SkillName.Spellweaving,
-                SkillName.Mysticism
+            //    SkillName.Ninjitsu,
+            //    SkillName.Bushido,
+            //    SkillName.Spellweaving,
+            //    SkillName.Mysticism
             }),
             new SkillsGumpGroup("Miscellaneous", new SkillName[]
             {
                 SkillName.Camping,
                 SkillName.Fishing,
-                SkillName.Focus,
+            //    SkillName.Focus,
                 SkillName.Healing,
                 SkillName.Herding,
                 SkillName.Lockpicking,
@@ -478,7 +478,7 @@ namespace Server.Gumps
                 SkillName.Swords,
                 SkillName.Tactics,
                 SkillName.Wrestling,
-                SkillName.Throwing
+            //    SkillName.Throwing
             }),
             new SkillsGumpGroup("Actions", new SkillName[]
             {

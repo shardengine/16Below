@@ -48,8 +48,10 @@ namespace Server.Commands
             Map[] fel = new Map[] { Map.Felucca };
             Map[] tram = new Map[] { Map.Trammel };
             Map[] ilsh = new Map[] { Map.Ilshenar };
+            /* not for LBR -Fraz
             Map[] malas = new Map[] { Map.Malas };
             Map[] tokuno = new Map[] { Map.Tokuno };
+            */
 
             for (int i = 0; i < list.Count; ++i)
             {
@@ -70,12 +72,14 @@ namespace Server.Commands
                     case 3:
                         maps = ilsh;
                         break; // Ilshenar
+                        /* not for LBR -Fraz
                     case 4:
                         maps = malas;
                         break; // Malas
                     case 5:
                         maps = tokuno;
                         break; // Tokuno Islands
+                        */
                 }
 
                 for (int j = 0; maps != null && j < maps.Length; ++j)

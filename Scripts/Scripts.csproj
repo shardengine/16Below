@@ -49,31 +49,31 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administration\Accounting\AccessRestrictions.cs">
+    <Compile Include="Administration\Account\AccessRestrictions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\Account.cs">
+    <Compile Include="Administration\Account\Account.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\AccountAttackLimiter.cs">
+    <Compile Include="Administration\Account\AccountAttackLimiter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\AccountComment.cs">
+    <Compile Include="Administration\Account\AccountComment.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\AccountHandler.cs">
+    <Compile Include="Administration\Account\AccountHandler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\Accounts.cs">
+    <Compile Include="Administration\Account\Accounts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\AccountTag.cs">
+    <Compile Include="Administration\Account\AccountTag.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\Firewall.cs">
+    <Compile Include="Administration\Account\Firewall.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\IPLimiter.cs">
+    <Compile Include="Administration\Account\IPLimiter.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\Add.cs">
@@ -252,6 +252,7 @@
     <Compile Include="Administration\Commands\Wipe.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Administration\World\Teleporters.cs" />
     <Compile Include="Systems\ContextMenus\AddToParty.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -1328,7 +1329,7 @@
     <Compile Include="Systems\Item Systems\Addons\LoomSouthAddon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\CurrentExpansion.cs" />
+    <Compile Include="Administration\Client\CurrentExpansion.cs" />
     <Compile Include="Systems\Utilities\MathHelper.cs" />
     <Compile Include="Systems\Champion\Mobiles\Barracoon.cs" />
     <Compile Include="Mobiles\Base\BaseChampion.cs" />
@@ -1342,8 +1343,8 @@
     <Compile Include="Systems\Champion\Mobiles\Serado.cs" />
     <Compile Include="Systems\Champion\Mobiles\ServantOfSemidar.cs" />
     <Compile Include="Systems\Champion\Mobiles\Silvani.cs" />
-    <Compile Include="Systems\Mobile Systems\Event\PumpkinHead.cs" />
-    <Compile Include="Systems\Mobile Systems\Event\Wanderer.cs" />
+    <Compile Include="Administration\World\Holidays\Halloween\PumpkinHead.cs" />
+    <Compile Include="Mobiles\Defined\Custom\Wanderer.cs" />
     <Compile Include="Systems\Factions\Mobiles\Mounts\BaseWarHorse.cs" />
     <Compile Include="Systems\Factions\Mobiles\Mounts\CoMWarHorse.cs" />
     <Compile Include="Systems\Factions\Mobiles\Mounts\MinaxWarHorse.cs" />
@@ -1351,43 +1352,42 @@
     <Compile Include="Systems\Factions\Mobiles\Mounts\TBWarHorse.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\AcidElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\AgapiteElemental.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\AirElemental.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Alligator.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\AncientLich.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\AncientWyrm.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\AirElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Alligator.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\AncientLich.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Dragons\AncientWyrm.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\AntLion.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ArcaneDaemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ArchDaemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ArcticOgreLord.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Balron.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Daemons\Balron.cs" />
     <Compile Include="Mobiles\Base\BaseCreature.cs" />
     <Compile Include="Mobiles\Base\BaseMount.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Beetle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Betrayer.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Bird.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\BlackBear.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Bird.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\BlackBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BloodElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Boar.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Bogle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Bogling.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BogThing.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BoneDemon.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\BoneKnight.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\BoneMagi.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\BoneKnight.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\BoneMagi.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Brigand.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BronzeElemental.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\BrownBear.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\BrownBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BulbousPutrification.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Bull.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\BullFrog.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Cat.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Animals\BullFrog.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Cat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Centaur.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Changeling.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ChaosDaemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ChaosDragoon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ChaosDragoonElite.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Chicken.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\ChickenLizard.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Chicken.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ColdDrake.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CopperElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CoralSnake.cs" />
@@ -1396,7 +1396,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\CorrosiveSlime.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CorruptedSoul.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Cougar.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Cow.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Cow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Crane.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Cursed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CursedSoul.cs" />
@@ -1406,22 +1406,22 @@
     <Compile Include="Systems\Mobile Systems\Normal\DarkWisp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DeadlyImp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DeepSeaSerpent.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\DesertOstard.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Mounts\DesertOstard.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Devourer.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\DireWolf.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\DireWolf.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DiseasedCat.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Dog.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Dog.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Dolphin.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Dragon.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Drake.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Dragons\Dragon.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Dragons\Drake.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DreadSpider.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DreamWraith .cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DullCopperElemental.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Eagle.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\EarthElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Eagle.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\EarthElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EffetePutridGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EffeteUndeadGargoyle.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Efreet.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Elementals\Efreet.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ElderGazer.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnragedCreatures.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnslavedGargoyle.cs" />
@@ -1442,24 +1442,24 @@
     <Compile Include="Systems\Mobile Systems\Normal\FireAnt.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireBeetle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireDaemon.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\FireElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\FireElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireRabbit.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireSteed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FleshGolem.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\ForestOstard.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\FrenziedOstard.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\FrostDragon.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Mounts\ForestOstard.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Animals\FrenziedOstard.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Dragons\FrostDragon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FrostOoze.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FrostSpider.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\FrostTroll.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Giantkin\FrostTroll.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Gargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Gazer.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GazerLarva.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Ghoul.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantBlackWidow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantIceWorm.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\GiantRat.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Animals\GiantRat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantSerpent.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantSpider.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantToad.cs" />
@@ -1469,7 +1469,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Golem.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GolemController.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GoreFiend.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Gorilla.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Gorilla.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterDragon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterMongbat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterPoisonElemental.cs" />
@@ -1484,9 +1484,9 @@
     <Compile Include="Systems\Mobile Systems\Normal\HellSteed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Hind.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HordeMinion.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Horse.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Mounts\Horse.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HumanBrigand.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\IceElemental.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Elementals\IceElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\IceFiend.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Icehound.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\IceSerpent.cs" />
@@ -1519,7 +1519,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Lich.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LichLord.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Lizardman.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Llama.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Mounts\Llama.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MaddeningHorror.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MeerCaptain.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MeerEternal.cs" />
@@ -1569,7 +1569,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\PutridUndeadGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\PutridUndeadGuardian.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Quagmire.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Rabbit.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Rabbit.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\RagingGrizzlyBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Raptor.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Rat.cs" />
@@ -1617,7 +1617,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\SkitteringHopper.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Slime.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Snake.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\SnowElemental.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Elementals\SnowElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SnowLeopard.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SpectralArmour.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Spectre.cs" />
@@ -1635,11 +1635,11 @@
     <Compile Include="Systems\Mobile Systems\Normal\TerathanWarrior.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ThirdDawnParrot.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\TimberWolf.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Titan.cs" />
+    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Giantkin\Titan.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Tormented Minotaur.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Treefellow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Troglodyte.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Troll.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Giantkin\Troll.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\UndeadGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\UndeadGuardian.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Unicorn.cs" />
@@ -1650,7 +1650,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\WailingBanshee.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Walrus.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WandererOfTheVoid.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\WaterElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\WaterElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhippingVine.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhiteWolf.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhiteWyrm.cs" />
@@ -1658,7 +1658,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Wisp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wraith.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wyvern.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Zombie.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\Zombie.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\Alchemist.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\AnimalTrainer.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\ArcherGuard.cs" />
@@ -1768,22 +1768,22 @@
     <Compile Include="Systems\Mobile Systems\NPCs\Weaver.cs" />
     <Compile Include="Mobiles\Defined\Summons\AnimatedWeapon.cs" />
     <Compile Include="Mobiles\Base\BaseFamiliar.cs" />
-    <Compile Include="Mobiles\Defined\Summons\BladeSpirits.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\BladeSpirits.cs" />
     <Compile Include="Mobiles\Defined\Summons\DarkWolf.cs" />
     <Compile Include="Mobiles\Defined\Summons\DeathAdder.cs" />
     <Compile Include="Mobiles\Defined\Summons\Dummy.cs" />
     <Compile Include="Mobiles\Defined\Summons\DummySpecific.cs" />
-    <Compile Include="Mobiles\Defined\Summons\EnergyVortex.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\EnergyVortex.cs" />
     <Compile Include="Mobiles\Defined\Summons\GargoylePet.cs" />
     <Compile Include="Mobiles\Defined\Summons\HordeMinion.cs" />
     <Compile Include="Mobiles\Defined\Summons\RisingColossus.cs" />
     <Compile Include="Mobiles\Defined\Summons\ShadowWisp.cs" />
     <Compile Include="Mobiles\Defined\Summons\SpawnedOrcishLord.cs" />
-    <Compile Include="Mobiles\Defined\Summons\SummonedAirElemental.cs" />
-    <Compile Include="Mobiles\Defined\Summons\SummonedDaemon.cs" />
-    <Compile Include="Mobiles\Defined\Summons\SummonedEarthElemental.cs" />
-    <Compile Include="Mobiles\Defined\Summons\SummonedFireElemental.cs" />
-    <Compile Include="Mobiles\Defined\Summons\SummonedWaterElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedAirElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedDaemon.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedEarthElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedFireElemental.cs" />
+    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedWaterElemental.cs" />
     <Compile Include="Mobiles\Defined\Summons\VampireBat.cs" />
     <Compile Include="Systems\Item Systems\Containers\ScrollBox.cs" />
     <Compile Include="Systems\Item Systems\Containers\ScrollBox3.cs" />
@@ -4357,10 +4357,10 @@
     <Compile Include="Systems\Item Systems\Equipment\Weapons\Katana.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Accounting\AccountPrompt.cs">
+    <Compile Include="Administration\Account\AccountPrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Animations.cs">
+    <Compile Include="Mobiles\System\Animations.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Combat\AttackMessage.cs">
@@ -4384,7 +4384,7 @@
     <Compile Include="Administration\Cleanup.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\ClientVerification.cs">
+    <Compile Include="Administration\Client\ClientVerification.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Console\ConsoleCommands.cs">
@@ -4447,16 +4447,16 @@
     <Compile Include="Systems\Services\GiftGiving\Winter2004.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Guild.cs">
+    <Compile Include="Mobiles\System\Guild.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\HardwareInfo.cs">
+    <Compile Include="Administration\Client\HardwareInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Utilities\IDynamicEnum.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\InhumanSpeech.cs">
+    <Compile Include="Mobiles\System\AI\InhumanSpeech.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\Players\Keywords.cs">
@@ -4471,13 +4471,13 @@
     <Compile Include="Administration\LoginStats.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Loot.cs">
+    <Compile Include="Mobiles\System\Loot.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\LootPack.cs">
+    <Compile Include="Mobiles\System\LootPack.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\MapDefinitions.cs">
+    <Compile Include="Administration\World\MapDefinitions.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\NameList.cs">
@@ -4486,12 +4486,13 @@
     <Compile Include="Mobiles\Players\NameVerification.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Notoriety.cs">
+    <Compile Include="Mobiles\System\Notoriety.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Paperdoll.cs">
+    <Compile Include="Mobiles\System\Paperdoll.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Systems\Utilities\Point4D.cs" />
     <Compile Include="Systems\Utilities\Poison.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4504,10 +4505,10 @@
     <Compile Include="Mobiles\Players\ProtocolExtensions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\RaceDefinitions.cs">
+    <Compile Include="Mobiles\System\RaceDefinitions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\RegenRates.cs">
+    <Compile Include="Mobiles\System\RegenRates.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\Players\RenameRequests.cs">
@@ -4522,10 +4523,10 @@
     <Compile Include="Administration\ShardPoller.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\ShrinkTable.cs">
+    <Compile Include="Mobiles\System\ShrinkTable.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\SkillCheck.cs">
+    <Compile Include="Mobiles\System\SkillCheck.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\SocketOptions.cs">
@@ -4534,7 +4535,7 @@
     <Compile Include="Systems\Utilities\TextDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Titles.cs">
+    <Compile Include="Mobiles\System\Titles.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Functional\ToggleItem.cs">
@@ -4553,7 +4554,7 @@
     <Compile Include="Administration\WebStatus.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\WeightOverloading.cs">
+    <Compile Include="Mobiles\System\WeightOverloading.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\WelcomeTimer.cs">
@@ -4562,49 +4563,49 @@
     <Compile Include="Mobiles\Base\BaseSummoned.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\TimedResistanceMod.cs">
+    <Compile Include="Mobiles\System\TimedResistanceMod.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\AIControlMobileTarget.cs">
+    <Compile Include="Mobiles\System\AI\AIControlMobileTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\AnimalAI.cs">
+    <Compile Include="Mobiles\System\AI\AnimalAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\ArcherAI.cs">
+    <Compile Include="Mobiles\System\AI\ArcherAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\BaseAI.cs">
+    <Compile Include="Mobiles\System\AI\BaseAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\BerserkAI.cs">
+    <Compile Include="Mobiles\System\AI\BerserkAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\HealerAI.cs">
+    <Compile Include="Mobiles\System\AI\HealerAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\MageAI.cs">
+    <Compile Include="Mobiles\System\AI\MageAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\MeleeAI.cs">
+    <Compile Include="Mobiles\System\AI\MeleeAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\OppositionGroup.cs">
+    <Compile Include="Mobiles\System\AI\OppositionGroup.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\OrcScoutAI.cs">
+    <Compile Include="Mobiles\System\AI\OrcScoutAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\PredatorAI.cs">
+    <Compile Include="Mobiles\System\AI\PredatorAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\SpeedInfo.cs">
+    <Compile Include="Mobiles\System\AI\SpeedInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\ThiefAI.cs">
+    <Compile Include="Mobiles\System\AI\ThiefAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\AI\VendorAI.cs">
+    <Compile Include="Mobiles\System\AI\VendorAI.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Multis\BaseHouse.cs">
@@ -4755,79 +4756,79 @@
     <Compile Include="Administration\Assistants.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BOBFilter.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BOBFilter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BOBFilterGump.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BOBFilterGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BOBGump.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BOBGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BOBLargeEntry.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BOBLargeEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BOBLargeSubEntry.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BOBLargeSubEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BOBSmallEntry.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BOBSmallEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BODBuyGump.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BODBuyGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BODType.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BODType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Books\BulkOrderBook.cs">
+    <Compile Include="Items\System\BulkOrders\Books\BulkOrderBook.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\BulkMaterialType.cs">
+    <Compile Include="Items\System\BulkOrders\BulkMaterialType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeBOD.cs">
+    <Compile Include="Items\System\BulkOrders\LargeBOD.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeBODAcceptGump.cs">
+    <Compile Include="Items\System\BulkOrders\LargeBODAcceptGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeBODGump.cs">
+    <Compile Include="Items\System\BulkOrders\LargeBODGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeBODTarget.cs">
+    <Compile Include="Items\System\BulkOrders\LargeBODTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeBulkEntry.cs">
+    <Compile Include="Items\System\BulkOrders\LargeBulkEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeSmithBOD.cs">
+    <Compile Include="Items\System\BulkOrders\LargeSmithBOD.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\LargeTailorBOD.cs">
+    <Compile Include="Items\System\BulkOrders\LargeTailorBOD.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\Rewards.cs">
+    <Compile Include="Items\System\BulkOrders\Rewards.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallBOD.cs">
+    <Compile Include="Items\System\BulkOrders\SmallBOD.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallBODAcceptGump.cs">
+    <Compile Include="Items\System\BulkOrders\SmallBODAcceptGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallBODGump.cs">
+    <Compile Include="Items\System\BulkOrders\SmallBODGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallBODTarget.cs">
+    <Compile Include="Items\System\BulkOrders\SmallBODTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallBulkEntry.cs">
+    <Compile Include="Items\System\BulkOrders\SmallBulkEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallSmithBOD.cs">
+    <Compile Include="Items\System\BulkOrders\SmallSmithBOD.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Systems\BulkOrders\SmallTailorBOD.cs">
+    <Compile Include="Items\System\BulkOrders\SmallTailorBOD.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Champion\ChampionAltar.cs">
@@ -4895,98 +4896,98 @@
     <Compile Include="Systems\Services\Chat\Packets.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\AutoCraft.cs" />
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftContext.cs">
+    <Compile Include="Mobiles\System\Craft\Core\AutoCraft.cs" />
+    <Compile Include="Mobiles\System\Craft\Core\CraftContext.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftGroup.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftGroup.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftGroupCol.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftGroupCol.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftGump.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftGumpItem.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftGumpItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftItem.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftItemCol.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftItemCol.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftItemIDAttribute.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftItemIDAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftRes.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftRes.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftResCol.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftResCol.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftSkill.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftSkill.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftSkillCol.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftSkillCol.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftSubRes.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftSubRes.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftSubResCol.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftSubResCol.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CraftSystem.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CraftSystem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\CustomCraft.cs">
+    <Compile Include="Mobiles\System\Craft\Core\CustomCraft.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\QueryMakersMarkGump.cs">
+    <Compile Include="Mobiles\System\Craft\Core\QueryMakersMarkGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\Recipes.cs">
+    <Compile Include="Mobiles\System\Craft\Core\Recipes.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\Repair.cs">
+    <Compile Include="Mobiles\System\Craft\Core\Repair.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\Core\Resmelt.cs">
+    <Compile Include="Mobiles\System\Craft\Core\Resmelt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefAlchemy.cs">
+    <Compile Include="Mobiles\System\Craft\DefAlchemy.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefBlacksmithy.cs">
+    <Compile Include="Mobiles\System\Craft\DefBlacksmithy.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefBowFletching.cs">
+    <Compile Include="Mobiles\System\Craft\DefBowFletching.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefCarpentry.cs">
+    <Compile Include="Mobiles\System\Craft\DefCarpentry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefCartography.cs">
+    <Compile Include="Mobiles\System\Craft\DefCartography.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefCooking.cs">
+    <Compile Include="Mobiles\System\Craft\DefCooking.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefGlassblowing.cs">
+    <Compile Include="Mobiles\System\Craft\DefGlassblowing.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefInscription.cs">
+    <Compile Include="Mobiles\System\Craft\DefInscription.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefMasonry.cs">
+    <Compile Include="Mobiles\System\Craft\DefMasonry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefTailoring.cs">
+    <Compile Include="Mobiles\System\Craft\DefTailoring.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Craft\DefTinkering.cs">
+    <Compile Include="Mobiles\System\Craft\DefTinkering.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Ethics\Core\Ethic.cs">
@@ -5351,13 +5352,13 @@
     </Compile>
     <Compile Include="Systems\Virtues\Honesty.cs" />
     <Compile Include="Systems\Virtues\Humility.cs" />
-    <Compile Include="Mobiles\Systems\Skills\Fishing.cs">
+    <Compile Include="Mobiles\System\Skills\Fishing.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Lumberjacking.cs">
+    <Compile Include="Mobiles\System\Skills\Lumberjacking.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Mining.cs">
+    <Compile Include="Mobiles\System\Skills\Mining.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Help\HelpGump.cs">
@@ -5427,7 +5428,7 @@
     <Compile Include="Administration\Tools\MyRunUO\MyRunUOStatus.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Paragon.cs" />
+    <Compile Include="Mobiles\System\Paragon.cs" />
     <Compile Include="Systems\Services\Party\AddPartyTarget.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -5452,28 +5453,28 @@
     <Compile Include="Systems\Services\Party\RemovePartyTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\FastAStarAlgorithm.cs">
+    <Compile Include="Mobiles\System\Pathing\FastAStarAlgorithm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\FastMovement.cs">
+    <Compile Include="Mobiles\System\Pathing\FastMovement.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\Movement.cs">
+    <Compile Include="Mobiles\System\Pathing\Movement.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\MovementPath.cs">
+    <Compile Include="Mobiles\System\Pathing\MovementPath.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\MoveResult.cs">
+    <Compile Include="Mobiles\System\Pathing\MoveResult.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\PathAlgorithm.cs">
+    <Compile Include="Mobiles\System\Pathing\PathAlgorithm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\PathFollower.cs">
+    <Compile Include="Mobiles\System\Pathing\PathFollower.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Pathing\SlowAStarAlgorithm.cs">
+    <Compile Include="Mobiles\System\Pathing\SlowAStarAlgorithm.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Plants\EmptyTheBowlGump.cs">
@@ -5530,9 +5531,9 @@
     <Compile Include="Systems\Plants\SetToDecorativeGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\World\Holidays\PlayerZombies.cs" />
-    <Compile Include="Administration\World\Holidays\PumpkinPatch.cs" />
-    <Compile Include="Mobiles\Systems\IFreezable.cs">
+    <Compile Include="Administration\World\Holidays\Halloween\PlayerZombies.cs" />
+    <Compile Include="Administration\World\Holidays\Halloween\PumpkinPatch.cs" />
+    <Compile Include="Mobiles\System\IFreezable.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\MedusaBlood.cs">
@@ -5725,7 +5726,7 @@
     <Compile Include="Administration\Custom Mods\Toolbar\Gumps\ToolbarEdit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\World\Holidays\TrickOrTreat.cs" />
+    <Compile Include="Administration\World\Holidays\Halloween\TrickOrTreat.cs" />
     <Compile Include="Systems\VeteranRewards\Character Statue Maker\CharacterStatue.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6092,73 +6093,73 @@
     <Compile Include="Systems\Services\XmlSpawner\XmlSpawner Core\XmlUtils\XmlPartialCategorizedAddGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Anatomy.cs">
+    <Compile Include="Mobiles\System\Skills\Anatomy.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\AnimalLore.cs">
+    <Compile Include="Mobiles\System\Skills\AnimalLore.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\AnimalTaming.cs">
+    <Compile Include="Mobiles\System\Skills\AnimalTaming.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\ArmsLore.cs">
+    <Compile Include="Mobiles\System\Skills\ArmsLore.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Begging.cs">
+    <Compile Include="Mobiles\System\Skills\Begging.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\DetectHidden.cs">
+    <Compile Include="Mobiles\System\Skills\DetectHidden.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Discordance.cs">
+    <Compile Include="Mobiles\System\Skills\Discordance.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\EvalInt.cs">
+    <Compile Include="Mobiles\System\Skills\EvalInt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\ForensicEval.cs">
+    <Compile Include="Mobiles\System\Skills\ForensicEval.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Hiding.cs">
+    <Compile Include="Mobiles\System\Skills\Hiding.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Inscribe.cs">
+    <Compile Include="Mobiles\System\Skills\Inscribe.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\ItemIdentification.cs">
+    <Compile Include="Mobiles\System\Skills\ItemIdentification.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Meditation.cs">
+    <Compile Include="Mobiles\System\Skills\Meditation.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Peacemaking.cs">
+    <Compile Include="Mobiles\System\Skills\Peacemaking.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Poisoning.cs">
+    <Compile Include="Mobiles\System\Skills\Poisoning.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Provocation.cs">
+    <Compile Include="Mobiles\System\Skills\Provocation.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\RemoveTrap.cs">
+    <Compile Include="Mobiles\System\Skills\RemoveTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Snooping.cs">
+    <Compile Include="Mobiles\System\Skills\Snooping.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\SpiritSpeak.cs">
+    <Compile Include="Mobiles\System\Skills\SpiritSpeak.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Stealing.cs">
+    <Compile Include="Mobiles\System\Skills\Stealing.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Stealth.cs">
+    <Compile Include="Mobiles\System\Skills\Stealth.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\TasteID.cs">
+    <Compile Include="Mobiles\System\Skills\TasteID.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\Skills\Tracking.cs">
+    <Compile Include="Mobiles\System\Skills\Tracking.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Services\GiftGiving\GiftGiving.cs">
@@ -6450,81 +6451,81 @@
     <Compile Include="Systems\Targeting\PickMoveTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Mobiles\Systems\VendorInfo\AnimalBuy.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\BeverageBuy.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\GenericBuy.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\GenericSell.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\PresetMapBuy.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBAlchemist.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBAnimalTrainer.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBArchitect.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBAxeWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBaker.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBanker.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBard.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBarkeeper.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBeekeeper.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBlacksmith.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBBowyer.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBButcher.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBCarpenter.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBChainmailArmor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBCobbler.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBCook.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBFarmer.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBFisherman.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBFortuneTeller.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBFurtrader.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBGlassblower.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBHairStylist.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBHealer.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBHelmetArmor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBHerbalist.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBHolyMage.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBHouseDeed.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBInfo.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBInnKeeper.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBJewel.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBKnifeWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBLeatherArmor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBLeatherWorker.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMaceWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMage.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMapmaker.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMetalShields.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMiller.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMiner.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBMonk.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBPlateArmor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBPlayerBarkeeper.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBPoleArmWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBProvisioner.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBRancher.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBRangedWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBRanger.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBRealEstateBroker.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBRingmailArmor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBScribe.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBShipwright.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBSmithTools.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBSpearForkWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBStavesWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBStoneCrafter.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBStuddedArmor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBSwordWeapon.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBTailor.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBTanner.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBTavernKeeper.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBThief.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBTinker.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBVagabond.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBVarietyDealer.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBVeterinarian.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBWaiter.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBWeaponSmith.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBWeaver.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\SBWoodenShields.cs" />
-    <Compile Include="Mobiles\Systems\VendorInfo\VendorInventory.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\AnimalBuy.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\BeverageBuy.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\GenericBuy.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\GenericSell.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\PresetMapBuy.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBAlchemist.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBAnimalTrainer.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBArchitect.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBAxeWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBaker.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBanker.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBard.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBarkeeper.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBeekeeper.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBlacksmith.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBBowyer.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBButcher.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBCarpenter.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBChainmailArmor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBCobbler.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBCook.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBFarmer.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBFisherman.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBFortuneTeller.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBFurtrader.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBGlassblower.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBHairStylist.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBHealer.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBHelmetArmor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBHerbalist.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBHolyMage.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBHouseDeed.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBInfo.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBInnKeeper.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBJewel.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBKnifeWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBLeatherArmor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBLeatherWorker.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMaceWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMage.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMapmaker.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMetalShields.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMiller.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMiner.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBMonk.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBPlateArmor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBPlayerBarkeeper.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBPoleArmWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBProvisioner.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBRancher.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBRangedWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBRanger.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBRealEstateBroker.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBRingmailArmor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBScribe.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBShipwright.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBSmithTools.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBSpearForkWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBStavesWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBStoneCrafter.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBStuddedArmor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBSwordWeapon.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBTailor.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBTanner.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBTavernKeeper.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBThief.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBTinker.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBVagabond.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBVarietyDealer.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBVeterinarian.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBWaiter.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBWeaponSmith.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBWeaver.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\SBWoodenShields.cs" />
+    <Compile Include="Mobiles\System\VendorInfo\VendorInventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Config\Config.csproj">
@@ -6542,6 +6543,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Administration\World\Holidays\Lord Blackthorns Revenge\" />
+    <Folder Include="Administration\World\Holidays\Original UO\" />
+    <Folder Include="Administration\World\Holidays\The Second Age\" />
+    <Folder Include="Administration\World\Holidays\Ultima Online Renaissance\" />
+    <Folder Include="Administration\World\Holidays\Ultima Online Third Dawn\" />
     <Folder Include="Items\Defined\Lord Blackthorns Revenge\Addons\" />
     <Folder Include="Items\Defined\Lord Blackthorns Revenge\Books\" />
     <Folder Include="Items\Defined\Lord Blackthorns Revenge\Consumables\" />
@@ -6583,12 +6589,15 @@
     <Folder Include="Items\Defined\Ultima Online Third Dawn\Multis\" />
     <Folder Include="Items\Defined\Ultima Online Third Dawn\Resources\" />
     <Folder Include="Items\Defined\Ultima Online Third Dawn\Tools\" />
-    <Folder Include="Mobiles\Defined\Custom\" />
     <Folder Include="Mobiles\Defined\Lord Blackthorns Revenge\" />
-    <Folder Include="Mobiles\Defined\Original UO\" />
-    <Folder Include="Mobiles\Defined\The Second Age\" />
+    <Folder Include="Mobiles\Defined\Original UO\Guards\" />
+    <Folder Include="Mobiles\Defined\Original UO\Townfolk\" />
+    <Folder Include="Mobiles\Defined\Original UO\Vendors\" />
+    <Folder Include="Mobiles\Defined\The Second Age\Creatures\Daemons\" />
     <Folder Include="Mobiles\Defined\Ultima Online Renaissance\" />
     <Folder Include="Mobiles\Defined\Ultima Online Third Dawn\" />
+    <Folder Include="Mobiles\System\Expansion\" />
+    <Folder Include="Mobiles\System\Speech\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

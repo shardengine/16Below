@@ -1308,17 +1308,20 @@ namespace Server.Mobiles
 					}
 				}
 
-				if (m_JusticeProtectors.Count > 0)
-				{
-					list.Add(new CallbackEntry(6157, CancelProtection));
-				}
+                if (Core.Expansion >= Expansion.AOS)
+                {
+				    if (m_JusticeProtectors.Count > 0)
+				    {
+					    list.Add(new CallbackEntry(6157, CancelProtection));
+				    }
 
-				if (Alive)
-				{
-					list.Add(new CallbackEntry(6210, ToggleChampionTitleDisplay));
-				}
+				    if (Alive)
+				    {
+					    list.Add(new CallbackEntry(6210, ToggleChampionTitleDisplay));
+				    }
 
-			}
+                }
+            }
 			else
 			{
 				BaseHouse curhouse = BaseHouse.FindHouseAt(this);

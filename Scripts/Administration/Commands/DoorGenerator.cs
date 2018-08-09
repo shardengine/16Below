@@ -368,6 +368,7 @@ namespace Server
 
             int ilshenarCount = m_Count;
 
+            /* not for LBR -Fraz
             m_Map = Map.Malas;
             m_Count = 0;
 
@@ -375,10 +376,11 @@ namespace Server
                 Generate(m_MalasRegions[i]);
 
             int malasCount = m_Count;
+            */
 
             Network.NetState.Resume();
 
-            World.Broadcast(0x35, true, "Door generation complete. Trammel: {0}; Felucca: {1}; Ilshenar: {2}; Malas: {3};", trammelCount, feluccaCount, ilshenarCount, malasCount);
+            World.Broadcast(0x35, true, "Door generation complete. Trammel: {0}; Felucca: {1}; Ilshenar: {2}; ", trammelCount, feluccaCount, ilshenarCount/*, malasCount*/); // Malas: {3};
         }
 
         public static bool IsFrame(int id, int[] list)

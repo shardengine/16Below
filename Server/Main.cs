@@ -513,12 +513,19 @@ namespace Server
 			Console.WriteLine("RandomImpl: {0} ({1})", RandomImpl.Type.Name, RandomImpl.IsHardwareRNG ? "Hardware" : "Software");
 			Utility.PopColor();
 
-		//	Utility.PushColor(ConsoleColor.DarkYellow);
-		//	Console.WriteLine("Core: Loading 16Below.ini...");
-			Configs.Load();
-		//	Utility.PopColor();
+            Utility.PushColor(ConsoleColor.Gray);
 
-			while (!ScriptCompiler.Compile(Debug, _Cache))
+			Console.WriteLine("Core: Loading 16Below.ini...");
+
+            Configs.Load();
+            
+            if (Configs.Get("16Below.ConsoleBeep", false))
+                Console.WriteLine("\a");
+            else
+                Console.WriteLine("");
+            Utility.PopColor();
+
+            while (!ScriptCompiler.Compile(Debug, _Cache))
 			{
 				Utility.PushColor(ConsoleColor.Red);
 				Console.WriteLine("Scripts: One or more scripts failed to compile or no script files were found.");

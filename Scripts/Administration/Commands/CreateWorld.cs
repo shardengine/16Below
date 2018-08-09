@@ -33,20 +33,28 @@ namespace Server.Commands
 			new CommandEntry("Moongates",       "Moongen",			"MoonGenDelete",		101),
 			new CommandEntry("Doors",           "DoorGen",			"DoorGenDelete",		102),
 			new CommandEntry("Signs",           "SignGen",			"SignGenDelete",		103),
-			new CommandEntry("Teleporters",     "TelGen",			"TelGenDelete",			104),
+
+
 			//new CommandEntry("Doom Lamp",       "GenLeverPuzzle",   "LampPuzzleDelete",		105),
 			//new CommandEntry("Doom Gauntlet",   "GenGauntlet",      "DeleteGauntlet",		106),
             //new CommandEntry("Khaldun",         "GenKhaldun",       "DeleteKhaldun",        107),
             //new CommandEntry("Despise",         "SetupDespise",     "DeleteDespise",        108),
             //new CommandEntry("Stealables",      "GenStealArties",   "RemoveStealArties",	109),
+
 			new CommandEntry("Solen Hives",     "SHTelGen",         "SHTelGenDelete",		110),
+
 			//new CommandEntry("Malas Secrets",   "SecretLocGen",     "SecretLocDelete",		111),
+
 			new CommandEntry("Factions",        "GenerateFactions",	"DeleteFactions",		112),
+
 			//new CommandEntry("Primeival Lich",  "GenLichPuzzle",	"DeleteLichPuzzle",		113),
+
 			new CommandEntry("Decorations",     "Decorate",         "DecorateDelete",		114),
+
 			//new CommandEntry("ML Decorations",  "DecorateML",		"DecorateMLDelete",		115),
 			//new CommandEntry("SA Decorations",  "DecorateSA",		"DecorateSADelete",		116),
-			new CommandEntry("Spawners",		"XmlLoad Spawns",	"XmlSpawnerWipeAll",	117),
+
+			new CommandEntry("Spawners",		"XmlLoad Data\\Spawns",	"XmlSpawnerWipeAll",	117),
 		});
         public CreateWorld()
         {
@@ -129,7 +137,7 @@ namespace Server.Commands
 		public static void DoCommands(int[] selections, GumpType type, Mobile from)
 		{
 			World.Broadcast(0x35, false, "The world is generating. This may take some time...");
-			string prefix = Server.Commands.CommandSystem.Prefix;
+			string prefix = CommandSystem.Prefix;
 			foreach (int sel in selections)
 			{
 				foreach (CreateWorld.CommandEntry entry in CreateWorld.Commands)
