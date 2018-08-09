@@ -1,6 +1,7 @@
 <p align="center">
-![alt text](Docs/images/16Below.png "16Below")
+ <img src="Docs/images/16Below.png" title="16Below">
 </p>
+
 16Below is a community driven Ultima Online server emulator written in c# aimed at publish 16 and below.
 
 
