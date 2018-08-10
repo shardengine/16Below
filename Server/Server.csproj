@@ -114,11 +114,11 @@
     <Compile Include=".\Network\Listener.cs" />
     <Compile Include=".\Network\MessagePump.cs" />
     <Compile Include=".\Network\NetState.cs" />
-    <Compile Include=".\Network\PacketHandler.cs" />
-    <Compile Include=".\Network\PacketHandlers.cs" />
-    <Compile Include=".\Network\PacketReader.cs" />
-    <Compile Include=".\Network\Packets.cs" />
-    <Compile Include=".\Network\PacketWriter.cs" />
+    <Compile Include="Network\PacketHandlers\PacketHandler.cs" />
+    <Compile Include="Network\PacketHandlers\PacketHandlers.cs" />
+    <Compile Include="Network\Packets\PacketReader.cs" />
+    <Compile Include="Network\Packets\Packets.cs" />
+    <Compile Include="Network\Packets\PacketWriter.cs" />
     <Compile Include=".\Network\SendQueue.cs" />
     <Compile Include="Mobiles\Notoriety.cs" />
     <Compile Include="Network\ObjectPropertyList.cs" />

@@ -574,16 +574,16 @@
     <Compile Include="Items\Base\Equipment\BaseArmor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneArms.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonChest.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonGloves.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonLegs.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Bone\BoneArms.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Daemon\DaemonChest.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Daemon\DaemonGloves.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Daemon\DaemonLegs.cs" />
     <Compile Include="Items\Defined\UO\Equipment\Armor\GlovesOfMining.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerArms.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerChest.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerGloves.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerGorget.cs" />
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerLegs.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ranger\RangerArms.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ranger\RangerChest.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ranger\RangerGloves.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ranger\RangerGorget.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ranger\RangerLegs.cs" />
     <Compile Include="Items\Defined\Custom\Misc\AOS+\TwilightLantern.cs" />
     <Compile Include="Items\Base\Containers\BaseBoard.cs">
       <SubType>Code</SubType>
@@ -1947,154 +1947,151 @@
     <Compile Include="Systems\Item Systems\Addons\WaterVat.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\ArmorEnums.cs">
+    <Compile Include="Items\System\ArmorEnums.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Bone\BoneChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Bone\BoneGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Bone\BoneLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\EvilOrcHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helms\EvilOrcHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\ChainChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Chainmail\ChainChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\ChainLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Chainmail\ChainLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Daemon\DaemonArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Dragon\DragonArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Dragon\DragonChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Dragon\DragonGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Dragon\DragonHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Dragon\DragonLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\Bascinet.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helms\Bascinet.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Bone\BoneHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\ChainCoif.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Chainmail\ChainCoif.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\CloseHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helms\CloseHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Daemon\DaemonHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\Helmet.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helms\Helmet.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherCap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherCap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\NorseHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helms\NorseHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\OrcHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helms\OrcHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\PlateHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\FemaleLeatherChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\FemaleLeatherChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherBustierArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherBustierArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherDo.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherGorget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherGorget.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherShorts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherShorts.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Leather\LeatherSkirt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherSkirt.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\FemalePlateChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\FemalePlateChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\PlateArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\PlateChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\PlateGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\PlateGorget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateGorget.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Plate\PlateLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ringmail\RingmailArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ringmail\RingmailChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ringmail\RingmailGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Ringmail\RingmailLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\FemaleStuddedChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\FemaleStuddedChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\StuddedArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\StuddedBustierArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedBustierArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\StuddedChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\StuddedGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\StuddedGorget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedGorget.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Studded\StuddedLegs.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\Corpses\BonePile.cs">
@@ -2837,7 +2834,7 @@
     <Compile Include="Systems\Item Systems\Resource\YarnsAndThreads.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\LargePlateShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\LargePlateShield.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Armor\MediumPlateShield.cs">
@@ -2846,31 +2843,31 @@
     <Compile Include="Items\Defined\UO\Equipment\Armor\SmallPlateShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\BronzeShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\BronzeShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\Buckler.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\Buckler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\ChaosShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\ChaosShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\HeaterShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\HeaterShield.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Armor\MetalKiteShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\MetalShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\MetalShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\OrderShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\OrderShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\WoodenKiteShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\WoodenKiteShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Equipment\Armor\WoodenShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\WoodenShield.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\FrenchBread.cs">
