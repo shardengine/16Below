@@ -43,7 +43,7 @@ namespace Server.Network
 		Encoded = 0xC0
 	}
 
-	public static class PacketHandlers
+	public static partial class PacketHandlers
 	{
 		private static readonly PacketHandler[] m_Handlers;
 		private static readonly PacketHandler[] m_6017Handlers;

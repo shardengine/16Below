@@ -6542,7 +6542,7 @@ public static void _TraceEnd(int index)
 								catch { }
 								try
 								{
-									using (StreamWriter op = new StreamWriter("badxml.log", true))
+									using (StreamWriter op = new StreamWriter("Logs/badxml.log", true))
 									{
 										op.WriteLine("# Invalid spawner : {0}: Fileposition {1} {2}", DateTime.UtcNow, fileposition, filename);
 										op.WriteLine();
@@ -6563,7 +6563,7 @@ public static void _TraceEnd(int index)
 									catch { }
 									try
 									{
-										using (StreamWriter op = new StreamWriter("badxml.log", true))
+										using (StreamWriter op = new StreamWriter("Logs/badxml.log", true))
 										{
 											op.WriteLine("# Questionable spawner : {0}: Format: X Y Z Map SpawnerName Fileposition Xmlfile", DateTime.UtcNow);
 											op.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}", SpawnCentreX, SpawnCentreY, SpawnCentreZ, XmlMapName, SpawnName, fileposition, filename);
@@ -6759,7 +6759,7 @@ public static void _TraceEnd(int index)
 									// log it
 									try
 									{
-										using (StreamWriter op = new StreamWriter("badxml.log", true))
+										using (StreamWriter op = new StreamWriter("Logs/badxml.log", true))
 										{
 											op.WriteLine("# Failed SetItemProperty Object initialization : {0}: Format: ObjectName X Y Z Map SpawnerName Xmlfile",
 												DateTime.UtcNow);
@@ -6806,7 +6806,7 @@ public static void _TraceEnd(int index)
 									// log it
 									try
 									{
-										using (StreamWriter op = new StreamWriter("badxml.log", true))
+										using (StreamWriter op = new StreamWriter("Logs/badxml.log", true))
 										{
 											op.WriteLine("# Failed TriggerObject initialization : {0}: Format: ObjectName X Y Z Map SpawnerName Xmlfile",
 												DateTime.UtcNow);
@@ -6835,22 +6835,22 @@ public static void _TraceEnd(int index)
 			if (failedobjectitemcount > 0)
 			{
 				if (from != null)
-					from.SendMessage(33, "Failed to initialize TriggerObjects in {0} spawners. Saved to 'badxml.log'", failedobjectitemcount);
+					from.SendMessage(33, "Failed to initialize TriggerObjects in {0} spawners. Saved to 'Logs/badxml.log'", failedobjectitemcount);
 			}
 			if (failedsetitemcount > 0)
 			{
 				if (from != null)
-					from.SendMessage(33, "Failed to initialize SetItemProperty Objects in {0} spawners. Saved to 'badxml.log'", failedsetitemcount);
+					from.SendMessage(33, "Failed to initialize SetItemProperty Objects in {0} spawners. Saved to 'Logs/badxml.log'", failedsetitemcount);
 			}
 			if (badcount > 0)
 			{
 				if (from != null)
-					from.SendMessage(33, "{0} bad spawners detected. Saved to 'badxml.log'", badcount);
+					from.SendMessage(33, "{0} bad spawners detected. Saved to 'Logs/badxml.log'", badcount);
 			}
 			if (questionablecount > 0)
 			{
 				if (from != null)
-					from.SendMessage(33, "{0} questionable spawners detected. Saved to 'badxml.log'", questionablecount);
+					from.SendMessage(33, "{0} questionable spawners detected. Saved to 'Logs/badxml.log'", questionablecount);
 			}
 			processedmaps = 1;
 			processedspawners = TotalCount;
