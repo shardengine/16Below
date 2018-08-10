@@ -571,132 +571,123 @@
     <Compile Include="Systems\Item Systems\Decorative\PumpkinScarecrow.cs" />
     <Compile Include="Systems\Item Systems\Decorative\RuinedTapestry.cs" />
     <Compile Include="Systems\Item Systems\Decorative\SkullsOnPike.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BaseArmor.cs">
+    <Compile Include="Items\Base\Equipment\BaseArmor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BoneArms.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DaemonChest.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DaemonGloves.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DaemonLegs.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\GlovesOfMining.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RangerArms.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RangerChest.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RangerGloves.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RangerGorget.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RangerLegs.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Light\TwilightLantern.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneArms.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonChest.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonGloves.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonLegs.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\GlovesOfMining.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerArms.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerChest.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerGloves.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerGorget.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RangerLegs.cs" />
+    <Compile Include="Items\Defined\Custom\Misc\AOS+\TwilightLantern.cs" />
     <Compile Include="Items\Base\Containers\BaseBoard.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Books\BaseBook.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\BaseClothing.cs">
+    <Compile Include="Items\Base\Equipment\BaseClothing.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Potions\BaseCurePotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Axe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Bardiche.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseBashing.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseKnife.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseMeleeWeapon.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BasePoleArm.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseRanged.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseSpear.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseSword.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BaseWeapon.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BattleAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BlackStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BladedStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Bokuto.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\BoneHarvester.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Bow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Broadsword.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\ButcherKnife.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Cleaver.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Club.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\ClumsyWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\CompositeBow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\CrescentBlade.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Crossbow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Cutlass.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Dagger.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Daisho.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\DoubleAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\DoubleBladedStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\DreadSword.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\DualPointedSpear.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\DualShortAxes.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\ExecutionersAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\FeebleWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\FireballWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\FireworksWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Fists.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\GlacialStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\GnarledStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\GreaterHealWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Halberd.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\HammerPick.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\HarmWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Hatchet.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\HealWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\HeavyCrossbow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\HitLower.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\IDWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\JukaBow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Kryss.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Lajatang.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Lance.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\LargeBattleAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Leafblade.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\LightningWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Longsword.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Mace.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\MagicalShortbow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\MagicArrowWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\MagicWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\ManaDrainWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Maul.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\OrcishBow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\OrnateAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Pickaxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Pike.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Pitchfork.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\QuarterStaff.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\RadiantScimitar.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\RandomWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\RepeatingCrossbow.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Scepter.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Scimitar.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Scythe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\ShepherdsCrook.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Shortblade.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\ShortSpear.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\SkinningKnife.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Spear.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\TribalSpear.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\TwoHandedAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\VikingSword.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WandTarget.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WarAxe.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WarCleaver.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WarFork.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WarHammer.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WarMace.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WeaknessWand.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\WeaponEnums.cs" />
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Yumi.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Axe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Bardiche.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseAxe.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseBashing.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseKnife.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseMeleeWeapon.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BasePoleArm.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseRanged.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseSpear.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseStaff.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseSword.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseWand.cs" />
+    <Compile Include="Items\Base\Equipment\Weapons\BaseWeapon.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\BattleAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\BlackStaff.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\BladedStaff.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\BoneHarvester.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Bow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Broadsword.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\ButcherKnife.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Cleaver.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Club.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\ClumsyWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\CompositeBow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\CrescentBlade.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Crossbow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Cutlass.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Dagger.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\DoubleAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\DoubleBladedStaff.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\ExecutionersAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\FeebleWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\FireballWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\FireworksWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Fists.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\GlacialStaff.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\GnarledStaff.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\GreaterHealWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Halberd.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\HammerPick.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\HarmWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Hatchet.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\HealWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\HeavyCrossbow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\HitLower.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\IDWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\JukaBow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Kryss.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\LargeBattleAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\LightningWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Longsword.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Mace.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\MagicalShortbow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\MagicArrowWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\MagicWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\ManaDrainWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Maul.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\OrcishBow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\OrnateAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Pickaxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Pike.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Pitchfork.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\QuarterStaff.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\RadiantScimitar.cs" />
+    <Compile Include="Items\System\RandomWand.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\RepeatingCrossbow.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Scepter.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Scimitar.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Scythe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\ShepherdsCrook.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Shortblade.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\ShortSpear.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\SkinningKnife.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Spear.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\TribalSpear.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\TwoHandedAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\VikingSword.cs" />
+    <Compile Include="Items\System\WandTarget.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\WarAxe.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\WarCleaver.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\WarFork.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\WarHammer.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\WarMace.cs" />
+    <Compile Include="Items\Defined\UO\Equipment\Wands\WeaknessWand.cs" />
+    <Compile Include="Items\System\WeaponEnums.cs" />
     <Compile Include="Systems\Item Systems\Functional\AcidVine.cs" />
     <Compile Include="Systems\Item Systems\Functional\Ankhs.cs" />
     <Compile Include="Items\Base\Functional\BaseDoor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Light\BaseEquipableLight.cs">
+    <Compile Include="Items\Base\Equipment\BaseEquipableLight.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Potions\BaseExplosionPotion.cs">
@@ -715,10 +706,10 @@
     <Compile Include="Items\Base\Multis\Base Camps\BaseImprisonedMobile.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\BaseInstrument.cs">
+    <Compile Include="Items\Base\Equipment\BaseInstrument.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Jewelry\BaseJewel.cs">
+    <Compile Include="Items\Base\Equipment\BaseJewel.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Functional\BaseLight.cs">
@@ -739,7 +730,7 @@
     <Compile Include="Items\Base\Potions\BaseRefreshPotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BaseShield.cs">
+    <Compile Include="Items\Base\Equipment\BaseShield.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Decoration\BaseSign.cs">
@@ -751,7 +742,7 @@
     <Compile Include="Items\Base\Potions\BaseStrengthPotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Suits\BaseSuit.cs">
+    <Compile Include="Items\Base\Equipment\BaseSuit.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Tools\BaseTool.cs">
@@ -928,7 +919,7 @@
     <Compile Include="Systems\Item Systems\Consumables\Firebomb.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\FiveOvercapStatScroll.cs">
+    <Compile Include="Items\Defined\Custom\Misc\FiveOvercapStatScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Internal\FlipableAddonAttribute.cs">
@@ -983,10 +974,10 @@
     <Compile Include="Systems\Item Systems\Decorative\KepetchWax.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Key.cs">
+    <Compile Include="Items\Defined\UO\Tools\Key.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\KeyRing.cs">
+    <Compile Include="Items\Defined\UO\Tools\KeyRing.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\Lever.cs">
@@ -1067,7 +1058,7 @@
     <Compile Include="Systems\Item Systems\Resource\ReflectiveWolfEye.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Scales.cs">
+    <Compile Include="Items\Defined\UO\Tools\Scales.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\ScouringToxin.cs">
@@ -1145,14 +1136,14 @@
     <Compile Include="Systems\Item Systems\Addons\TerMurDresserSouthAddon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\SwarmOfFlies.cs">
+    <Compile Include="Items\Defined\Custom\Misc\SwarmOfFlies.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Internal\Teleporter.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Internal\TeleportRope.cs" />
-    <Compile Include="Items\Defined\Custom\TenMurdererKillRemoverDeed.cs">
+    <Compile Include="Items\Defined\Custom\Misc\TenMurdererKillRemoverDeed.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\TravestysCollectionOfShells.cs">
@@ -1212,16 +1203,16 @@
     <Compile Include="Systems\Item Systems\Decorative\WindChimes.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\GMEthereal.cs">
+    <Compile Include="Items\Defined\Custom\Admin\GMEthereal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\GMHidingStone.cs">
+    <Compile Include="Items\Defined\Custom\Admin\GMHidingStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\StaffOrb.cs">
+    <Compile Include="Items\Defined\Custom\Admin\StaffOrb.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\StaffRobe.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\StaffRobe.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Addons\AbbatoirAddon.cs">
@@ -1349,42 +1340,42 @@
     <Compile Include="Systems\Factions\Mobiles\Mounts\TBWarHorse.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\AcidElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\AgapiteElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\AirElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Alligator.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\AncientLich.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Dragons\AncientWyrm.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\AirElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Alligator.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\AncientLich.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Dragons\AncientWyrm.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\AntLion.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ArcaneDaemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ArchDaemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ArcticOgreLord.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Daemons\Balron.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Daemons\Balron.cs" />
     <Compile Include="Mobiles\Base\BaseCreature.cs" />
     <Compile Include="Mobiles\Base\BaseMount.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Beetle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Betrayer.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Bird.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\BlackBear.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Bird.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\BlackBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BloodElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Boar.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Bogle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Bogling.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BogThing.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BoneDemon.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\BoneKnight.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\BoneMagi.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\BoneKnight.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\BoneMagi.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Brigand.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BronzeElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\BrownBear.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\BrownBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\BulbousPutrification.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Bull.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Animals\BullFrog.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Cat.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Animals\BullFrog.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Centaur.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Changeling.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ChaosDaemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ChaosDragoon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ChaosDragoonElite.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Chicken.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Chicken.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ColdDrake.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CopperElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CoralSnake.cs" />
@@ -1393,7 +1384,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\CorrosiveSlime.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CorruptedSoul.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Cougar.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Cow.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Crane.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Cursed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CursedSoul.cs" />
@@ -1403,22 +1394,22 @@
     <Compile Include="Systems\Mobile Systems\Normal\DarkWisp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DeadlyImp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DeepSeaSerpent.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Mounts\DesertOstard.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Mounts\DesertOstard.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Devourer.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\DireWolf.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\DireWolf.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DiseasedCat.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Dog.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Dog.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Dolphin.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Dragons\Dragon.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Dragons\Drake.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Dragons\Dragon.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Dragons\Drake.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DreadSpider.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DreamWraith .cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DullCopperElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Eagle.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\EarthElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Eagle.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\EarthElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EffetePutridGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EffeteUndeadGargoyle.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Elementals\Efreet.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Elementals\Efreet.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ElderGazer.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnragedCreatures.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnslavedGargoyle.cs" />
@@ -1439,24 +1430,24 @@
     <Compile Include="Systems\Mobile Systems\Normal\FireAnt.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireBeetle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireDaemon.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\FireElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\FireElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireRabbit.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FireSteed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FleshGolem.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Mounts\ForestOstard.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Animals\FrenziedOstard.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Dragons\FrostDragon.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Mounts\ForestOstard.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Animals\FrenziedOstard.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Dragons\FrostDragon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FrostOoze.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\FrostSpider.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Giantkin\FrostTroll.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Giantkin\FrostTroll.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Gargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Gazer.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GazerLarva.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Ghoul.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantBlackWidow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantIceWorm.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Animals\GiantRat.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Animals\GiantRat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantSerpent.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantSpider.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantToad.cs" />
@@ -1466,7 +1457,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Golem.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GolemController.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GoreFiend.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Gorilla.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Gorilla.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterDragon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterMongbat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterPoisonElemental.cs" />
@@ -1481,9 +1472,9 @@
     <Compile Include="Systems\Mobile Systems\Normal\HellSteed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Hind.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HordeMinion.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Mounts\Horse.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Mounts\Horse.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HumanBrigand.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Elementals\IceElemental.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Elementals\IceElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\IceFiend.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Icehound.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\IceSerpent.cs" />
@@ -1516,7 +1507,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Lich.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LichLord.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Lizardman.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Mounts\Llama.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Mounts\Llama.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MaddeningHorror.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MeerCaptain.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MeerEternal.cs" />
@@ -1566,7 +1557,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\PutridUndeadGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\PutridUndeadGuardian.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Quagmire.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Animals\Rabbit.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Rabbit.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\RagingGrizzlyBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Raptor.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Rat.cs" />
@@ -1614,7 +1605,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\SkitteringHopper.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Slime.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Snake.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Elementals\SnowElemental.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Elementals\SnowElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SnowLeopard.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SpectralArmour.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Spectre.cs" />
@@ -1632,11 +1623,11 @@
     <Compile Include="Systems\Mobile Systems\Normal\TerathanWarrior.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ThirdDawnParrot.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\TimberWolf.cs" />
-    <Compile Include="Mobiles\Defined\The Second Age\Creatures\Giantkin\Titan.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Giantkin\Titan.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Tormented Minotaur.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Treefellow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Troglodyte.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Giantkin\Troll.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Giantkin\Troll.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\UndeadGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\UndeadGuardian.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Unicorn.cs" />
@@ -1647,7 +1638,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\WailingBanshee.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Walrus.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WandererOfTheVoid.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Elementals\WaterElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\WaterElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhippingVine.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhiteWolf.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhiteWyrm.cs" />
@@ -1655,7 +1646,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Wisp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wraith.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wyvern.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Undead\Zombie.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Zombie.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\Alchemist.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\AnimalTrainer.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\ArcherGuard.cs" />
@@ -1765,22 +1756,22 @@
     <Compile Include="Systems\Mobile Systems\NPCs\Weaver.cs" />
     <Compile Include="Mobiles\Defined\Summons\AnimatedWeapon.cs" />
     <Compile Include="Mobiles\Base\BaseFamiliar.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\BladeSpirits.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\BladeSpirits.cs" />
     <Compile Include="Mobiles\Defined\Summons\DarkWolf.cs" />
     <Compile Include="Mobiles\Defined\Summons\DeathAdder.cs" />
     <Compile Include="Mobiles\Defined\Summons\Dummy.cs" />
     <Compile Include="Mobiles\Defined\Summons\DummySpecific.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\EnergyVortex.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\EnergyVortex.cs" />
     <Compile Include="Mobiles\Defined\Summons\GargoylePet.cs" />
     <Compile Include="Mobiles\Defined\Summons\HordeMinion.cs" />
     <Compile Include="Mobiles\Defined\Summons\RisingColossus.cs" />
     <Compile Include="Mobiles\Defined\Summons\ShadowWisp.cs" />
     <Compile Include="Mobiles\Defined\Summons\SpawnedOrcishLord.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedAirElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedDaemon.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedEarthElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedFireElemental.cs" />
-    <Compile Include="Mobiles\Defined\Original UO\Creatures\Summons\SummonedWaterElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedAirElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedDaemon.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedEarthElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedFireElemental.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedWaterElemental.cs" />
     <Compile Include="Mobiles\Defined\Summons\VampireBat.cs" />
     <Compile Include="Systems\Item Systems\Containers\ScrollBox.cs" />
     <Compile Include="Systems\Item Systems\Containers\ScrollBox3.cs" />
@@ -1956,154 +1947,154 @@
     <Compile Include="Systems\Item Systems\Addons\WaterVat.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\ArmorEnums.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\ArmorEnums.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BoneChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BoneGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BoneLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\EvilOrcHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\EvilOrcHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\ChainChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\ChainChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\ChainLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\ChainLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DaemonArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DragonArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DragonChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DragonGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DragonHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DragonLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DragonLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\Bascinet.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Bascinet.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BoneHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\BoneHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\ChainCoif.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\ChainCoif.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\CloseHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\CloseHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\DaemonHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\DaemonHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\Helmet.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Helmet.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherCap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherCap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\NorseHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\NorseHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\OrcHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\OrcHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\PlateHelm.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateHelm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\FemaleLeatherChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\FemaleLeatherChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherBustierArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherBustierArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherDo.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherDo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherGorget.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherGorget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherShorts.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherShorts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LeatherSkirt.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LeatherSkirt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\FemalePlateChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\FemalePlateChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\PlateArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\PlateChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\PlateGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\PlateGorget.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateGorget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\PlateLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\PlateLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RingmailArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RingmailChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RingmailGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\RingmailLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\RingmailLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\FemaleStuddedChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\FemaleStuddedChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\StuddedArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\StuddedBustierArms.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedBustierArms.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\StuddedChest.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\StuddedGloves.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedGloves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\StuddedGorget.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedGorget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\StuddedLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\StuddedLegs.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\Corpses\BonePile.cs">
@@ -2137,10 +2128,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Books\BaseLocalizedBook.cs" />
-    <Compile Include="Systems\Item Systems\Books\BlueBook.cs">
+    <Compile Include="Items\Defined\UO\Books\BlueBook.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Books\BrownBook.cs">
+    <Compile Include="Items\Defined\UO\Books\BrownBook.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Books\BlackthornWelcomeBook.cs">
@@ -2158,7 +2149,7 @@
     <Compile Include="Systems\Item Systems\Books\KaburJournal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Books\LibraryBooks.cs">
+    <Compile Include="Items\Defined\UO\Books\LibraryBooks.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Books\NewAquariumBook.cs">
@@ -2168,37 +2159,37 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Books\Note.cs" />
-    <Compile Include="Systems\Item Systems\Books\RedBook.cs">
+    <Compile Include="Items\Defined\UO\Books\RedBook.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Books\TanBook.cs">
+    <Compile Include="Items\Defined\UO\Books\TanBook.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\Cloaks.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\Cloaks.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\Hats.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\Hats.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\MiddleTorso.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\MiddleTorso.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\OuterLegs.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\OuterLegs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\OuterTorso.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\OuterTorso.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\Pants.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\Pants.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\Shirts.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\Shirts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\Shoes.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\Shoes.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Clothing\Waist.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Clothing\Waist.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Functional\BaseSwitch.cs">
@@ -2510,16 +2501,16 @@
     <Compile Include="Systems\Item Systems\Containers\CheckerBoard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\CheckersPieces.cs">
+    <Compile Include="Items\Defined\UO\Tools\CheckersPieces.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\Chessboard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\ChessPieces.cs">
+    <Compile Include="Items\Defined\UO\Tools\ChessPieces.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Dices.cs">
+    <Compile Include="Items\Defined\UO\Tools\Dices.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongDealerIndicator.cs">
@@ -2594,19 +2585,19 @@
     <Compile Include="Systems\Item Systems\Internal\GuildTeleporter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Jewelry\Beads.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Jewelry\Beads.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Jewelry\Bracelet.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Jewelry\Bracelet.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Jewelry\Earrings.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Jewelry\Earrings.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Jewelry\Necklace.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Jewelry\Necklace.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Jewelry\Ring.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Jewelry\Ring.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\Brazier.cs">
@@ -2621,7 +2612,7 @@
     <Compile Include="Systems\Item Systems\Decorative\CandelabraStand.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Light\Candle.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Light\Candle.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\CandleLarge.cs">
@@ -2654,7 +2645,7 @@
     <Compile Include="Systems\Item Systems\Decorative\LampPost3.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Light\Lantern.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Light\Lantern.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\LightSource.cs">
@@ -2672,7 +2663,7 @@
     <Compile Include="Systems\Item Systems\Decorative\ShojiLantern.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Light\Torch.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Light\Torch.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\WallSconce.cs">
@@ -2687,7 +2678,7 @@
     <Compile Include="Systems\Item Systems\Tools\BlankMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\CityMap.cs">
+    <Compile Include="Items\Defined\UO\Tools\CityMap.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\IndecipherableMap.cs">
@@ -2702,13 +2693,13 @@
     <Compile Include="Systems\Item Systems\Tools\PresetMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\SeaChart.cs">
+    <Compile Include="Items\Defined\UO\Tools\SeaChart.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\TreasureMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\WorldMap.cs">
+    <Compile Include="Items\Defined\UO\Tools\WorldMap.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\EmptyPots.cs">
@@ -2846,40 +2837,40 @@
     <Compile Include="Systems\Item Systems\Resource\YarnsAndThreads.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\LargePlateShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\LargePlateShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\MediumPlateShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\MediumPlateShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\SmallPlateShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\SmallPlateShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\BronzeShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\BronzeShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\Buckler.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\Buckler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\ChaosShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\ChaosShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\HeaterShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\HeaterShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\MetalKiteShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\MetalKiteShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\MetalShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\MetalShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\OrderShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\OrderShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\WoodenKiteShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\WoodenKiteShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Armor\WoodenShield.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Armor\WoodenShield.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\FrenchBread.cs">
@@ -2942,7 +2933,7 @@
     <Compile Include="Systems\Item Systems\Functional\LargeForge.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Bedroll.cs">
+    <Compile Include="Items\Defined\UO\Tools\Bedroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Functional\Campfire.cs">
@@ -2957,13 +2948,13 @@
     <Compile Include="Systems\Item Systems\Consumables\TaxidermyKit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\FishingPole.cs">
+    <Compile Include="Items\Defined\UO\Tools\FishingPole.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\MessageInABottle.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Sextant.cs">
+    <Compile Include="Items\Defined\UO\Tools\Sextant.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\ShipwreckedItem.cs">
@@ -2981,7 +2972,7 @@
     <Compile Include="Systems\Item Systems\Tools\ProspectorsTool.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Shovel.cs">
+    <Compile Include="Items\Defined\UO\Tools\Shovel.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\SturdyPickaxe.cs">
@@ -3332,7 +3323,7 @@
     <Compile Include="Systems\Item Systems\Consumables\WallOfStoneScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Spellbooks\Spellbook.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Spellbooks\Spellbook.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\SpellStone.cs">
@@ -3341,7 +3332,7 @@
     <Compile Include="Systems\Item Systems\Resource\Bandage.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\FireHorn.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\FireHorn.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\RecipeScroll.cs">
@@ -3353,25 +3344,25 @@
     <Compile Include="Systems\Item Systems\Consumables\ScrollBinderDeed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\BambooFlute.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\BambooFlute.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\Drums.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\Drums.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\Harp.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\Harp.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\LapHarp.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\LapHarp.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\Lute.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\Lute.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\Tambourine.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\Tambourine.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Instruments\TambourineTassel.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Instruments\TambourineTassel.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\GlassblowingBook.cs">
@@ -3398,7 +3389,7 @@
     <Compile Include="Systems\Item Systems\Internal\CustomHuePicker.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\DyeTub.cs">
+    <Compile Include="Items\Defined\UO\Tools\DyeTub.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\FurnitureDyeTub.cs">
@@ -3419,10 +3410,10 @@
     <Compile Include="Systems\Item Systems\Addons\Dressform.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Dyes.cs">
+    <Compile Include="Items\Defined\UO\Tools\Dyes.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Scissors.cs">
+    <Compile Include="Items\Defined\UO\Tools\Scissors.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\DisguiseKit.cs">
@@ -3446,7 +3437,7 @@
     <Compile Include="Systems\Item Systems\Resource\ClockParts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Clocks.cs">
+    <Compile Include="Items\Defined\UO\Tools\Clocks.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\Gears.cs">
@@ -3464,7 +3455,7 @@
     <Compile Include="Systems\Item Systems\Resource\Springs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Spyglass.cs">
+    <Compile Include="Items\Defined\UO\Tools\Spyglass.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\Utensils.cs">
@@ -3473,25 +3464,25 @@
     <Compile Include="Systems\Item Systems\Tools\Blowpipe.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\DovetailSaw.cs">
+    <Compile Include="Items\Defined\UO\Tools\DovetailSaw.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\DrawKnife.cs">
+    <Compile Include="Items\Defined\UO\Tools\DrawKnife.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\FletcherTools.cs">
+    <Compile Include="Items\Defined\UO\Tools\FletcherTools.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\FlourSifter.cs">
+    <Compile Include="Items\Defined\UO\Tools\FlourSifter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Froe.cs">
+    <Compile Include="Items\Defined\UO\Tools\Froe.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Hammer.cs">
+    <Compile Include="Items\Defined\UO\Tools\Hammer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Inshave.cs">
+    <Compile Include="Items\Defined\UO\Tools\Inshave.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\JointingPlane.cs">
@@ -3503,46 +3494,46 @@
     <Compile Include="Systems\Item Systems\Tools\MapmakersPen.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\MortarPestle.cs">
+    <Compile Include="Items\Defined\UO\Tools\MortarPestle.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\MouldingPlane.cs">
+    <Compile Include="Items\Defined\UO\Tools\MouldingPlane.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Nails.cs">
+    <Compile Include="Items\Defined\UO\Tools\Nails.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\RollingPin.cs">
+    <Compile Include="Items\Defined\UO\Tools\RollingPin.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Saw.cs">
+    <Compile Include="Items\Defined\UO\Tools\Saw.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Scorp.cs">
+    <Compile Include="Items\Defined\UO\Tools\Scorp.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\ScribesPen.cs">
+    <Compile Include="Items\Defined\UO\Tools\ScribesPen.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\SewingKit.cs">
+    <Compile Include="Items\Defined\UO\Tools\SewingKit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Skillet.cs">
+    <Compile Include="Items\Defined\UO\Tools\Skillet.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\SledgeHammer.cs">
+    <Compile Include="Items\Defined\UO\Tools\SledgeHammer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\SmithHammer.cs">
+    <Compile Include="Items\Defined\UO\Tools\SmithHammer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\SmoothingPlane.cs">
+    <Compile Include="Items\Defined\UO\Tools\SmoothingPlane.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\TinkerTools.cs">
+    <Compile Include="Items\Defined\UO\Tools\TinkerTools.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\Tongs.cs">
+    <Compile Include="Items\Defined\UO\Tools\Tongs.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Addons\FountainOfLife.cs">
@@ -3803,7 +3794,7 @@
     <Compile Include="Systems\Item Systems\Addons\Wreath.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\WristWatch.cs">
+    <Compile Include="Items\Defined\UO\Tools\WristWatch.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\HouseRaffleDeed.cs">
@@ -4277,16 +4268,16 @@
     <Compile Include="Systems\Item Systems\Addons\TormentedMinotaurStatuette.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Suits\DeathShroud.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Suits\DeathShroud.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Suits\DupreSuit.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Suits\DupreSuit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Suits\LordBlackthorneSuit.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Suits\LordBlackthorneSuit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Suits\LordBritishSuit.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Suits\LordBritishSuit.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\EnchantedSwitch.cs">
@@ -4351,7 +4342,7 @@
     <Compile Include="Systems\Combat\Slayer\SlayerName.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Equipment\Weapons\Katana.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Weapons\Katana.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Account\AccountPrompt.cs">
@@ -6162,7 +6153,7 @@
     <Compile Include="Systems\Services\GiftGiving\GiftGiving.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\ItemFixes.cs">
+    <Compile Include="Items\System\ItemFixes.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\PreventInaccess.cs">
@@ -6174,26 +6165,26 @@
     <Compile Include="Systems\Item Systems\Internal\ResGate.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\AlchemyStone.cs">
+    <Compile Include="Items\Defined\Custom\Misc\AlchemyStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\GamblingStone.cs">
+    <Compile Include="Items\Defined\Custom\Misc\GamblingStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\GMStone.cs" />
-    <Compile Include="Items\Defined\Custom\IngotStone.cs">
+    <Compile Include="Items\Defined\Custom\Admin\GMStone.cs" />
+    <Compile Include="Items\Defined\Custom\Misc\IngotStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\RegStone.cs">
+    <Compile Include="Items\Defined\Custom\Misc\RegStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\ScribeStone.cs">
+    <Compile Include="Items\Defined\Custom\Misc\ScribeStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\SmithStone.cs">
+    <Compile Include="Items\Defined\Custom\Misc\SmithStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\Custom\TailorStone.cs">
+    <Compile Include="Items\Defined\Custom\Misc\TailorStone.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\AlchemyBag.cs">
@@ -6540,59 +6531,56 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Administration\World\Holidays\Lord Blackthorns Revenge\" />
-    <Folder Include="Administration\World\Holidays\Original UO\" />
-    <Folder Include="Administration\World\Holidays\The Second Age\" />
-    <Folder Include="Administration\World\Holidays\Ultima Online Renaissance\" />
-    <Folder Include="Administration\World\Holidays\Ultima Online Third Dawn\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Addons\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Books\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Consumables\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Containers\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Decorations\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Equipment\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Multis\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Resources\" />
-    <Folder Include="Items\Defined\Lord Blackthorns Revenge\Tools\" />
-    <Folder Include="Items\Defined\Original UO\Addons\" />
-    <Folder Include="Items\Defined\Original UO\Books\" />
-    <Folder Include="Items\Defined\Original UO\Consumables\" />
-    <Folder Include="Items\Defined\Original UO\Decorations\" />
-    <Folder Include="Items\Defined\Original UO\Equipment\" />
-    <Folder Include="Items\Defined\Original UO\Multis\" />
-    <Folder Include="Items\Defined\Original UO\Resources\" />
-    <Folder Include="Items\Defined\Original UO\Tools\" />
-    <Folder Include="Items\Defined\The Second Age\Addons\" />
-    <Folder Include="Items\Defined\The Second Age\Books\" />
-    <Folder Include="Items\Defined\The Second Age\Consumables\" />
-    <Folder Include="Items\Defined\The Second Age\Decorations\" />
-    <Folder Include="Items\Defined\The Second Age\Equipment\" />
-    <Folder Include="Items\Defined\The Second Age\Multis\" />
-    <Folder Include="Items\Defined\The Second Age\Resources\" />
-    <Folder Include="Items\Defined\The Second Age\Tools\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Addons\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Books\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Consumables\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Decorations\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Equipment\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Multis\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Resources\" />
-    <Folder Include="Items\Defined\Ultima Online Renaissance\Tools\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Addons\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Books\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Consumables\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Decorations\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Equipment\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Multis\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Resources\" />
-    <Folder Include="Items\Defined\Ultima Online Third Dawn\Tools\" />
-    <Folder Include="Mobiles\Defined\Lord Blackthorns Revenge\" />
-    <Folder Include="Mobiles\Defined\Original UO\Guards\" />
-    <Folder Include="Mobiles\Defined\Original UO\Townfolk\" />
-    <Folder Include="Mobiles\Defined\Original UO\Vendors\" />
-    <Folder Include="Mobiles\Defined\The Second Age\Creatures\Daemons\" />
-    <Folder Include="Mobiles\Defined\Ultima Online Renaissance\" />
-    <Folder Include="Mobiles\Defined\Ultima Online Third Dawn\" />
+    <Folder Include="Administration\World\Holidays\LBR\" />
+    <Folder Include="Administration\World\Holidays\T2A\" />
+    <Folder Include="Administration\World\Holidays\UOR\" />
+    <Folder Include="Administration\World\Holidays\UOTD\" />
+    <Folder Include="Administration\World\Holidays\UO\" />
+    <Folder Include="Items\Defined\LBR\Addons\" />
+    <Folder Include="Items\Defined\LBR\Books\" />
+    <Folder Include="Items\Defined\LBR\Consumables\" />
+    <Folder Include="Items\Defined\LBR\Containers\" />
+    <Folder Include="Items\Defined\LBR\Decorations\" />
+    <Folder Include="Items\Defined\LBR\Equipment\" />
+    <Folder Include="Items\Defined\LBR\Multis\" />
+    <Folder Include="Items\Defined\LBR\Resources\" />
+    <Folder Include="Items\Defined\LBR\Tools\" />
+    <Folder Include="Items\Defined\T2A\Addons\" />
+    <Folder Include="Items\Defined\T2A\Books\" />
+    <Folder Include="Items\Defined\T2A\Consumables\" />
+    <Folder Include="Items\Defined\T2A\Decorations\" />
+    <Folder Include="Items\Defined\T2A\Equipment\" />
+    <Folder Include="Items\Defined\T2A\Multis\" />
+    <Folder Include="Items\Defined\T2A\Resources\" />
+    <Folder Include="Items\Defined\T2A\Tools\" />
+    <Folder Include="Items\Defined\UOR\Addons\" />
+    <Folder Include="Items\Defined\UOR\Books\" />
+    <Folder Include="Items\Defined\UOR\Consumables\" />
+    <Folder Include="Items\Defined\UOR\Decorations\" />
+    <Folder Include="Items\Defined\UOR\Equipment\" />
+    <Folder Include="Items\Defined\UOR\Multis\" />
+    <Folder Include="Items\Defined\UOR\Resources\" />
+    <Folder Include="Items\Defined\UOR\Tools\" />
+    <Folder Include="Items\Defined\UOTD\Addons\" />
+    <Folder Include="Items\Defined\UOTD\Books\" />
+    <Folder Include="Items\Defined\UOTD\Consumables\" />
+    <Folder Include="Items\Defined\UOTD\Decorations\" />
+    <Folder Include="Items\Defined\UOTD\Equipment\" />
+    <Folder Include="Items\Defined\UOTD\Multis\" />
+    <Folder Include="Items\Defined\UOTD\Resources\" />
+    <Folder Include="Items\Defined\UOTD\Tools\" />
+    <Folder Include="Items\Defined\UO\Addons\" />
+    <Folder Include="Items\Defined\UO\Consumables\" />
+    <Folder Include="Items\Defined\UO\Decorations\" />
+    <Folder Include="Items\Defined\UO\Multis\" />
+    <Folder Include="Items\Defined\UO\Resources\" />
+    <Folder Include="Mobiles\Defined\LBR\" />
+    <Folder Include="Mobiles\Defined\T2A\Creatures\Daemons\" />
+    <Folder Include="Mobiles\Defined\UOR\" />
+    <Folder Include="Mobiles\Defined\UOTD\" />
+    <Folder Include="Mobiles\Defined\UO\Guards\" />
+    <Folder Include="Mobiles\Defined\UO\Townfolk\" />
+    <Folder Include="Mobiles\Defined\UO\Vendors\" />
     <Folder Include="Mobiles\System\Expansion\" />
     <Folder Include="Mobiles\System\Speech\" />
   </ItemGroup>
