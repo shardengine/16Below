@@ -32,7 +32,7 @@ namespace Server.Configuration
 
         public class DataPath
         {
-            public static string    CustomPath          = "C:\\Ultima Online LBR";
+            public static string    CustomPath          = "";
             public static bool      IgnoreStandardPaths = true;
         }
 
