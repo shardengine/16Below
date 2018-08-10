@@ -43,12 +43,14 @@ namespace Server.Mobiles
 
             VirtualArmor = 34;
 
+            /* Era -Fraz
 			switch (Utility.Random(12))
             {
                 case 0: PackItem(new StrangleScroll()); break;
                 case 1: PackItem(new WitherScroll()); break;
                 case 2: PackItem(new VampiricEmbraceScroll()); break;
 			}
+            */
 
             m_NextAbilityTime = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(2, 5));
         }

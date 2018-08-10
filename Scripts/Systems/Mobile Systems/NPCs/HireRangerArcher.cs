@@ -49,14 +49,16 @@ namespace Server.Mobiles
             this.AddItem(new Shirt());
 
             // Pick a random sword
-            switch ( Utility.Random(2)) 
+            switch ( Utility.Random(1)) 
             {
                 case 0:
                     this.AddItem(new Bow());
                     break;
+                    /* Era -Fraz
                 case 1:
                     this.AddItem(new CompositeBow());
                     break;
+                    */
             }
 
             this.AddItem(new RangerChest());

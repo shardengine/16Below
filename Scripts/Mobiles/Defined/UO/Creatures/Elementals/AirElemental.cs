@@ -44,11 +44,12 @@ namespace Server.Mobiles
 
             this.VirtualArmor = 40;
 
+            // Needs era adjustments -Fraz
 			switch (Utility.Random(24))
             {
-                case 0: PackItem(new PainSpikeScroll()); break;
+            //    case 0: PackItem(new PainSpikeScroll()); break;
                 case 1: PackItem(new PoisonStrikeScroll()); break;
-                case 2: PackItem(new StrangleScroll()); break;
+            //    case 2: PackItem(new StrangleScroll()); break;
                 case 3: PackItem(new VengefulSpiritScroll()); break;
 			}
 

@@ -33,11 +33,15 @@ namespace Server.Mobiles
             {
                 this.Add(new GenericBuyInfo(typeof(Crossbow), 55, 20, 0xF50, 0));
                 this.Add(new GenericBuyInfo(typeof(HeavyCrossbow), 55, 20, 0x13FD, 0));
+
+                /* Era -Fraz
                 if (Core.AOS)
                 {
                     this.Add(new GenericBuyInfo(typeof(RepeatingCrossbow), 46, 20, 0x26C3, 0));
                     this.Add(new GenericBuyInfo(typeof(CompositeBow), 45, 20, 0x26C2, 0));
                 }
+                */
+
                 this.Add(new GenericBuyInfo(typeof(Bolt), 2, Utility.Random(30, 60), 0x1BFB, 0));
                 this.Add(new GenericBuyInfo(typeof(Bow), 40, 20, 0x13B2, 0));
                 this.Add(new GenericBuyInfo(typeof(Arrow), 2, Utility.Random(30, 60), 0xF3F, 0));
@@ -59,11 +63,13 @@ namespace Server.Mobiles
                 this.Add(typeof(Bow), 17);
                 this.Add(typeof(Crossbow), 25); 
 
+                /* Era -Fraz
                 if (Core.AOS)
                 {
                     this.Add(typeof(CompositeBow), 23);
                     this.Add(typeof(RepeatingCrossbow), 22);
                 }
+                */
             }
         }
     }

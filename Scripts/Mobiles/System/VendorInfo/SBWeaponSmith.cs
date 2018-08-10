@@ -44,11 +44,13 @@ namespace Server.Mobiles
                 this.Add(new GenericBuyInfo(typeof(WarHammer), 25, 20, 0x1439, 0));
                 this.Add(new GenericBuyInfo(typeof(WarMace), 31, 20, 0x1407, 0));
 
+                /* Era -Fraz
                 if (Core.AOS)
                 {
                     this.Add(new GenericBuyInfo(typeof(Scepter), 39, 20, 0x26BC, 0));
                     this.Add(new GenericBuyInfo(typeof(BladedStaff), 40, 20, 0x26BD, 0));
                 }
+                */
 
                 this.Add(new GenericBuyInfo(typeof(Hatchet), 25, 20, 0xF44, 0));
                 this.Add(new GenericBuyInfo(typeof(Hatchet), 27, 20, 0xF43, 0));
@@ -96,6 +98,7 @@ namespace Server.Mobiles
                             this.Add(new GenericBuyInfo(typeof(LargeBattleAxe), 33, 20, 0x13FB, 0));
                             this.Add(new GenericBuyInfo(typeof(WarAxe), 29, 20, 0x13B0, 0));
 
+                            /* Era
                             if (Core.AOS)
                             {
                                 this.Add(new GenericBuyInfo(typeof(BoneHarvester), 35, 20, 0x26BB, 0));
@@ -107,6 +110,7 @@ namespace Server.Mobiles
                                 this.Add(new GenericBuyInfo(typeof(CompositeBow), 50, 20, 0x26C2, 0));
                                 this.Add(new GenericBuyInfo(typeof(RepeatingCrossbow), 57, 20, 0x26C3, 0));
                             }
+                            */
 
                             break;
                         }
@@ -146,6 +150,7 @@ namespace Server.Mobiles
                 this.Add(typeof(Bow), 17);
                 this.Add(typeof(Crossbow), 23); 
 
+                /* -Fraz
                 if (Core.AOS)
                 {
                     this.Add(typeof(CompositeBow), 25);
@@ -161,6 +166,7 @@ namespace Server.Mobiles
                     this.Add(typeof(Lance), 17);
                     this.Add(typeof(CrescentBlade), 18);
                 }
+                */
 
                 this.Add(typeof(Spear), 15);
                 this.Add(typeof(Pitchfork), 9);

@@ -4,7 +4,12 @@
 /Bin/Saves
 /Bin/Web
 /Bin/Docs
+/Bin/Honesty
+/Bin/Reports
+/Honesty
 /Docs
+/ShardEngine/Bin
+/ShardEngine.dll
 *.dll
 *.pdb
 *.exe
@@ -18,6 +23,9 @@
 *.log
 *.config
 *.DotSettings.user
-/Honesty
-staffHistory.xml
-reportHistory.xml
+.vs/
+drng64.dll
+drng32.dll
+libdrng.so
+Bin/staffHistory.xml
+Bin/reportHistory.xml

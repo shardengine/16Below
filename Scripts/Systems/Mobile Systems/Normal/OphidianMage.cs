@@ -49,11 +49,12 @@ namespace Server.Mobiles
 
             this.PackReg(10);
 
+            /* Era -Fraz
 			switch (Utility.Random(6))
             {
                 case 0: PackItem(new PainSpikeScroll()); break;
 			}
-
+            */
         }
 
         public OphidianMage(Serial serial)

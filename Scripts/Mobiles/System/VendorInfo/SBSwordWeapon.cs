@@ -39,6 +39,7 @@ namespace Server.Mobiles
                 this.Add(new GenericBuyInfo(typeof(VikingSword), 55, 20, 0x13B9, 0));
                 this.Add(new GenericBuyInfo(typeof(Scimitar), 36, 20, 0x13B6, 0));
 
+                /* Era -Fraz
                 if (Core.AOS)
                 {
                     this.Add(new GenericBuyInfo(typeof(BoneHarvester), 35, 20, 0x26BB, 0));
@@ -48,6 +49,7 @@ namespace Server.Mobiles
                     this.Add(new GenericBuyInfo(typeof(Pike), 39, 20, 0x26BE, 0));
                     this.Add(new GenericBuyInfo(typeof(Scythe), 39, 20, 0x26BA, 0));
                 }
+                */
             }
         }
 
@@ -63,6 +65,7 @@ namespace Server.Mobiles
                 this.Add(typeof(Scimitar), 18);
                 this.Add(typeof(VikingSword), 27);
 
+                /* Era
                 if (Core.AOS)
                 {
                     this.Add(typeof(Scythe), 19);
@@ -74,6 +77,7 @@ namespace Server.Mobiles
                     this.Add(typeof(Lance), 17);
                     this.Add(typeof(CrescentBlade), 18);
                 }
+                */
             }
         }
     }

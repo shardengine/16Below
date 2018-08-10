@@ -927,9 +927,10 @@ namespace Server.Misc
                     {
                         if (human || elf)
                             EquipItem(new Hatchet());
+                        /* -Fraz
                         else if (gargoyle)
                             EquipItem(new DualShortAxes());
-
+                        */
                         break;
                     }
                 case SkillName.Macing:

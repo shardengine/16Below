@@ -141,18 +141,18 @@ namespace Server.Engines.Craft
                 }
                 else if (this.m_CraftSystem is DefBlacksmithy)
                 {
-	                return (weapon is Pitchfork)
+                    return (weapon is Pitchfork);
 
-		                #region Temporary
-
+                        /*
+		                #region Temporary                        
 		                // TODO: Make these items craftable
 	                       ||
 	                       (weapon is RadiantScimitar) ||
 	                       (weapon is WarCleaver) ||
 	                       (weapon is Leafblade) ||
 	                       (weapon is OrnateAxe);
-
-	                #endregion
+	                    #endregion
+                        */
                 }
                 return false;
             }

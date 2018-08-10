@@ -300,6 +300,7 @@ namespace Server.Engines.Craft
             #region Pole Arms
             AddCraft(typeof(Bardiche), 1011083, 1023917, 31.7, 81.7, typeof(IronIngot), 1044036, 18, 1044037);
 
+            /* Era -Fraz
             if (Core.AOS)
             {
                 AddCraft(typeof(BladedStaff), 1011083, 1029917, 40.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
@@ -328,10 +329,12 @@ namespace Server.Engines.Craft
             {
                 AddCraft(typeof(Scythe), 1011083, 1029914, 39.0, 89.0, typeof(IronIngot), 1044036, 14, 1044037);
             }
+            */
 
             AddCraft(typeof(Spear), 1011083, 1023938, 49.0, 99.0, typeof(IronIngot), 1044036, 12, 1044037);
             AddCraft(typeof(WarFork), 1011083, 1025125, 42.9, 92.9, typeof(IronIngot), 1044036, 12, 1044037);
 
+            /* Era -Fraz
             #region SA
             if (Core.SA)
             {
@@ -339,6 +342,7 @@ namespace Server.Engines.Craft
                 SetNeededExpansion(index, Expansion.SA);
             }
             #endregion
+            */
 
             //Not craftable (is this an AOS change ??)
             //AddCraft( typeof( Pitchfork ), 1011083, 1023720, 36.1, 86.1, typeof( IronIngot ), 1044036, 12, 1044037 );

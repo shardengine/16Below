@@ -43,11 +43,12 @@ namespace Server.Mobiles
             if (0.025 > Utility.RandomDouble())
                 this.PackItem(new GargoylesPickaxe());
 
+            /* Era -Fraz
 			switch (Utility.Random(6))
             {
                 case 0: PackItem(new PainSpikeScroll()); break;
 			}
-
+            */
         }
 
         public Gargoyle(Serial serial)

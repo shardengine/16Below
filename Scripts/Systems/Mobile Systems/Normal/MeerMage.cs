@@ -44,11 +44,13 @@ namespace Server.Mobiles
 
             this.VirtualArmor = 16;
 
+            /* Era -Fraz
 			switch (Utility.Random(8))
             {
                 case 0: PackItem(new StrangleScroll()); break;
                 case 1: PackItem(new WitherScroll()); break;
 			}
+            */
 
             this.m_NextAbilityTime = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(2, 5));
         }
