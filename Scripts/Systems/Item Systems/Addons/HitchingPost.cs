@@ -323,7 +323,7 @@ namespace Server.Items
             {
                 from.SendLocalizedMessage(502672); // HA HA HA! Sorry, I am not an inn.
             }
-            else if ((pet is PackLlama || pet is PackHorse || pet is Beetle) && (pet.Backpack != null && pet.Backpack.Items.Count > 0))
+            else if ((pet is PackLlama || pet is PackHorse /*|| pet is Beetle Era -Fraz*/) && (pet.Backpack != null && pet.Backpack.Items.Count > 0))
             {
                 from.SendLocalizedMessage(1042563); // You need to unload your pet.
             }

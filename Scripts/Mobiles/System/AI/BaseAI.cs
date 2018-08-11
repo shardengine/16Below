@@ -1725,8 +1725,8 @@ namespace Server.Mobiles
 				{
 					Name = creature.Name;
 				}
-				else if (ItemID == ShrinkTable.DefaultItemID || creature.GetType().IsDefined(typeof(FriendlyNameAttribute), false) ||
-						 creature is Reptalon)
+				else if (ItemID == ShrinkTable.DefaultItemID || creature.GetType().IsDefined(typeof(FriendlyNameAttribute), false) 
+                    /*|| creature is Reptalon Era -Fraz*/)
 				{
 					Name = FriendlyNameAttribute.GetFriendlyNameFor(creature.GetType()).ToString();
 				}

@@ -1192,10 +1192,10 @@ namespace Server.Items
 		    defender.Damage(damage, attacker);
 
 			if (m_MaxHits > 0 &&
-				((MaxRange <= 1 && (defender is Slime || defender is CorrosiveSlime)) ||
+				((MaxRange <= 1 && (defender is Slime /*|| defender is CorrosiveSlime*/)) || // Expansion era -Fraz
 				 Utility.Random(250) == 0)) // Stratics says 50% chance, seems more like 4%..
 			{
-				if (MaxRange <= 1 && (defender is Slime || defender is CorrosiveSlime))
+				if (MaxRange <= 1 && (defender is Slime /*|| defender is CorrosiveSlime*/))
 				{
 					attacker.LocalOverheadMessage(MessageType.Regular, 0x3B2, 500263); // *Acid blood scars your weapon!*
 				}

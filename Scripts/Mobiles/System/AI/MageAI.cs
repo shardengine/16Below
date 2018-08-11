@@ -59,7 +59,7 @@ namespace Server.Mobiles
         {
             get
             {
-                return (m_Mobile is BaseVendor || m_Mobile is BaseEscortable || m_Mobile is Changeling);
+                return (m_Mobile is BaseVendor || m_Mobile is BaseEscortable /*|| m_Mobile is Changeling Era -Fraz*/);
             }
         }
         public virtual bool IsNecromancer

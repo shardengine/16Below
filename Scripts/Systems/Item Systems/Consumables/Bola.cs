@@ -87,19 +87,22 @@ namespace Server.Items
 			
             to.Damage(1, from);
 
+            /*
             if (to is ChaosDragoon || to is ChaosDragoonElite)
                 from.SendLocalizedMessage(1042047); // You fail to knock the rider from its mount.
+            */
 
             IMount mt = to.Mount;
             
-			if ( mt != null && !( to is ChaosDragoon || to is ChaosDragoonElite ) )
+
+			if ( mt != null /*&& !( to is ChaosDragoon || to is ChaosDragoonElite ) */)
 			{
 				mt.Rider = null;
 
 				to.SendLocalizedMessage( 1040023 ); // You have been knocked off of your mount!
 				from.SendMessage("You knock them from their mount!");
 			}
-
+            
             if (to is PlayerMobile)
             {
                 if (to.Mounted)

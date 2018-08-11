@@ -253,6 +253,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\Teleporters.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Extinct\Bogle.cs" />
     <Compile Include="Systems\ContextMenus\AddToParty.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -766,7 +767,7 @@
     <Compile Include="Systems\Item Systems\Resource\ArcanicRuneStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\BankCheck.cs">
+    <Compile Include="Items\Defined\UO\Admin\BankCheck.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Containers\BaseTreasureChestMod.cs">
@@ -934,7 +935,7 @@
     <Compile Include="Systems\Item Systems\Resource\GoblinBlood.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Gold.cs">
+    <Compile Include="Items\Defined\UO\Admin\Gold.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Addons\Guillotine.cs">
@@ -1333,7 +1334,7 @@
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\AgapiteElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\AirElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Alligator.cs" />
-    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\AncientLich.cs" />
+    <Compile Include="Systems\Khaldun\Mobiles\AncientLich.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Dragons\AncientWyrm.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\ArcticOgreLord.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Daemons\Balron.cs" />
@@ -1346,7 +1347,7 @@
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Boar.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Undead\BoneKnight.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Undead\BoneMagi.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Brigand.cs" />
+    <Compile Include="Mobiles\Defined\UO\Brigand.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\BronzeElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\BrownBear.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Bull.cs" />
@@ -1356,16 +1357,12 @@
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Chicken.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\CopperElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CoralSnake.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\CorporealBrume.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Corpser.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\CorrosiveSlime.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\CorruptedSoul.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Cougar.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Corpser.cs" />
+    <Compile Include="Mobiles\Defined\Custom\CorruptedSoul.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cougar.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cow.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Crane.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Cursed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\CursedSoul.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\CuSidhe.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Giantkin\Cyclops.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Daemons\Daemon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\DarkWisp.cs" />
@@ -1387,7 +1384,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\EffetePutridGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EffeteUndeadGargoyle.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Elementals\Efreet.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\ElderGazer.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\ElderGazer.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnragedCreatures.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnslavedGargoyle.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\EnslavedGoblinKeeper.cs" />
@@ -1419,7 +1416,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\Gargoyle.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Gazer.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GazerLarva.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Ghoul.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Ghoul.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantBlackWidow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GiantIceWorm.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Animals\GiantRat.cs" />
@@ -1428,7 +1425,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\GiantToad.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Gibberling.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Goat.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\GoldenElemental.cs" />
+    <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\GoldenElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Golem.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GolemController.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GoreFiend.cs" />
@@ -1436,14 +1433,14 @@
     <Compile Include="Systems\Mobile Systems\Normal\GreaterDragon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterMongbat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GreaterPoisonElemental.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\GreatHart.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\GreyWolf.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\GreatHart.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\GreyWolf.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\GrizzlyBear.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Guardian.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Harpy.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\HeadlessOne.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Harpy.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\HeadlessOne.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HellCat.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\HellHound.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\HellHound.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HellSteed.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Hind.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\HordeMinion.cs" />
@@ -1473,14 +1470,14 @@
     <Compile Include="Systems\Khaldun\Mobiles\KhaldunZealot.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Kirin.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Korpre.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Kraken.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Kraken.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LadyOfTheSnow.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LavaElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LavaLizard.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LavaSerpent.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\LavaSnake.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Lich.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\LichLord.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Lich.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\LichLord.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Lizardman.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Mounts\Llama.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MaddeningHorror.cs" />
@@ -1494,7 +1491,7 @@
     <Compile Include="Systems\Mobile Systems\Normal\MinotaurGeneral.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MinotaurScout.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Moloch.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Mongbat.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Mongbat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MoundOfMaggots.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\MountainGoat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Mummy.cs" />
@@ -1512,11 +1509,11 @@
     <Compile Include="Systems\Mobile Systems\Normal\OrcCaptain.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\OrcChopper.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\OrcishLord.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\OrcishMage.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Orcs\OrcishMage.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\OrcScout.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Ortanord.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\PackHorse.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\PackLlama.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\PackHorse.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\PackLlama.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Panther.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Phoenix.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Pig.cs" />
@@ -1534,15 +1531,12 @@
     <Compile Include="Systems\Mobile Systems\Normal\Quagmire.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Rabbit.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\RagingGrizzlyBear.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Raptor.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Rat.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Ratman.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\RatmanArcher.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\RatmanMage.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Rat.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Ratman.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\RatmanArcher.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\RatmanMage.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Ravager.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Reaper.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\RenegadeChangeling.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Reptalon.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\RestlessSoul.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Revenant.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\RevenantLion.cs" />
@@ -1561,13 +1555,13 @@
     <Compile Include="Systems\Mobile Systems\Normal\SeaSerpent.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SentinelSpider.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SerpentineDragon.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\SewerRat.cs" />
+    <Compile Include="Mobiles\Defined\T2A\Creatures\Animals\SewerRat.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Shade.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ShadowFiend.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\ShadowIronElemental.cs" />
+    <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\ShadowIronElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ShadowWisp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\ShadowWyrm.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Sheep.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Sheep.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SilverSerpent.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SilverSteed.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SkeletalDragon.cs" />
@@ -1576,10 +1570,10 @@
     <Compile Include="Systems\Mobile Systems\Normal\SkeletalLich.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SkeletalMage.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SkeletalMount.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Skeleton.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Skeleton.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SkitteringHopper.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Slime.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Snake.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Slime.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Snake.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Elementals\SnowElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SnowLeopard.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\SpectralArmour.cs" />
@@ -1596,8 +1590,8 @@
     <Compile Include="Mobiles\Defined\T2A\Creatures\Terathans\TerathanDrone.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Terathans\TerathanMatriarch.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Terathans\TerathanWarrior.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\ThirdDawnParrot.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\TimberWolf.cs" />
+    <Compile Include="Mobiles\Defined\UOTD\Creatures\Animals\ThirdDawnParrot.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\TimberWolf.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Giantkin\Titan.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Tormented Minotaur.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Treefellow.cs" />
@@ -1608,19 +1602,19 @@
     <Compile Include="Systems\Mobile Systems\Normal\Unicorn.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\ValoriteElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\VampireBat.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\VeriteElemental.cs" />
+    <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\VeriteElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\VorpalBunny.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WailingBanshee.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Walrus.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Walrus.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WandererOfTheVoid.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\WaterElemental.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhippingVine.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\WhiteWolf.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Animals\WhiteWolf.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\WhiteWyrm.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wight.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wisp.cs" />
     <Compile Include="Systems\Mobile Systems\Normal\Wraith.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\Wyvern.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Dragons\Wyvern.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Zombie.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\Alchemist.cs" />
     <Compile Include="Systems\Mobile Systems\NPCs\AnimalTrainer.cs" />
@@ -2857,7 +2851,7 @@
     <Compile Include="Systems\Item Systems\Consumables\Dates.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Lantern.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Lantern.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\LiquorPitcher.cs">
@@ -2872,7 +2866,7 @@
     <Compile Include="Systems\Item Systems\Consumables\Stew.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Bedroll.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Bedroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\Cookies.cs">
@@ -2911,7 +2905,7 @@
     <Compile Include="Systems\Item Systems\Functional\Campfire.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Kindling.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Kindling.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\Board.cs">
@@ -3028,10 +3022,10 @@
     <Compile Include="Items\Defined\UO\Resources\Potions\LesserPoisonPotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\PoisonPotion.cs">
+    <Compile Include="Items\Defined\UO\Resources\Potions\PoisonPotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\RefreshPotion.cs">
+    <Compile Include="Items\Defined\UO\Resources\Potions\RefreshPotion.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\TotalRefreshPotion.cs">
@@ -3040,7 +3034,7 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\GreaterStrengthPotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\StrengthPotion.cs">
+    <Compile Include="Items\Defined\UO\Resources\Potions\StrengthPotion.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\EarthquakeScroll.cs">
@@ -3049,7 +3043,7 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\EnergyVortexScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\ResurrectionScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\ResurrectionScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\SummonAirElementalScroll.cs">
@@ -3136,13 +3130,13 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\ManaDrainScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\RecallScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\RecallScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\HealingStoneScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\SleepScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\SleepScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\SpellPlagueScroll.cs">
@@ -3184,7 +3178,7 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\MagicUnTrapScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\ProtectionScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\ProtectionScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\StrengthScroll.cs">
@@ -3235,7 +3229,7 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\ParalyzeFieldSpell.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\RevealScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\RevealScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\SpellScroll.cs">
@@ -3262,10 +3256,10 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\TeleportScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\UnlockScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\UnlockScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\WallOfStoneScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\WallOfStoneScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Spellbooks\Spellbook.cs">
@@ -3367,7 +3361,7 @@
     <Compile Include="Mobiles\Players\DisguisePersistence.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\LockPick.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\LockPick.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\Axle.cs">
@@ -3766,7 +3760,7 @@
     <Compile Include="Systems\Item Systems\Decorative\MonsterStatuette.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Bucket.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Bucket.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\ClosedBarrel.cs">
@@ -4530,9 +4524,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\AI\PredatorAI.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Mobiles\System\AI\SpeedInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\AI\ThiefAI.cs">

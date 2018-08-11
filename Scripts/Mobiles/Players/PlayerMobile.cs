@@ -4092,7 +4092,7 @@ namespace Server.Mobiles
 						continue;
 					}
 
-					if ((pet is PackLlama || pet is PackHorse || pet is Beetle) &&
+					if ((pet is PackLlama || pet is PackHorse /*|| pet is Beetle Era -Fraz*/) &&
 						(pet.Backpack != null && pet.Backpack.Items.Count > 0))
 					{
 						continue;

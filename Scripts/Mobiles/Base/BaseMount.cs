@@ -167,10 +167,12 @@ namespace Server.Mobiles
             if (!dismounted.Mounted)
                 return;
 
+            /* Era -Fraz
             if (dismounted is ChaosDragoonElite)
             {
                 dismounter.SendLocalizedMessage(1042047); // You fail to knock the rider from its mount.
             }
+            */
 
             IMount mount = dismounted.Mount;
 

@@ -38,7 +38,7 @@ namespace Server.Items
 			new Type[]{ typeof( DreadSpider ), typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( OgreLord ) },
 			new Type[]{ typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( PoisonElemental ), typeof( BloodElemental ) },
 			new Type[]{ typeof( AncientWyrm ), typeof( Balron ), typeof( BloodElemental ), typeof( PoisonElemental ), typeof( Titan ) },
-            new Type[]{ typeof( BloodElemental), typeof(ColdDrake), typeof(FrostDragon), typeof(GreaterDragon), typeof(PoisonElemental)}
+            new Type[]{ typeof( BloodElemental), /*typeof(ColdDrake),Era -Fraz*/ typeof(FrostDragon), typeof(GreaterDragon), typeof(PoisonElemental)}
 		};
 
         private static Type[][] m_IlshenarSpawnTypes = new Type[][]
@@ -48,9 +48,9 @@ namespace Server.Items
 			new Type[]{ typeof( OrcishMage ), typeof( Gargoyle ), typeof( Gazer ), typeof( HellHound ), typeof( EarthElemental ) },
 			new Type[]{ typeof( Lich ), typeof( OgreLord ), typeof( DreadSpider ), typeof( AirElemental ), typeof( FireElemental ) },
 			new Type[]{ typeof( DreadSpider ), typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( OgreLord ) },
-			new Type[]{ typeof( PoisonElemental ) },
+			new Type[]{ typeof( PoisonElemental ) }/*,
 			new Type[]{ typeof( Changeling ), typeof( Titan ) },
-            new Type[]{ typeof( RenegadeChangeling ), typeof( Titan ) }
+            new Type[]{ typeof( RenegadeChangeling ), typeof( Titan ) }*/
         };
         #endregion
 

@@ -1639,7 +1639,8 @@ namespace Server.Mobiles
 
             m_iTeam = 0;
 
-            SpeedInfo.GetSpeeds(this, ref dActiveSpeed, ref dPassiveSpeed);
+            // remove speed info -Fraz
+            // SpeedInfo.GetSpeeds(this, ref dActiveSpeed, ref dPassiveSpeed);
 
             m_dActiveSpeed = dActiveSpeed;
             m_dPassiveSpeed = dPassiveSpeed;
@@ -2022,7 +2023,8 @@ namespace Server.Mobiles
             double activeSpeed = m_dActiveSpeed;
             double passiveSpeed = m_dPassiveSpeed;
 
-            SpeedInfo.GetSpeeds(this, ref activeSpeed, ref passiveSpeed);
+            // remove speed info -Fraz
+            // SpeedInfo.GetSpeeds(this, ref activeSpeed, ref passiveSpeed);
 
             bool isStandardActive = false;
             for (int i = 0; !isStandardActive && i < m_StandardActiveSpeeds.Length; ++i)
