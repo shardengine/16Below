@@ -33,7 +33,7 @@ namespace Server.Configuration
         public class DataPath
         {
             public static string    CustomPath          = "";
-            public static bool      IgnoreStandardPaths = true;
+            public static bool      IgnoreStandardPaths = false;
         }
 
         public class Accounts

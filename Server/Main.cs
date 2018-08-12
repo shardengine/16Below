@@ -37,7 +37,11 @@ namespace Server
 			GlobalUpdateRange = 18;
 		}
 
-		private static bool _Crashed;
+        public static bool bConsoleBeep = false;
+        public static bool bEnforceExpansionClient = false;
+        public static bool bDemoVersionEnabled = false;
+
+        private static bool _Crashed;
 		private static Thread _TimerThread;
 		private static string _BaseDirectory;
 		private static string _ExePath;
@@ -518,12 +522,17 @@ namespace Server
 			Console.WriteLine("Core: Loading 16Below.ini...");
 
             Configs.Load();
-            
-            if (Configs.Get("16Below.ConsoleBeep", false))
+
+            bConsoleBeep = Configs.Get("16Below.ConsoleBeep", false);
+
+            if (bConsoleBeep)
                 Console.WriteLine("\a");
             else
                 Console.WriteLine("");
             Utility.PopColor();
+
+            bEnforceExpansionClient = Configs.Get("16Below.EnforceExpansionClient", false);
+            bDemoVersionEnabled = Configs.Get("16Below.DemoVersionEnabled", false);
 
             while (!ScriptCompiler.Compile(Debug, _Cache))
 			{

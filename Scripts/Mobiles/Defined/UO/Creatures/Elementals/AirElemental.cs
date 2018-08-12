@@ -45,6 +45,7 @@ namespace Server.Mobiles
             this.VirtualArmor = 40;
 
             // Needs era adjustments -Fraz
+            /*
 			switch (Utility.Random(24))
             {
             //    case 0: PackItem(new PainSpikeScroll()); break;
@@ -52,6 +53,7 @@ namespace Server.Mobiles
             //    case 2: PackItem(new StrangleScroll()); break;
                 case 3: PackItem(new VengefulSpiritScroll()); break;
 			}
+            */
 
             this.ControlSlots = 2;
         }

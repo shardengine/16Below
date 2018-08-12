@@ -2397,6 +2397,41 @@ m_Stream.Write( (int) renderMode );
 		}
 	}
 
+    public sealed class SkillUpdateLBR : Packet
+    {
+        public SkillUpdateLBR(Skills skills)
+            : base(0x3a)
+        {
+            EnsureCapacity(6 + (skills.Length * 7));
+
+            m_Stream.Write((byte)0x00); // type: absolute, capped
+
+            for (int i = 0; i < skills.Length; ++i)
+            {
+                Skill s = skills[i];
+
+                double v = s.NonRacialValue;
+                int uv = (int)(v * 10);
+
+                if (uv < 0)
+                {
+                    uv = 0;
+                }
+                else if (uv >= 0x10000)
+                {
+                    uv = 0xFFFF;
+                }
+
+                m_Stream.Write((ushort)(s.Info.SkillID + 1));
+                m_Stream.Write((ushort)uv);
+                m_Stream.Write((ushort)s.BaseFixedPoint);
+                m_Stream.Write((byte)s.Lock);
+                //m_Stream.Write((ushort)s.CapFixedPoint);
+            }
+            m_Stream.Write((short)0); // terminate
+        }
+    }
+
     public sealed class SkillUpdateOld : Packet
     {
         public SkillUpdateOld(Skills skills)
@@ -4382,41 +4417,6 @@ m_Stream.Write( (int) renderMode );
 		{ }
 	}
 
-	public sealed class CityInfo
-	{
-		private Point3D m_Location;
-
-		public CityInfo(string city, string building, int description, int x, int y, int z, Map m)
-		{
-			City = city;
-			Building = building;
-			Description = description;
-			m_Location = new Point3D(x, y, z);
-			Map = m;
-		}
-
-		public CityInfo(string city, string building, int x, int y, int z, Map m)
-			: this(city, building, 0, x, y, z, m)
-		{ }
-
-		public CityInfo(string city, string building, int description, int x, int y, int z)
-			: this(city, building, description, x, y, z, Map.Trammel)
-		{ }
-
-		public CityInfo(string city, string building, int x, int y, int z)
-			: this(city, building, 0, x, y, z, Map.Trammel)
-		{ }
-
-		public string City { get; set; }
-		public string Building { get; set; }
-		public int Description { get; set; }
-		public int X { get { return m_Location.X; } set { m_Location.X = value; } }
-		public int Y { get { return m_Location.Y; } set { m_Location.Y = value; } }
-		public int Z { get { return m_Location.Z; } set { m_Location.Z = value; } }
-		public Point3D Location { get { return m_Location; } set { m_Location = value; } }
-		public Map Map { get; set; }
-	}
-
 	public sealed class CharacterListUpdate : Packet
 	{
 		public CharacterListUpdate(IAccount a)
@@ -4525,6 +4525,189 @@ m_Stream.Write( (int) renderMode );
 		}
 	}
 
+    public sealed class CityInfo
+    {
+        private Point3D m_Location;
+
+        public CityInfo(string city, string building, int description, int x, int y, int z, Map m)
+        {
+            City = city;
+            Building = building;
+            Description = description;
+            m_Location = new Point3D(x, y, z);
+            Map = m;
+        }
+
+        public CityInfo(string city, string building, int x, int y, int z, Map m)
+            : this(city, building, 0, x, y, z, m)
+        { }
+
+        public CityInfo(string city, string building, int description, int x, int y, int z)
+            : this(city, building, description, x, y, z, Map.Trammel)
+        { }
+
+        public CityInfo(string city, string building, int x, int y, int z)
+            : this(city, building, 0, x, y, z, Map.Trammel)
+        { }
+
+        public string City { get; set; }
+        public string Building { get; set; }
+        public int Description { get; set; }
+        public int X { get { return m_Location.X; } set { m_Location.X = value; } }
+        public int Y { get { return m_Location.Y; } set { m_Location.Y = value; } }
+        public int Z { get { return m_Location.Z; } set { m_Location.Z = value; } }
+        public Point3D Location { get { return m_Location; } set { m_Location = value; } }
+        public Map Map { get; set; }
+    }
+
+    /*
+    public sealed class CityInfo
+    {
+        private Point3D m_Location;
+
+        public CityInfo(string city, string building, int description, int x, int y, int z, Map m)
+        {
+            City = city;
+            Building = building;
+            Description = description;
+            m_Location = new Point3D(x, y, z);
+            Map = m;
+        }
+
+        public CityInfo(string city, string building, int x, int y, int z, Map m)
+            : this(city, building, 0, x, y, z, m)
+        { }
+
+        public CityInfo(string city, string building, int description, int x, int y, int z)
+            : this(city, building, description, x, y, z, Map.Trammel)
+        { }
+
+        public CityInfo(string city, string building, int x, int y, int z)
+            : this(city, building, 0, x, y, z, Map.Trammel)
+        { }
+
+        public string City { get; set; }
+        public string Building { get; set; }
+        public int Description { get; set; }
+        public int X { get { return m_Location.X; } set { m_Location.X = value; } }
+        public int Y { get { return m_Location.Y; } set { m_Location.Y = value; } }
+        public int Z { get { return m_Location.Z; } set { m_Location.Z = value; } }
+        public Point3D Location { get { return m_Location; } set { m_Location = value; } }
+        public Map Map { get; set; }
+    }
+    */
+
+    public sealed class CharacterList : Packet
+    {
+         public CharacterList(IAccount a, CityInfo[] info)
+            : base(0xA9)
+        {
+            EnsureCapacity(11 + (a.Length * 60) + (info.Length * 89));
+
+            int highSlot = -1;
+
+            for (int i = 0; i < a.Length; ++i)
+            {
+                if (a[i] != null)
+                {
+                    highSlot = i;
+                }
+            }
+
+            int count = Math.Max(Math.Max(highSlot + 1, a.Limit), 5);
+
+            m_Stream.Write((byte)count);
+
+            for (int i = 0; i < count; ++i)
+            {
+                if (a[i] != null)
+                {
+                    m_Stream.WriteAsciiFixed(a[i].Name, 30);
+                    m_Stream.Fill(30); // password
+                }
+                else
+                {
+                    m_Stream.Fill(60);
+                }
+            }
+
+            m_Stream.Write((byte)info.Length);
+
+            for (int i = 0; i < info.Length; ++i)
+            {
+                CityInfo ci = info[i];
+
+                m_Stream.Write((byte)i);
+                m_Stream.WriteAsciiFixed(ci.City, 32);
+                m_Stream.WriteAsciiFixed(ci.Building, 32);
+                m_Stream.Write(ci.X);
+                m_Stream.Write(ci.Y);
+                m_Stream.Write(ci.Z);
+                m_Stream.Write(ci.Map.MapID);
+                m_Stream.Write(ci.Description);
+                m_Stream.Write(0);
+            }
+
+            CharacterListFlags flags = ExpansionInfo.CoreExpansion.CharacterListFlags;
+
+            if (count > 6)
+            {
+                flags |= (CharacterListFlags.SeventhCharacterSlot | CharacterListFlags.SixthCharacterSlot);
+            }
+            // 7th Character Slot - TODO: Is SixthCharacterSlot Required?
+            else if (count == 6)
+            {
+                flags |= CharacterListFlags.SixthCharacterSlot; // 6th Character Slot
+            }
+            else if (a.Limit == 1)
+            {
+                flags |= (CharacterListFlags.SlotLimit & CharacterListFlags.OneCharacterSlot); // Limit Characters & One Character
+            }
+
+            m_Stream.Write((int)(flags | m_AdditionalFlags)); // Additional Flags
+
+            m_Stream.Write((short)-1);
+
+            ThirdPartyFeature disabled = FeatureProtection.DisabledFeatures;
+
+            if (disabled != 0)
+            {
+                if (m_MD5Provider == null)
+                {
+                    m_MD5Provider = new MD5CryptoServiceProvider();
+                }
+
+                m_Stream.UnderlyingStream.Flush();
+
+                byte[] hashCode = m_MD5Provider.ComputeHash(
+                    m_Stream.UnderlyingStream.GetBuffer(), 0, (int)m_Stream.UnderlyingStream.Length);
+                var buffer = new byte[28];
+
+                for (int i = 0; i < count; ++i)
+                {
+                    Utility.RandomBytes(buffer);
+
+                    m_Stream.Seek(35 + (i * 60), SeekOrigin.Begin);
+                    m_Stream.Write(buffer, 0, buffer.Length);
+                }
+
+                m_Stream.Seek(35, SeekOrigin.Begin);
+                m_Stream.Write((int)((long)disabled >> 32));
+                m_Stream.Write((int)disabled);
+
+                m_Stream.Seek(95, SeekOrigin.Begin);
+                m_Stream.Write(hashCode, 0, hashCode.Length);
+            }
+        }
+
+        private static MD5CryptoServiceProvider m_MD5Provider;
+
+        private static CharacterListFlags m_AdditionalFlags;
+
+        public static CharacterListFlags AdditionalFlags { get { return m_AdditionalFlags; } set { m_AdditionalFlags = value; } }
+    }
+
+    /*
 	public sealed class CharacterList : Packet
 	{
 		public CharacterList(IAccount a, CityInfo[] info)
@@ -4634,8 +4817,10 @@ m_Stream.Write( (int) renderMode );
 
 		public static CharacterListFlags AdditionalFlags { get { return m_AdditionalFlags; } set { m_AdditionalFlags = value; } }
 	}
+    */
 
-	public sealed class CharacterListOld : Packet
+
+    public sealed class CharacterListOld : Packet
 	{
 		public CharacterListOld(IAccount a, CityInfo[] info)
 			: base(0xA9)

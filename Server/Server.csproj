@@ -114,8 +114,8 @@
     <Compile Include=".\Network\Listener.cs" />
     <Compile Include=".\Network\MessagePump.cs" />
     <Compile Include=".\Network\NetState.cs" />
-    <Compile Include="Network\PacketHandlers\PacketHandler.cs" />
-    <Compile Include="Network\PacketHandlers\PacketHandlers.cs" />
+    <Compile Include="Network\Packets\PacketHandler.cs" />
+    <Compile Include="Network\Packets\PacketHandlers.cs" />
     <Compile Include="Network\Packets\PacketReader.cs" />
     <Compile Include="Network\Packets\Packets.cs" />
     <Compile Include="Network\Packets\PacketWriter.cs" />
@@ -238,5 +238,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Administration\Tools\" />
+    <Folder Include="Network\PacketHandlers\" />
   </ItemGroup>
 </Project>
