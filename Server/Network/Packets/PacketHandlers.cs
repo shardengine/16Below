@@ -2825,7 +2825,6 @@ namespace Server.Network
 				state.Dispose();
 				return;
 			}
-
 			if (state.m_AuthID != 0 && authID != state.m_AuthID)
 			{
 				Utility.PushColor(ConsoleColor.DarkRed);
@@ -2859,11 +2858,13 @@ namespace Server.Network
 
 				if (state.NewCharacterList)
 				{
+                //    Console.WriteLine("New Character List");
 					state.Send(new CharacterList(state.Account, state.CityInfo));
 				}
 				else
 				{
-					state.Send(new CharacterListOld(state.Account, state.CityInfo));
+                //   Console.WriteLine("Old Character List");
+                    state.Send(new CharacterListOld(state.Account, state.CityInfo));
 				}
 			}
 			else

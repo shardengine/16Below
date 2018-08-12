@@ -163,7 +163,12 @@ namespace Server.Network
 				{
 					_ProtocolChanges = ProtocolChanges.Version400a;
 				}
-			}
+                // LBR -Fraz
+                else if (value == m_Version306j)
+                {
+                    _ProtocolChanges = ProtocolChanges.Version306j;
+                }
+            }
 		}
 
         private static readonly ClientVersion m_Version306j = new ClientVersion("3.0.6j");
@@ -201,6 +206,7 @@ namespace Server.Network
 			NewMobileIncoming = 0x00001000,
 			NewSecureTrading = 0x00002000,
 
+            Version306j = 0,
 			Version400a = NewSpellbook,
 			Version407a = Version400a | DamagePacket,
 			Version500a = Version407a | Unpack,

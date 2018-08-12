@@ -85,7 +85,7 @@ namespace Server.Misc
             EventSink.ClientVersionReceived += new ClientVersionReceivedHandler(EventSink_ClientVersionReceived);
 
             //ClientVersion.Required = null;
-            //Required = new ClientVersion( "6.0.0.0" );
+            Required = new ClientVersion( "3.0.6j" );
 
             if (m_DetectClientRequirement)
             {
@@ -94,6 +94,9 @@ namespace Server.Misc
                 if (File.Exists(path))
                 {
                     FileVersionInfo info = FileVersionInfo.GetVersionInfo(path);
+
+                    Console.WriteLine("Path: {0}", path);
+                    Console.WriteLine("Client: {0}.{1}.{2}.{3}", info.FileMajorPart, info.FileMinorPart, info.FileBuildPart, info.FilePrivatePart);
 
                     if (info.FileMajorPart != 0 || info.FileMinorPart != 0 || info.FileBuildPart != 0 || info.FilePrivatePart != 0)
                     {
@@ -108,6 +111,8 @@ namespace Server.Misc
                 Console.WriteLine("Restricting client version to {0}. \r\nAction to be taken: {1}", Required, m_OldClientResponse);
                 Utility.PopColor();
             }
+
+
         }
 
         private static void EventSink_ClientVersionReceived(ClientVersionReceivedArgs e)
@@ -116,8 +121,7 @@ namespace Server.Misc
             NetState state = e.State;
             ClientVersion version = e.Version;
 
-            if (state.Mobile.IsStaff())
-                return;
+            if (state.Mobile.IsStaff()) return;
 
             if (Required != null && version < Required && (m_OldClientResponse == OldClientResponse.Kick || (m_OldClientResponse == OldClientResponse.LenientKick && (DateTime.UtcNow - state.Mobile.CreationTime) > m_AgeLeniency && state.Mobile is PlayerMobile && ((PlayerMobile)state.Mobile).GameTime > m_GameTimeLeniency)))
             {
