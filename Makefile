@@ -35,5 +35,5 @@ Ultima.dll: Ultima/*.cs
 ServUO.sh: 16Below.exe
 	echo "#!/bin/sh" > ${CURPATH}/16Below.sh
 	echo "mono ${CURPATH}/16Below.exe" >> ${CURPATH}/16Below.sh
-	chmod a+x ${CURPATH}/16BelowO.sh
+	chmod a+x ${CURPATH}/16Below.sh
 	sed -i.bak -e 's/<!--//g; s/-->//g' 16Below.exe.config
