@@ -220,9 +220,12 @@ namespace Server.Misc
                 newChar.BankBox.DropItem(ticket);
             }
 
-        //    CityInfo city = GetStartLocation(args, young); // Temp Fix -Fraz
+            CityInfo city = GetStartLocation(args, young); 
 
-            CityInfo city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca); // FOR FIRST TIME CHARACTER YOUNG STATUS IN DEV -Fraz
+            if (Core.bEnforceExpansionClient && Core.LBR) // Temp Fix -Fraz (LBR has no selection?) or netstate is old client?
+            {
+                city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca);
+            }
 
             newChar.MoveToWorld(city.Location, city.Map);
 
@@ -251,6 +254,7 @@ namespace Server.Misc
             ClientFlags flags = args.State == null ? ClientFlags.None : args.State.Flags;
             Mobile m = args.Mobile;
 
+            /*
             switch ( args.Profession )
             {
                 case 4: //Necro
@@ -264,13 +268,13 @@ namespace Server.Misc
                             useHaven = true; 
 
                             new BadStartMessage(m, 1062205);
-                            /*
-                            * Unfortunately you are playing on a *NON-Age-Of-Shadows* game 
-                            * installation and cannot be transported to Malas.  
-                            * You will not be able to take your new player quest in Malas 
-                            * without an AOS client.  You are now being taken to the city of 
-                            * Haven on the Trammel facet.
-                            * */
+
+                            // Unfortunately you are playing on a *NON-Age-Of-Shadows* game 
+                            // installation and cannot be transported to Malas.  
+                            // You will not be able to take your new player quest in Malas 
+                            // without an AOS client.  You are now being taken to the city of 
+                            // Haven on the Trammel facet.
+
                         }
 
                         break;
@@ -290,13 +294,13 @@ namespace Server.Misc
                             useHaven = true;
 
                             new BadStartMessage(m, 1063487);
-                            /*
-                            * Unfortunately you are playing on a *NON-Samurai-Empire* game 
-                            * installation and cannot be transported to Tokuno. 
-                            * You will not be able to take your new player quest in Tokuno 
-                            * without an SE client. You are now being taken to the city of 
-                            * Haven on the Trammel facet.
-                            * */
+
+                            // Unfortunately you are playing on a *NON-Samurai-Empire* game 
+                            // installation and cannot be transported to Tokuno. 
+                            // You will not be able to take your new player quest in Tokuno 
+                            // without an SE client. You are now being taken to the city of 
+                            // Haven on the Trammel facet.
+
                         }
 
                         break;
@@ -312,20 +316,20 @@ namespace Server.Misc
                             useHaven = true;
 
                             new BadStartMessage(m, 1063487);
-                            /*
-                            * Unfortunately you are playing on a *NON-Samurai-Empire* game 
-                            * installation and cannot be transported to Tokuno. 
-                            * You will not be able to take your new player quest in Tokuno 
-                            * without an SE client. You are now being taken to the city of 
-                            * Haven on the Trammel facet.
-                            * */
+
+                            // Unfortunately you are playing on a *NON-Samurai-Empire* game 
+                            // installation and cannot be transported to Tokuno. 
+                            // You will not be able to take your new player quest in Tokuno 
+                            // without an SE client. You are now being taken to the city of 
+                            // Haven on the Trammel facet.
+
                         }
 
                         break;
                     }
             }
-
-            if (useHaven)
+            */
+            if (useHaven && (Core.ML))// (!Core.bEnforceExpansionClient)
                 return m_NewHavenInfo;
             else
                 return args.City;
@@ -927,10 +931,12 @@ namespace Server.Misc
                     {
                         if (human || elf)
                             EquipItem(new Hatchet());
+
                         /* -Fraz
                         else if (gargoyle)
                             EquipItem(new DualShortAxes());
                         */
+
                         break;
                     }
                 case SkillName.Macing:

@@ -20,7 +20,22 @@ namespace Server.Misc
         private static readonly TimeSpan            DeleteDelay             = Config.Accounts.DeleteDelay;
         private static readonly bool                PasswordCommandEnabled  = Config.Accounts.PasswordCommandEnabled;
         public static readonly PasswordProtection   ProtectPasswords        = Config.Accounts.ProtectPasswords;
-        private static readonly CityInfo[]          StartingCities          = Config.Player.StartingCities;
+
+        //   private static readonly CityInfo[]          StartingCities          = Config.Player.StartingCities;
+
+        public static CityInfo[] StartingCities = new CityInfo[]
+        {
+            //  new CityInfo("New Haven",   "New Haven Bank",       1150168, 3667,  2625,  0),
+                new CityInfo("Yew",         "The Empath Abbey",     1075072, 633,   858,   0),
+                new CityInfo("Minoc",       "The Barnacle",         1075073, 2476,  413,   15),
+                new CityInfo("Britain",     "The Wayfarer's Inn",   1075074, 1602,  1591,  20),
+                new CityInfo("Moonglow",    "The Scholars Inn",     1075075, 4408,  1168,  0),
+                new CityInfo("Trinsic",     "The Traveler's Inn",   1075076, 1845,  2745,  0),
+                new CityInfo("Jhelom",      "The Mercenary Inn",    1075078, 1374,  3826,  0),
+                new CityInfo("Skara Brae",  "The Falconer's Inn",   1075079, 618,   2234,  0),
+                new CityInfo("Vesper",      "The Ironwood Inn",     1075080, 2771,  976,   0)
+        };
+
 
         private static readonly char[] m_ForbiddenChars = new char[]
         {
@@ -177,13 +192,18 @@ namespace Server.Misc
 
         public static void EventSink_AccountLogin(AccountLoginEventArgs e)
         {
-            // This is preventing login for some atm unknown reason -Fraz
             /*
-			// If the login attempt has already been rejected by another event handler
-			// then just return
-			if (e.Accepted == false)
-				return;
+            if(!Core.bEnforceExpansionClient)
+            {
+                // This is preventing login for some atm unknown reason with older and newer clients -Fraz
+
+			    // If the login attempt has already been rejected by another event handler
+			    // then just return
+			    if (e.Accepted == false)
+				    return;
+            }
             */
+
             if (!IPLimiter.SocketBlock && !IPLimiter.Verify(e.State.Address))
             {
                 e.Accepted = false;

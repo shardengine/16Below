@@ -12031,13 +12031,15 @@ namespace Server
         {
             if (from == this)
             {
-                if (m_NetState != null && m_NetState.SupportsExpansion(Expansion.AOS))
+                if (!Core.bEnforceExpansionClient && (m_NetState != null && m_NetState.SupportsExpansion(Expansion.AOS)))
                 {
                     Send(new SkillUpdate(m_Skills));
+
                 }
                 else
                 {
-                    Send(new SkillUpdateOld(m_Skills));
+                    if (m_NetState != null && m_NetState.SupportsExpansion(Expansion.LBR)) Send(new SkillUpdateLBR(m_Skills));
+                    else Send(new SkillUpdateOld(m_Skills));
                 }
             }
         }

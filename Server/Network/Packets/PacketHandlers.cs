@@ -2856,9 +2856,9 @@ namespace Server.Network
 
 				state.Send(SupportedFeatures.Instantiate(state));
 
-				if (state.NewCharacterList)
+				if (state.NewCharacterList) // -Fraz
 				{
-                //    Console.WriteLine("New Character List");
+                //    Console.WriteLine("New Character List: City {0}   Account {1}", state.CityInfo[1].City, state.Account.Username);
 					state.Send(new CharacterList(state.Account, state.CityInfo));
 				}
 				else

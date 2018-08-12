@@ -13,28 +13,30 @@ namespace Server.Misc
             * 3) Map 0xFF is reserved for core use.
             * 4) Changing or removing any predefined maps may cause server instability.
             */
-
-            // This will need to check expansion and client enforcement to determine the corrrect map sizes and definitions -Fraz
-
-            /*
-            RegisterMap(0, 0, 0, 7168, 4096, 4, "Felucca", MapRules.FeluccaRules);
-            RegisterMap(1, 1, 1, 7168, 4096, 0, "Trammel", MapRules.TrammelRules);
-            RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);
-            */
-
-
-
-            RegisterMap(0, 0, 0, 6144, 4096, 4, "Felucca", MapRules.FeluccaRules);
-            RegisterMap(1, 1, 1, 6144, 4096, 0, "Trammel", MapRules.TrammelRules);
-            RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);
-
-
-
-            /*
-            RegisterMap(3, 3, 3, 2560, 2048, 1, "Malas", MapRules.TrammelRules);
-            RegisterMap(4, 4, 4, 1448, 1448, 1, "Tokuno", MapRules.TrammelRules);
-            RegisterMap(5, 5, 5, 1280, 4096, 1, "TerMur", MapRules.TrammelRules);
-            */
+            if (Core.LBR)
+            {
+                if (Core.bEnforceExpansionClient) // -Fraz (until later era's are added)
+                {
+                    RegisterMap(0, 0, 0, 6144, 4096, 4, "Felucca", MapRules.FeluccaRules);
+                    RegisterMap(1, 1, 1, 6144, 4096, 0, "Trammel", MapRules.TrammelRules);
+                    RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);
+                }
+                else
+                {
+                    RegisterMap(0, 0, 0, 7168, 4096, 4, "Felucca", MapRules.FeluccaRules);
+                    RegisterMap(1, 1, 1, 7168, 4096, 0, "Trammel", MapRules.TrammelRules);
+                    RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);
+                }
+            }
+            else if (Core.TOL)
+            {
+                RegisterMap(0, 0, 0, 7168, 4096, 4, "Felucca", MapRules.FeluccaRules);
+                RegisterMap(1, 1, 1, 7168, 4096, 0, "Trammel", MapRules.TrammelRules);
+                RegisterMap(2, 2, 2, 2304, 1600, 1, "Ilshenar", MapRules.TrammelRules);
+                RegisterMap(3, 3, 3, 2560, 2048, 1, "Malas", MapRules.TrammelRules);
+                RegisterMap(4, 4, 4, 1448, 1448, 1, "Tokuno", MapRules.TrammelRules);
+                RegisterMap(5, 5, 5, 1280, 4096, 1, "TerMur", MapRules.TrammelRules);
+            }
 
             RegisterMap(0x7F, 0x7F, 0x7F, Map.SectorSize, Map.SectorSize, 1, "Internal", MapRules.Internal);
 
