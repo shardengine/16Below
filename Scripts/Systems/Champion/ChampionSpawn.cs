@@ -426,6 +426,7 @@ namespace Server.Engines.CannedEvil
             Start();
         }
 
+        /*
         #region Scroll of Transcendence
         private ScrollofTranscendence CreateRandomSoT(bool felucca)
         {
@@ -436,17 +437,19 @@ namespace Server.Engines.CannedEvil
 
             return ScrollofTranscendence.CreateRandom(level, level);
         }
-
         #endregion
+        */
 
         public static void GiveScrollTo(Mobile killer, SpecialScroll scroll)
         {
             if (scroll == null || killer == null)	//sanity
                 return;
 
+            /*
             if (scroll is ScrollofTranscendence)
                 killer.SendLocalizedMessage(1094936); // You have received a Scroll of Transcendence!
             else
+            */
                 killer.SendLocalizedMessage(1049524); // You have received a scroll of power!
 			
             if (killer.Alive)
@@ -579,6 +582,7 @@ namespace Server.Engines.CannedEvil
                                     {
                                         PlayerMobile pm = (PlayerMobile)killer;
 
+                                        /*
                                         if (Utility.RandomDouble() < ChampionSystem.TranscendenceChance)
                                         {
                                             ScrollofTranscendence SoTF = CreateRandomSoT(true);
@@ -589,9 +593,13 @@ namespace Server.Engines.CannedEvil
                                             PowerScroll PS = PowerScroll.CreateRandomNoCraft(5, 5);
                                             GiveScrollTo(pm, (SpecialScroll)PS);
                                         }
+                                        */
+                                        PowerScroll PS = PowerScroll.CreateRandomNoCraft(5, 5);
+                                        GiveScrollTo(pm, (SpecialScroll)PS);
+
                                     }
                                 }
-
+                                /*
                                 if (Map == Map.Ilshenar || Map == Map.Tokuno || Map == Map.Malas)
                                 {
                                     if (Utility.RandomDouble() < 0.0015)
@@ -601,6 +609,7 @@ namespace Server.Engines.CannedEvil
                                         killer.AddToBackpack(SoTT);
                                     }
                                 }
+                                */
                             }
 							#endregion
 

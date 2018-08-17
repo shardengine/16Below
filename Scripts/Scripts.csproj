@@ -6,7 +6,7 @@
     <ProjectGuid>{308EA7C6-2873-4E47-AF3F-ABBA3F8AB63E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Scripts.CS</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -2293,7 +2293,7 @@
     <Compile Include="Systems\Item Systems\Decorative\WhiteStoneWall.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Container.cs">
+    <Compile Include="Items\Base\Containers\Container.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\FillableContainers.cs">
@@ -2302,7 +2302,7 @@
     <Compile Include="Systems\Item Systems\Containers\FurnitureContainer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\LockableContainer.cs">
+    <Compile Include="Items\Base\Containers\LockableContainer.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\MarkContainer.cs">
@@ -2317,7 +2317,7 @@
     <Compile Include="Systems\Item Systems\Containers\Strongbox.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\TrapableContainer.cs">
+    <Compile Include="Items\Base\Containers\TrapableContainer.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Containers\TreasureChest.cs">
@@ -2395,9 +2395,6 @@
     <Compile Include="Systems\Item Systems\Functional\FarmableWheat.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\AdmiralHeartyRum.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Base\Consumables\BaseMagicalFood.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -2428,13 +2425,13 @@
     <Compile Include="Items\Defined\UO\Resources\Food\Food.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\FruitBowl.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\FruitBowl.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Fruits.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Fruits.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Vegetables.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Vegetables.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\WrathGrapes.cs">
@@ -2461,55 +2458,55 @@
     <Compile Include="Systems\Item Systems\Decorative\RarewoodChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Backgammon.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Backgammon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\CheckerBoard.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\CheckerBoard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\CheckersPieces.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\CheckersPieces.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Chessboard.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Chessboard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\ChessPieces.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\ChessPieces.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\Dices.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Dices.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongDealerIndicator.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongDealerIndicator.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongDices.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongDices.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongEnums.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongEnums.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongGame.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongGame.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongPacketHandlers.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongPacketHandlers.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongPieceDim.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongPieceDim.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongPlayers.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongPlayers.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongTile.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongTile.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongTileTypeGenerator.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongTileTypeGenerator.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\MahjongWallBreakIndicator.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\MahjongWallBreakIndicator.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Containers\Mahjong\Packets.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Games\Mahjong\Packets.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\Amber.cs">
@@ -2641,31 +2638,31 @@
     <Compile Include="Systems\Item Systems\Decorative\WhiteHangingLantern.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\BlankMap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Maps\BlankMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\CityMap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Maps\CityMap.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\IndecipherableMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\LocalMap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Maps\LocalMap.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\MapItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Tools\PresetMap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Maps\PresetMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\SeaChart.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Maps\SeaChart.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\TreasureMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\WorldMap.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Maps\WorldMap.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\EmptyPots.cs">
@@ -2839,7 +2836,7 @@
     <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\WoodenShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\FrenchBread.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\FrenchBread.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\WaterPitcher.cs">
@@ -2848,7 +2845,7 @@
     <Compile Include="Items\Defined\UO\Resources\Food\Cheese.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Dates.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Dates.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Provisions\Lantern.cs">
@@ -2857,22 +2854,22 @@
     <Compile Include="Systems\Item Systems\Consumables\LiquorPitcher.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Pizza.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Pizza.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\Shirt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Stew.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Stew.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Provisions\Bedroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Cookies.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Cookies.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Fish Steak.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Fish Steak.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Tools\BegFishingPole.cs">
@@ -2884,7 +2881,7 @@
     <Compile Include="Systems\Item Systems\Consumables\Sake.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\Turnip.cs">
+    <Compile Include="Items\Defined\UO\Resources\Food\Turnip.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\Wine.cs">
@@ -2899,7 +2896,7 @@
     <Compile Include="Systems\Item Systems\Functional\LargeForge.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\Bedroll.cs">
+    <Compile Include="Items\Defined\UO\Tools\BegBedroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Functional\Campfire.cs">
@@ -2920,7 +2917,7 @@
     <Compile Include="Systems\Item Systems\Consumables\MessageInABottle.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\Sextant.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Sextant.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\ShipwreckedItem.cs">
@@ -3028,7 +3025,7 @@
     <Compile Include="Items\Defined\UO\Resources\Potions\RefreshPotion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\TotalRefreshPotion.cs">
+    <Compile Include="Items\Defined\UO\Resources\Potions\TotalRefreshPotion.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\GreaterStrengthPotion.cs">
@@ -3103,7 +3100,7 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\NightSightScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\ReactiveArmorScroll.cs">
+    <Compile Include="Items\Defined\UO\Resources\Scrolls\ReactiveArmorScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\WeakenScroll.cs">
@@ -3139,25 +3136,7 @@
     <Compile Include="Items\Defined\UO\Resources\Scrolls\SleepScroll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\SpellPlagueScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Systems\Item Systems\Consumables\SpellTriggerScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\StoneFormScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\PoisonStrikeScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\SummonFamiliarScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\VampiricEmbraceScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\VengefulSpiritScroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\AgilityScroll.cs">
@@ -3233,9 +3212,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\SpellScroll.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\SpellweavingScrolls.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Scrolls\BlessScroll.cs">
@@ -3376,7 +3352,7 @@
     <Compile Include="Systems\Item Systems\Resource\ClockParts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\Clocks.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Clocks.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Resource\Gears.cs">
@@ -3394,7 +3370,7 @@
     <Compile Include="Systems\Item Systems\Resource\Springs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\Spyglass.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\Spyglass.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Decorative\Utensils.cs">
@@ -3733,7 +3709,7 @@
     <Compile Include="Systems\Item Systems\Addons\Wreath.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\WristWatch.cs">
+    <Compile Include="Items\Defined\UO\Equipment\Provisions\WristWatch.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\HouseRaffleDeed.cs">
@@ -4097,9 +4073,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\ScrollofAlacrity.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Systems\Item Systems\Consumables\ScrollofTranscendence.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Systems\Item Systems\Consumables\SpecialScroll.cs">
@@ -6482,8 +6455,9 @@
     <Folder Include="Items\Defined\LBR\Resources\" />
     <Folder Include="Items\Defined\LBR\Tools\" />
     <Folder Include="Items\Defined\T2A\Addons\" />
+    <Folder Include="Items\Defined\T2A\Admin\" />
     <Folder Include="Items\Defined\T2A\Books\" />
-    <Folder Include="Items\Defined\T2A\Consumables\" />
+    <Folder Include="Items\Defined\T2A\Consumables\Food\" />
     <Folder Include="Items\Defined\T2A\Decorations\" />
     <Folder Include="Items\Defined\T2A\Equipment\" />
     <Folder Include="Items\Defined\T2A\Multis\" />
@@ -6506,6 +6480,7 @@
     <Folder Include="Items\Defined\UOTD\Resources\" />
     <Folder Include="Items\Defined\UOTD\Tools\" />
     <Folder Include="Items\Defined\UO\Addons\" />
+    <Folder Include="Items\Defined\UO\Containers\" />
     <Folder Include="Items\Defined\UO\Decorations\" />
     <Folder Include="Items\Defined\UO\Multis\" />
     <Folder Include="Mobiles\Defined\LBR\Creatures\" />

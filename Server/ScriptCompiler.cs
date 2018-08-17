@@ -620,6 +620,7 @@ namespace Server
 				}
 				else
 				{
+                    
                     Utility.PushColor(ConsoleColor.Green);
                     Console.Write("[Success]");
                     Utility.PopColor();
@@ -694,9 +695,11 @@ namespace Server
 			}
 			else
 			{
+                /*
 				Utility.PushColor(ConsoleColor.Green);
                 Console.Write("[Success]"); //    0 errors, 0 warnings");            
 				Utility.PopColor();
+                */
 			}
 		}
 

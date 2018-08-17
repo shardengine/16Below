@@ -161,6 +161,7 @@ namespace Server.Items
                                 from.PlaySound(0x249);
 							}
 						}
+                        /*
 						else if (targeted is ScrollofTranscendence)
 						{
 							ScrollofTranscendence sot = (ScrollofTranscendence)targeted;
@@ -173,6 +174,7 @@ namespace Server.Items
                             from.SendLocalizedMessage(1113146); //Binding Scrolls of Transcendence
                             from.PlaySound(0x249);
 						}
+                        */
 						else
 							from.SendLocalizedMessage(1113142); //You may only bind powerscrolls, stats scrolls or scrolls of transcendence.
 							
@@ -245,6 +247,7 @@ namespace Server.Items
 						    from.SendLocalizedMessage(1113143); //This scroll does not match the type currently being bound.
                         break;
 					}
+                    /*
 				case BinderType.SOT:
 					{
 						if(targeted is ScrollofTranscendence)
@@ -280,6 +283,7 @@ namespace Server.Items
                             from.SendLocalizedMessage(1113143); //This scroll does not match the type currently being bound.
                         break;
 					}
+                    */
 			}
 
             InvalidateProperties();
@@ -311,6 +315,7 @@ namespace Server.Items
 		
 		private class BinderWarningGump : BaseConfirmGump
 		{
+            /*
 			private double m_Value;
 			private int m_Needed;
 			private ScrollofTranscendence m_Scroll;
@@ -342,6 +347,7 @@ namespace Server.Items
 			public override void Refuse( Mobile from )
 			{
 			}
+            */
 		}
 		
 		public ScrollBinderDeed(Serial serial) : base(serial)

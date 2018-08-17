@@ -310,7 +310,7 @@ namespace Server.Items
         {
             Item special;
 
-            switch (Utility.Random(6))
+            switch (Utility.Random(5)) // was 6 - sot -Fraz
             {
                 default:
                 case 0: special = new MessageInABottle(); break;
@@ -318,7 +318,7 @@ namespace Server.Items
                 case 2: special = new Skeletonkey(); break;
                 case 3: special = new TreasureMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), map); break;
                 case 4: special = GetRandomRecipe(); break;
-                case 5: special = ScrollofTranscendence.CreateRandom(1, 5); break;
+            //    case 5: special = ScrollofTranscendence.CreateRandom(1, 5); break;
             }
 
             return special;

@@ -59,10 +59,12 @@ namespace Server.Mobiles
 
             this.PackReg(50);
 
+            /* -nonera -Fraz
 			switch (Utility.Random(3))
             {
                 case 0: PackItem(new VampiricEmbraceScroll()); break;
 			}
+            */
 
         }
 
