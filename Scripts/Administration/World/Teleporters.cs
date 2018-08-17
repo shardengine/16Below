@@ -20,7 +20,7 @@ namespace Server
 
         public static void Initialize()
         {
-            Console.WriteLine("Loading Fraz's Teleport System");
+        //    Console.WriteLine("Loading Fraz's Teleport System");
             LoadPaths();
 
         //    CommandSystem.Register("TeleMenu", AccessLevel.Administrator, new CommandEventHandler(TeleMenu_OnCommand)); // Next Version - Fraz

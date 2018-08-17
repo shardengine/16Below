@@ -1,10 +1,3 @@
-#region Header
-// **********
-// 16Below - ScriptCompiler.cs
-// **********
-#endregion
-
-#region References
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
@@ -16,7 +9,6 @@ using System.Text;
 
 using Microsoft.CSharp;
 using Microsoft.VisualBasic;
-#endregion
 
 namespace Server
 {
@@ -181,7 +173,7 @@ namespace Server
 
                                     if (valid)
                                     {
-                                        Console.WriteLine("Config: Loading Config dll.");
+                                    //    Console.WriteLine("Config: Loading Config dll.");
 
                                         assembly = Assembly.LoadFrom("Output/Config.dll");
 
@@ -206,9 +198,11 @@ namespace Server
 
             DeleteFiles("Config*.dll");
 
+            /*
             Utility.PushColor(ConsoleColor.DarkGray);
             Console.WriteLine("Scripts: Compiling .CS Scripts... (Config)");
             Utility.PopColor();
+            */
 
             using (CSharpCodeProvider provider = new CSharpCodeProvider())
             {
@@ -287,16 +281,22 @@ namespace Server
 
 		public static bool CompileCSScripts(bool debug, bool cache, out Assembly assembly)
 		{
+            /*
 			Utility.PushColor(ConsoleColor.Green);
 			Console.Write("Scripts: ");
 			Utility.PopColor();
+            */
+
 			var files = GetScripts("*.cs");
 
 			if (files.Length == 0)
 			{
+                /*
 				Utility.PushColor(ConsoleColor.Red);
 				Console.WriteLine("no files found.");
 				Utility.PopColor();
+                */
+
 				assembly = null;
 				return true;
 			}
@@ -331,7 +331,7 @@ namespace Server
 
 									if (valid)
 									{
-                                        Console.Write("Loading C# dlls...");
+                                    //  Console.Write("Loading C# dlls...");
 
                                         assembly = Assembly.LoadFrom("Output/Scripts.dll");
 
@@ -340,10 +340,11 @@ namespace Server
 											m_AdditionalReferences.Add(assembly.Location);
 										}
 
+                                        /*
 										Utility.PushColor(ConsoleColor.Green);
 										Console.WriteLine("done (cached)");
 										Utility.PopColor();
-
+                                        */
 										return true;
 									}
 								}
@@ -357,7 +358,7 @@ namespace Server
 
 			DeleteFiles("Scripts*.dll");
 
-            Console.WriteLine("Compiling .CS Scripts... (Scripts)");
+       //     Console.WriteLine("Compiling .CS Scripts... (Scripts)");
 
             using (CSharpCodeProvider provider = new CSharpCodeProvider())
 			{
@@ -441,7 +442,7 @@ namespace Server
 
 		public static bool CompileVBScripts(bool debug, bool cache, out Assembly assembly)
 		{
-			Console.Write("Scripts: Compiling VB.NET scripts...");
+		//	Console.Write(".Compiling VB.NET scripts...");
 			var files = GetScripts("*.vb");
 
 			if (files.Length == 0)
@@ -488,7 +489,7 @@ namespace Server
 											m_AdditionalReferences.Add(assembly.Location);
 										}
 
-										Console.WriteLine("done (cached)");
+									//	Console.WriteLine("done (cached)");
 
 										return true;
 									}
@@ -563,30 +564,53 @@ namespace Server
 			{
 				var errors = new Dictionary<string, List<CompilerError>>(results.Errors.Count, StringComparer.OrdinalIgnoreCase);
 				var warnings = new Dictionary<string, List<CompilerError>>(results.Errors.Count, StringComparer.OrdinalIgnoreCase);
-
-				foreach (CompilerError e in results.Errors)
+                bool flag = true;
+                foreach (CompilerError e in results.Errors)
 				{
 					string file = e.FileName;
 
 					// Ridiculous. FileName is null if the warning/error is internally generated in csc.
 					if (string.IsNullOrEmpty(file))
 					{
+                        if (flag)
+                        {
+                            Utility.PushColor(ConsoleColor.Red);
+                            Console.WriteLine("[Error]");
+                            flag = false;
+                        }
+
 						Console.WriteLine("ScriptCompiler: {0}: {1}", e.ErrorNumber, e.ErrorText);
+                        Utility.PopColor();
 						continue;
-					}
+                    }
+                    else
+                    {
+                        Dictionary<string, List<CompilerError>> dictionary3 = e.IsWarning ? errors: warnings;
+                        List<CompilerError> clist = null;
+                        dictionary3.TryGetValue(file, out clist);
+                        if (clist == null)
+                        {
+                            clist = (dictionary3[file] = new List<CompilerError>());
+                        }
+                        clist.Add(e);
+                    }
+                    if (errors.Count > 0)
+                    {
+                        if (flag)
+                        {
+                            Utility.PushColor(ConsoleColor.Red);
+                            Console.WriteLine("[Error]");
+                            Utility.PopColor();
+                        }
+                    }
+                    else if (flag)
+                    {
+                        Utility.PushColor(ConsoleColor.Yellow);
+                        Console.WriteLine("[Warning]");
+                        Utility.PopColor();
+                    }
+                }
 
-					var table = (e.IsWarning ? warnings : errors);
-
-					List<CompilerError> list = null;
-					table.TryGetValue(file, out list);
-
-					if (list == null)
-					{
-						table[file] = list = new List<CompilerError>();
-					}
-
-					list.Add(e);
-				}
 
 				if (errors.Count > 0)
 				{
@@ -596,10 +620,17 @@ namespace Server
 				}
 				else
 				{
-					Utility.PushColor(ConsoleColor.Green);
+                    Utility.PushColor(ConsoleColor.Green);
+                    Console.Write("[Success]");
+                    Utility.PopColor();
+
+                    /*
+                    Utility.PushColor(ConsoleColor.Green);
 					Console.WriteLine("Finished with: {0} errors, {1} warnings", errors.Count, warnings.Count);
 					Utility.PopColor();
+                    */
 				}
+
 
 				string scriptRoot = Path.GetFullPath(Path.Combine(Core.BaseDirectory, "Scripts" + Path.DirectorySeparatorChar));
 				Uri scriptRootUri = new Uri(scriptRoot);
@@ -659,13 +690,12 @@ namespace Server
 
 					Utility.PopColor();
 				}
-
 				Utility.PopColor();
 			}
 			else
 			{
 				Utility.PushColor(ConsoleColor.Green);
-				Console.WriteLine("Finished with: 0 errors, 0 warnings");
+                Console.Write("[Success]"); //    0 errors, 0 warnings");            
 				Utility.PopColor();
 			}
 		}
@@ -771,9 +801,11 @@ namespace Server
 			}
 			else
 			{
+                /*
 				Utility.PushColor(ConsoleColor.DarkRed);
 				Console.WriteLine("Scripts: Skipping VB.NET Scripts...done (use -vb to enable)");
 				Utility.PopColor();
+                */
 			}
 
 			if (assemblies.Count == 0)
@@ -783,9 +815,13 @@ namespace Server
 
 			m_Assemblies = assemblies.ToArray();
 
+
+            /*
 			Utility.PushColor(ConsoleColor.Yellow);
 			Console.WriteLine("Scripts: Verifying...");
 			Utility.PopColor();
+            */
+
 
 			Stopwatch watch = Stopwatch.StartNew();
 
@@ -794,12 +830,45 @@ namespace Server
 			watch.Stop();
 
 			Utility.PushColor(ConsoleColor.Green);
-			Console.WriteLine(
+
+
+        //    Utility.PushColor(ConsoleColor.Green);
+        //    Console.Write("[Success]");
+            //    0 errors, 0 warnings");
+
+
+       //     string text = "...................";
+            string text2 = string.Format("({0} items, {1} mobiles, {2} custom)", Core.ScriptItems, Core.ScriptMobiles, Core.ScriptCustoms);
+            int num = text2.Length - 30;
+            if (num < 0)
+            {
+                num = 0;
+            }
+            num = 18 - num;
+            Utility.PushColor(ConsoleColor.Cyan);
+            Console.SetCursorPosition(24, Console.CursorTop);
+            Console.Write(text2);
+            Console.SetCursorPosition(70, Console.CursorTop);
+            Utility.PushColor(ConsoleColor.Green);
+            Console.WriteLine("[Success]");
+            Utility.PopColor();
+
+          //  Console.Write("");
+
+            Utility.PopColor();
+
+
+            /*
+            Console.WriteLine(
 				"Finished ({0} items, {1} mobiles, {3} customs) ({2:F2} seconds)",
 				Core.ScriptItems,
 				Core.ScriptMobiles,
 				watch.Elapsed.TotalSeconds,
 				Core.ScriptCustoms);
+            */
+
+
+
 			Utility.PopColor();
 
 			return true;

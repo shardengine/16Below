@@ -1356,7 +1356,7 @@
     <Compile Include="Mobiles\Defined\UOTD\Creatures\Centaur.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Chicken.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\CopperElemental.cs" />
-    <Compile Include="Systems\Mobile Systems\Normal\CoralSnake.cs" />
+    <Compile Include="Mobiles\Defined\Custom\CoralSnake.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Corpser.cs" />
     <Compile Include="Mobiles\Defined\Custom\CorruptedSoul.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cougar.cs" />

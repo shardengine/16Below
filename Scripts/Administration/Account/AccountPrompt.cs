@@ -9,30 +9,55 @@ namespace Server.Misc
         {
             if (Accounts.Count == 0 && !Core.Service)
             {
-                Console.WriteLine("This server has no accounts.");
-                Console.Write("Do you want to create the owner account now? (y/n)");
+                Utility.PushColor(ConsoleColor.Red);
+                Console.WriteLine(new String('_', Console.BufferWidth));
+                Console.WriteLine("                            Account Administration:");
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("                Do you want to create the owner account now? ");
+                Utility.PushColor(ConsoleColor.Cyan);
+                Console.Write("(y/n)");
+                Utility.PopColor();
 
                 if (Console.ReadKey(true).Key == ConsoleKey.Y)
                 {
                     Console.WriteLine();
 
-                    Console.Write("\r\nUsername: ");
+                    Console.Write("                             Username: ");
                     string username = Console.ReadLine();
 
-                    Console.Write("Password: ");
+                    Console.Write("                             Password: ");
                     string password = Console.ReadLine();
 
                     Account a = new Account(username, password);
                     a.AccessLevel = AccessLevel.Owner;
 
-                    Console.WriteLine("Account created.");
+                    Utility.PushColor(ConsoleColor.Magenta);
+                    Console.Write("Shard: ");
+                    Utility.PushColor(ConsoleColor.Gray);
+                    Console.Write("Owner Account");
+                    Utility.PushColor(ConsoleColor.DarkGray);
+                    Console.Write("..................................................");
+                    Utility.PushColor(ConsoleColor.Green);
+                    Console.WriteLine("[Created]");
+                    Utility.PopColor();
                 }
                 else
                 {
                     Console.WriteLine();
-
-                    Console.WriteLine("Account not created.");
+                    Utility.PushColor(ConsoleColor.Magenta);
+                    Console.Write("Shard: ");
+                    Utility.PushColor(ConsoleColor.Gray);
+                    Console.Write("Owner Account");
+                    Utility.PushColor(ConsoleColor.DarkGray);
+                    Console.Write("..................................................");
+                    Utility.PushColor(ConsoleColor.DarkRed);
+                    Console.WriteLine("[Skipped]");
+                    Utility.PopColor();
                 }
+
+                Utility.PushColor(ConsoleColor.Red);
+                Console.WriteLine(new String('_', Console.BufferWidth));
+                Utility.PopColor();
             }
         }
     }

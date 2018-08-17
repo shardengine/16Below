@@ -118,7 +118,10 @@ namespace Server
 		{
 			if (_Initialized)
 			{
-				return;
+                Console.Write("ShardEngine.ini not found.........."); // already initialized
+                Utility.PushColor(ConsoleColor.Red);
+                Console.WriteLine("[Failed]");
+                return;
 			}
 
 			_Initialized = true;
@@ -136,8 +139,10 @@ namespace Server
 			}
 			catch (DirectoryNotFoundException)
 			{
-				Console.WriteLine("Warning: No server configuration files found!");
-				return;
+                Console.Write("ShardEngine.ini not found..........");
+                Utility.PushColor(ConsoleColor.Red);
+                Console.WriteLine("[Failed]");
+                return;
 			}
 
 			foreach (var path in files)
@@ -148,9 +153,10 @@ namespace Server
 				}
 				catch (Exception e)
 				{
-					Console.WriteLine("Warning: Failed to load 16Below.ini file:");
-					Console.WriteLine(path);
-					Utility.PushColor(ConsoleColor.Red);
+                    Console.Write("ShardEngine.ini not loaded.........");
+                    Utility.PushColor(ConsoleColor.Red);
+                    Console.WriteLine("[Failed]");
+				    Console.WriteLine(path);
 					Console.WriteLine(e.Message);
 					Utility.PopColor();
 
@@ -173,23 +179,21 @@ namespace Server
 							Console.ReadKey();
 
 							Core.Kill(false);
+                            break;
 						}
-							return;
+                        default:
+                            {
+                                Utility.PushColor(ConsoleColor.Gray);
+                                Console.WriteLine("[Default]");
+                                Utility.PopColor();
+                            }
+                            return;
 					}
 				}
-			}
-
-			if (Core.Debug)
-			{
-				Console.WriteLine();
-
-				foreach (var e in _Entries.Values)
-				{
-					Console.WriteLine(e);
-				}
-
-				Console.WriteLine();
-			}
+                Utility.PushColor(ConsoleColor.Green);
+                Console.WriteLine("[Success]");
+                Utility.PopColor();
+            }
 		}
 
 		private static void LoadFile(string path)

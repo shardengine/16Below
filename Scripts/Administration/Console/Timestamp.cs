@@ -1,3 +1,4 @@
+using Server;
 using System;
 using System.IO;
 using System.Text;
@@ -6,7 +7,7 @@ namespace System
 {
     public class ConsoleHook : TextWriter
     {
-        private static readonly bool _Enabled = true;
+        private static readonly bool _Enabled = Configs.Get("16Below.ConsoleTimeStamp", true);
         private static Stream m_OldOutput;
         private static bool m_Newline;
         public override Encoding Encoding

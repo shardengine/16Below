@@ -22,9 +22,6 @@ namespace Joeku.SR
             if (!File.Exists(filePath))
                 return;
 
-            Console.WriteLine();
-            Console.WriteLine("Joeku's Staff Runebook: Loading...");
-
             XmlDocument doc = new XmlDocument();
             doc.Load(filePath);
 

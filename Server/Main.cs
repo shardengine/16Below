@@ -37,7 +37,6 @@ namespace Server
 			GlobalUpdateRange = 18;
 		}
 
-        public static bool bConsoleBeep = false;
         public static bool bEnforceExpansionClient = false;
         public static bool bDemoVersionEnabled = false;
 
@@ -273,7 +272,7 @@ namespace Server
 
 		private delegate bool ConsoleEventHandler(ConsoleEventType type);
 
-		private static ConsoleEventHandler m_ConsoleEventHandler;
+	//	private static ConsoleEventHandler m_ConsoleEventHandler;
 
 		private static class UnsafeNativeMethods
 		{
@@ -440,127 +439,349 @@ namespace Server
 				publishNumber = File.ReadAllText("publish.txt");
 			}
 
-			// Added to help future code support on forums, as a 'check' people can ask for to it see if they recompiled core or not
-			Utility.PushColor(ConsoleColor.DarkGreen);
-			Console.WriteLine(new String('-', Console.BufferWidth));
-			Utility.PopColor();
-			Utility.PushColor(ConsoleColor.Cyan);
-			Console.WriteLine(
-				"16Below - [http://www.shardengine.com/16Below] Version {0}.{1}, Build {2}.{3}",
-				ver.Major,
-				ver.Minor,
-				ver.Build,
-				ver.Revision);
-			// Console.WriteLine("Publish {0}", publishNumber);
-			Utility.PopColor();
+            Utility.PushColor(ConsoleColor.Magenta);
 
-			string s = Arguments;
+            Console.WriteLine("                 ___ _                _   ___           _          ");
+            Console.WriteLine("                / __| |_  __ _ _ _ __| | | __|_ _  __ _(_)_ _  ___ ");
+            Console.WriteLine("                \\__ \\ ' \\/ _` | '_/ _` | | _|| ' \\/ _` | | ' \\/ -_)");
+            Console.WriteLine("                |___/_||_\\__,_|_| \\__,_| |___|_||_\\__, |_|_||_\\___|");
+            Console.WriteLine("                                                  |___/            ");
 
-			if (s.Length > 0)
-			{
-				Utility.PushColor(ConsoleColor.Yellow);
-				Console.WriteLine("Core: Running with arguments: {0}", s);
-				Utility.PopColor();
-			}
+            Utility.PushColor(ConsoleColor.Cyan);             
+            Console.WriteLine("                            _  __ ___      _                      ");
+            Console.WriteLine("                           / |/ /| _ ) ___| |_____ __ __          ");
+            Console.WriteLine("                           | / _ \\ _ \\/ -_) / _ \\ V  V /       ");
+            Console.WriteLine("                           |_\\___/___/\\___|_\\___/\\_/\\_/      ");
+            Console.WriteLine();
+        //  Console.WriteLine("                                         16Below                   ");
 
-			ProcessorCount = Environment.ProcessorCount;
 
-			if (ProcessorCount > 1)
-			{
-				MultiProcessor = true;
-			}
 
-			if (MultiProcessor || Is64Bit)
-			{
-				Utility.PushColor(ConsoleColor.Green);
-				Console.WriteLine(
-					"Core: Optimizing for {0} {2}processor{1}",
-					ProcessorCount,
-					ProcessorCount == 1 ? "" : "s",
-					Is64Bit ? "64-bit " : "");
-				Utility.PopColor();
-			}
+            Utility.PushColor(ConsoleColor.White);
+            Console.WriteLine("                        Running Shard Engine Version {0}.{1}.{2}", new object[]
+            {
+                ver.Major,
+                ver.Minor,
+                ver.MinorRevision,
+            //  ver.Revision
+            });
 
-			int platform = (int)Environment.OSVersion.Platform;
-
-			if (platform == 4 || platform == 128)
-			{
-				// MS 4, MONO 128
-				Unix = true;
-				Utility.PushColor(ConsoleColor.Yellow);
-				Console.WriteLine("Core: Unix environment detected");
-				Utility.PopColor();
-			}
-			else
-			{
-				m_ConsoleEventHandler = OnConsoleEvent;
-				UnsafeNativeMethods.SetConsoleCtrlHandler(m_ConsoleEventHandler, true);
-			}
-
-			if (GCSettings.IsServerGC)
-			{
-				Utility.PushColor(ConsoleColor.DarkYellow);
-				Console.WriteLine("Core: Server garbage collection mode enabled");
-				Utility.PopColor();
-			}
-
-			if (_UseHRT)
-			{
-				Utility.PushColor(ConsoleColor.DarkYellow);
-				Console.WriteLine(
-					"Core: Requested high resolution timing ({0})",
-					UsingHighResolutionTiming ? "Supported" : "Unsupported");
-				Utility.PopColor();
-			}
-
-			Utility.PushColor(ConsoleColor.DarkYellow);
-			Console.WriteLine("RandomImpl: {0} ({1})", RandomImpl.Type.Name, RandomImpl.IsHardwareRNG ? "Hardware" : "Software");
-			Utility.PopColor();
-
-            Utility.PushColor(ConsoleColor.Gray);
-
-			Console.WriteLine("Core: Loading 16Below.ini...");
-
-            Configs.Load();
-
-            bConsoleBeep = Configs.Get("16Below.ConsoleBeep", false);
-
-            if (bConsoleBeep)
-                Console.WriteLine("\a");
+            if (Environment.Version.Build == 30319)
+            {
+                Console.WriteLine("                           .NET Framework Version 4.6.1");
+            }
             else
-                Console.WriteLine("");
+            {
+                Console.WriteLine("                         .NET Framework Version {0}.{1}.{2}", new object[]
+                {
+                    Environment.Version.Major,
+                    Environment.Version.Minor,
+                    Environment.Version.Build,
+                });
+            }
+            Console.WriteLine("                            http://www.shardengine.com");
+            Utility.PushColor(ConsoleColor.Blue);
+            Console.WriteLine(new String('_', Console.BufferWidth));
+            Utility.PushColor(ConsoleColor.White);
+            int platform = (int)Environment.OSVersion.Platform;
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Detecting Operating System");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write(".....................................");
+            Utility.PushColor(ConsoleColor.White);
+            if (platform == 4 || platform == 128)
+            {
+                Unix = true;
+                Console.WriteLine("[Unix]");
+                Utility.PopColor();
+            }
+            else
+            {
+             //   _ConsoleEventHandler = new ConsoleEventHandler(OnConsoleEvent);
+             //   UnsafeNativeMethods.SetConsoleCtrlHandler(_ConsoleEventHandler, true);
+                switch (Environment.OSVersion.Platform)
+                {
+                    case PlatformID.Win32S:
+                        Console.WriteLine("[Win3.1]");
+                        Utility.PopColor();
+                        break;
+                    case PlatformID.Win32Windows:
+                        {
+                            int minor = Environment.OSVersion.Version.Minor;
+                            if (minor != 0)
+                            {
+                                if (minor != 10)
+                                {
+                                    if (minor == 90)
+                                    {
+                                        Console.WriteLine("[WinME]");
+                                        Utility.PopColor();
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("[Win98]");
+                                    Utility.PopColor();
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("[Win95]");
+                                Utility.PopColor();
+                            }
+                            break;
+                        }
+                    case PlatformID.Win32NT:
+                        switch (Environment.OSVersion.Version.Major)
+                        {
+                            case 3:
+                                Console.WriteLine("[NT 3.51]");
+                                Utility.PopColor();
+                                break;
+                            case 4:
+                                Console.WriteLine("[NT 4.0]");
+                                Utility.PopColor();
+                                break;
+                            case 5:
+                                switch (Environment.OSVersion.Version.Minor)
+                                {
+                                    case 0:
+                                        Console.WriteLine("[Win2000]");
+                                        Utility.PopColor();
+                                        break;
+                                    case 1:
+                                        Console.WriteLine("[WinXP]");
+                                        Utility.PopColor();
+                                        break;
+                                    case 2:
+                                        Console.WriteLine("[Win2003]");
+                                        Utility.PopColor();
+                                        break;
+                                }
+                                break;
+                            case 6:
+                                switch (Environment.OSVersion.Version.Minor)
+                                {
+                                    case 0:
+                                        Console.WriteLine("[Vista]");
+                                        Utility.PopColor();
+                                        break;
+                                    case 1:
+                                        Console.WriteLine("[Win7]");
+                                        Utility.PopColor();
+                                        break;
+                                    case 2:
+                                        Console.WriteLine("[Win8]");
+                                        Utility.PopColor();
+                                        break;
+                                    case 3:
+                                        Console.WriteLine("[Win8.1]");
+                                        Utility.PopColor();
+                                        break;
+                                    case 4:
+                                        Console.WriteLine("[Win10]");
+                                        Utility.PopColor();
+                                        break;
+                                }
+                                break;
+                        }
+                        break;
+                    case PlatformID.WinCE:
+                        Console.WriteLine("[WinCE]");
+                        Utility.PopColor();
+                        break;
+                    default:
+                    //    _ConsoleEventHandler = new ConsoleEventHandler(OnConsoleEvent);
+                    //    UnsafeNativeMethods.SetConsoleCtrlHandler(_ConsoleEventHandler, true);
+                        Console.WriteLine("[Unknown]");
+                        Utility.PopColor();
+                        break;
+                }
+            }
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Processor Configuration");
+            Utility.PushColor(ConsoleColor.Cyan);
+            Console.Write("(Core Count {0})", Environment.ProcessorCount);
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("..........................");
+            Utility.PushColor(ConsoleColor.White);
+            if (Is64Bit)
+            {
+                Console.WriteLine("[64-bit]");
+                Utility.PopColor();
+            }
+            else
+            {
+                Console.WriteLine("[32-bit]");
+                Utility.PopColor();
+            }
+            string arguments = Arguments;
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Operating Mode");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write(".................................................");
+            if (arguments.Length > 0)
+            {
+                if (arguments.Length > 8)
+                {
+                    Console.SetCursorPosition(63, Console.CursorTop);
+                }
+                else if (arguments.Length == 8)
+                {
+                    Console.SetCursorPosition(69, Console.CursorTop);
+                }
+                Utility.PushColor(ConsoleColor.Yellow);
+                Console.WriteLine("[{0}]", new object[]
+                {
+                    arguments
+                });
+                Utility.PopColor();
+            }
+            else
+            {
+                Utility.PushColor(ConsoleColor.Gray);
+                Console.WriteLine("[default]");
+                Utility.PopColor();
+            }
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Garbage Collection Mode");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("........................................");
+            if (GCSettings.IsServerGC)
+            {
+                Utility.PushColor(ConsoleColor.White);
+                Console.WriteLine("[Enabled]");
+                Utility.PopColor();
+            }
+            else
+            {
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.SetCursorPosition(69, Console.CursorTop);
+                Console.WriteLine("[Disabled]");
+                Utility.PopColor();
+            }             
+        //    string text = ".....................................................";
+            int num = 70 - (RandomImpl.Type.Name.Length + 18);
+            if (num < 0)
+            {
+                num = 0;
+            }
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("RandomImpl {0}", new object[]
+            {
+                RandomImpl.Type.Name
+            });
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("............................................");
+            Utility.PushColor(ConsoleColor.White);
+            Console.SetCursorPosition(69, Console.CursorTop);
+            Console.WriteLine("[{0}]", new object[]
+            {
+                RandomImpl.IsHardwareRNG ? "Hardware" : "Software"
+            });
             Utility.PopColor();
-
+            if (_UseHRT)
+            {
+                Utility.PushColor(ConsoleColor.Magenta);
+                Console.Write("Shard: ");
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("High Resolution Timing requested");
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.Write("...............................");
+                if (UsingHighResolutionTiming)
+                {
+                    Utility.PushColor(ConsoleColor.Green);
+                    Console.WriteLine("[Success]");
+                    Utility.PopColor();
+                }
+                else
+                {
+                    Utility.PushColor(ConsoleColor.Red);
+                    Console.WriteLine("[Failure]");
+                    Utility.PopColor();
+                }
+            }
+            else
+            {
+                Utility.PushColor(ConsoleColor.Magenta);
+                Console.Write("Shard: ");
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("Standard Timing requested");
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.Write("......................................");
+                Utility.PushColor(ConsoleColor.Green);
+                Console.WriteLine("[Success]");
+                Utility.PopColor();
+            }
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Initializing Shard Engine settings");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write(".............................");
+            Configs.Load();
             bEnforceExpansionClient = Configs.Get("16Below.EnforceExpansionClient", false);
             bDemoVersionEnabled = Configs.Get("16Below.DemoVersionEnabled", false);
-
+            Utility.PopColor();
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Compiling Scripts");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("..............................................");
+            Utility.PopColor();
             while (!ScriptCompiler.Compile(Debug, _Cache))
 			{
 				Utility.PushColor(ConsoleColor.Red);
 				Console.WriteLine("Scripts: One or more scripts failed to compile or no script files were found.");
 				Utility.PopColor();
+				if (Service) return;
 
-				if (Service)
-				{
-					return;
-				}
-
-				Console.WriteLine(" - Press return to exit, or R to try again.");
-
-				if (Console.ReadKey(true).Key != ConsoleKey.R)
-				{
-					return;
-				}
-			}
+                Utility.PushColor(ConsoleColor.Yellow);
+                Console.WriteLine("");
+                Console.Write("Shard: Press <return> to exit, or <R> to try again.                   ");
+                if (Console.ReadKey(true).Key != ConsoleKey.R) return;
+            }
 
 			ScriptCompiler.Invoke("Configure");
 
 			Region.Load();
+
 			World.Load();
 
 			ScriptCompiler.Invoke("Initialize");
 
-			MessagePump messagePump = MessagePump = new MessagePump();
+            Utility.PushColor(ConsoleColor.Green);
+            Console.WriteLine(new String('_', Console.BufferWidth));
+            Utility.PopColor();
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Initializing Network");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("...(F5 for a list of available IP's).....");
+            Utility.PushColor(ConsoleColor.White);
+            if (Configs.Get("16Below.ConsoleBeep", false))
+                Console.WriteLine("\a[Listening]");
+            else
+                Console.WriteLine("[Listening]");
+
+            Utility.PopColor();
+            Utility.PushColor(ConsoleColor.Green);
+            Console.WriteLine(new String('_', Console.BufferWidth));
+            Utility.PopColor();
+
+            MessagePump messagePump = MessagePump = new MessagePump();
 
 			_TimerThread.Start();
 

@@ -95,8 +95,9 @@ namespace Server.Misc
                 {
                     FileVersionInfo info = FileVersionInfo.GetVersionInfo(path);
 
-                    Console.WriteLine("Path: {0}", path);
-                    Console.WriteLine("Client: {0}.{1}.{2}.{3}", info.FileMajorPart, info.FileMinorPart, info.FileBuildPart, info.FilePrivatePart);
+                    // -Fraz will look at this later...
+                //    Console.WriteLine("Path: {0}", path);
+                //    Console.WriteLine("Client: {0}.{1}.{2}.{3}", info.FileMajorPart, info.FileMinorPart, info.FileBuildPart, info.FilePrivatePart);
 
                     if (info.FileMajorPart != 0 || info.FileMinorPart != 0 || info.FileBuildPart != 0 || info.FilePrivatePart != 0)
                     {
@@ -107,12 +108,62 @@ namespace Server.Misc
 
             if (Required != null)
             {
+                Utility.PushColor(ConsoleColor.Magenta);
+                Console.Write("Shard: ");
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("Restricting client version to");
+                Utility.PushColor(ConsoleColor.Cyan);
+                Console.Write(" <{0}>", Required);
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.Write(".......................");
+                Console.SetCursorPosition(70, Console.CursorTop);
+                switch (m_OldClientResponse)
+                {
+                    case OldClientResponse.Ignore:
+                        Utility.PushColor(ConsoleColor.DarkGray);
+                        break;
+                    case OldClientResponse.Warn:
+                        Utility.PushColor(ConsoleColor.DarkYellow);
+                        break;
+                    case OldClientResponse.Annoy:
+                        Utility.PushColor(ConsoleColor.Yellow);
+                        break;
+                    case OldClientResponse.LenientKick:
+                        Console.SetCursorPosition(66, Console.CursorTop);
+                        Utility.PushColor(ConsoleColor.Gray);
+                        break;
+                    case OldClientResponse.Kick:
+                        Utility.PushColor(ConsoleColor.White);
+                        break;
+                    default:
+                        break;
+                }
+                Console.WriteLine("[{0}]", m_OldClientResponse);
+                Utility.PopColor();
+            }
+            else
+            {
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("Shard: Client Version Restrictions Enabled");
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.Write("............................");
+                Utility.PushColor(ConsoleColor.Gray);
+                Console.WriteLine("[None]");
+                Utility.PopColor();
+            }
+
+            /*
+            if (Required != null)
+            {
                 Utility.PushColor(ConsoleColor.White);
                 Console.WriteLine("Restricting client version to {0}. \r\nAction to be taken: {1}", Required, m_OldClientResponse);
                 Utility.PopColor();
             }
+            */
 
-
+            Utility.PushColor(ConsoleColor.Blue);
+            Console.WriteLine(new String('_', Console.BufferWidth));
+            Utility.PopColor();
         }
 
         private static void EventSink_ClientVersionReceived(ClientVersionReceivedArgs e)

@@ -325,7 +325,7 @@ namespace Server
 			else
 			{
 				Console.WriteLine("tiledata.mul was not found");
-				Console.WriteLine("Make sure your Scripts/Misc/DataPath.cs is properly configured");
+				Console.WriteLine("Make sure your Config/Server.cs is properly configured");
 				Console.WriteLine("After pressing return an exception will be thrown and the server will terminate");
 
 				throw new Exception(String.Format("TileData: {0} not found", filePath));

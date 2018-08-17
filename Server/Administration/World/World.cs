@@ -333,11 +333,15 @@ namespace Server
 			m_Loaded = true;
 			m_LoadingType = null;
 
-			Utility.PushColor(ConsoleColor.Yellow);
-			Console.WriteLine("World: Loading...");
-			Utility.PopColor();
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Loading World");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("..................................................");
+            Utility.PopColor();
 
-			Stopwatch watch = Stopwatch.StartNew();
+            Stopwatch watch = Stopwatch.StartNew();
 
 			m_Loading = true;
 
@@ -884,6 +888,25 @@ namespace Server
 
 			watch.Stop();
 
+        //    string text = "...................";
+
+            string text2 = string.Format("({0} items, {1} mobiles, {2} custom)", m_Items.Count, m_Mobiles.Count, _Data.Count);
+            int num15 = text2.Length - 30;
+            if (num15 < 0)
+            {
+                num15 = 0;
+            }
+            num15 = 19 - num15;
+
+            Utility.PushColor(ConsoleColor.Cyan);
+            Console.SetCursorPosition(20, Console.CursorTop);
+            Console.Write(text2);
+            Console.SetCursorPosition(70, Console.CursorTop);
+            Utility.PushColor(ConsoleColor.Green);
+            Console.WriteLine("[Success]");
+            Utility.PopColor();
+
+            /*
 			Utility.PushColor(ConsoleColor.Green);
 			Console.WriteLine(
 				"...done ({1} items, {2} mobiles, {3} customs) ({0:F2} seconds)",
@@ -892,7 +915,8 @@ namespace Server
 				m_Mobiles.Count,
 				_Data.Count);
 			Utility.PopColor();
-		}
+            */
+        }
 
 		private static void ProcessSafetyQueues()
 		{

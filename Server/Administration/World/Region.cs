@@ -996,42 +996,58 @@ namespace Server
 
 		internal static void Load()
 		{
-			if (!File.Exists("Data/Regions.xml"))
+            if (!File.Exists("Data/Regions.xml"))
+            {
+                Utility.PushColor(ConsoleColor.Magenta);
+                Console.Write("Shard: ");
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("Data/Regions.xml does not exist");
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.Write("................................");
+                Utility.PushColor(ConsoleColor.Red);
+                Console.WriteLine("[Failed]");
+                Utility.PopColor();
+                return;
+            }
+            Utility.PushColor(ConsoleColor.Magenta);
+            Console.Write("Shard: ");
+            Utility.PushColor(ConsoleColor.White);
+            Console.Write("Loading Regions");
+            Utility.PushColor(ConsoleColor.DarkGray);
+            Console.Write("................................................");
+            Utility.PopColor();
+
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(Path.Combine(Core.BaseDirectory, "Data/Regions.xml"));
+            XmlElement xmlElement = xmlDocument["ServerRegions"];
+            bool flag = true;
+
+			if (xmlElement == null)
 			{
-				Utility.PushColor(ConsoleColor.Red);
-				Console.WriteLine("Error: Data/Regions.xml does not exist");
-				Utility.PopColor();
-				return;
-			}
-
-			Utility.PushColor(ConsoleColor.Yellow);
-			Console.Write("Regions: Loading...");
-			Utility.PopColor();
-
-			XmlDocument doc = new XmlDocument();
-			doc.Load(Path.Combine(Core.BaseDirectory, "Data/Regions.xml"));
-
-			XmlElement root = doc["ServerRegions"];
-
-			if (root == null)
-			{
-				Utility.PushColor(ConsoleColor.Red);
-				Console.WriteLine("Could not find root element 'ServerRegions' in Regions.xml");
-				Utility.PopColor();
+                Utility.PushColor(ConsoleColor.Red);
+                Console.WriteLine("[Failed]");
+                Console.WriteLine("ShardEngine: Could not find root element 'ServerRegions' in Regions.xml");
+                Utility.PopColor();
+                return;
 			}
 			else
 			{
-				foreach (XmlElement facet in root.SelectNodes("Facet"))
+				foreach (XmlElement facet in xmlElement.SelectNodes("Facet"))
 				{
 					Map map = null;
 					if (ReadMap(facet, "name", ref map))
 					{
 						if (map == Map.Internal)
 						{
-							Utility.PushColor(ConsoleColor.Red);
-							Console.WriteLine("Invalid internal map in a facet element");
-							Utility.PopColor();
-						}
+                            Utility.PushColor(ConsoleColor.Yellow);
+                            if (flag)
+                            {
+                                Console.WriteLine("[Warning]");
+                                flag = false;
+                            }
+                            Console.WriteLine("ShardEngine: Invalid internal map in a facet element of Regions.xml");
+                            Utility.PopColor();
+                        }
 						else
 						{
 							LoadRegions(facet, map, null);
@@ -1039,11 +1055,13 @@ namespace Server
 					}
 				}
 			}
-
-			Utility.PushColor(ConsoleColor.Green);
-			Console.WriteLine("done");
-			Utility.PopColor();
-		}
+            if (flag)
+            {
+                Utility.PushColor(ConsoleColor.Green);
+                Console.WriteLine("[Success]");
+                Utility.PopColor();
+            }
+        }
 
 		private static void LoadRegions(XmlElement xml, Map map, Region parent)
 		{
