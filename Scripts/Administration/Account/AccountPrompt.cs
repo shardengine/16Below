@@ -46,7 +46,7 @@ namespace Server.Misc
                     Console.WriteLine();
                     Utility.PushColor(ConsoleColor.Magenta);
                     Console.Write("Shard: ");
-                    Utility.PushColor(ConsoleColor.Gray);
+                    Utility.PushColor(ConsoleColor.White);
                     Console.Write("Owner Account");
                     Utility.PushColor(ConsoleColor.DarkGray);
                     Console.Write("..................................................");
@@ -58,6 +58,19 @@ namespace Server.Misc
                 Utility.PushColor(ConsoleColor.Red);
                 Console.WriteLine(new String('_', Console.BufferWidth));
                 Utility.PopColor();
+            }
+            else
+            {
+                Utility.PushColor(ConsoleColor.Magenta);
+                Console.Write("Shard: ");
+                Utility.PushColor(ConsoleColor.White);
+                Console.Write("Owner Account");
+                Utility.PushColor(ConsoleColor.DarkGray);
+                Console.Write("...................................................");
+                Utility.PushColor(ConsoleColor.DarkCyan);
+                Console.WriteLine("[Loaded]");
+                Utility.PopColor();
+
             }
         }
     }

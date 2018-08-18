@@ -404,13 +404,15 @@ namespace Server.SkillHandlers
 						{
 							if (m_Creature.Owners.Count == 0) // First tame
 							{
+                                /* -Era -Fraz
 								if (m_Creature is GreaterDragon)
 								{
 									ScaleSkills(m_Creature, 0.72, 0.90); // 72% of original skills trainable to 90%
 									m_Creature.Skills[SkillName.Magery].Base = m_Creature.Skills[SkillName.Magery].Cap;
 										// Greater dragons have a 90% cap reduction and 90% skill reduction on magery
 								}
-								else if (m_Paralyzed)
+                                */
+								if (m_Paralyzed)
 								{
 									ScaleSkills(m_Creature, 0.86); // 86% of original skills if they were paralyzed during the taming
 								}

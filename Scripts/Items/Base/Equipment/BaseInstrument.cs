@@ -349,8 +349,10 @@ namespace Server.Items
             if (IsPoisonImmune(bc))
                 val += 100;
 
+            /* Era -Fraz
             if (targ is VampireBat || targ is VampireBatFamiliar)
                 val += 100;
+            */
 
             val += GetPoisonLevel(bc) * 20;
 

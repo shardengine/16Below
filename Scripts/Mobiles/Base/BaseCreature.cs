@@ -1074,8 +1074,8 @@ namespace Server.Mobiles
 
         private static readonly Type[] m_AnimateDeadTypes = new[]
         {
-            typeof(MoundOfMaggots), typeof(HellSteed), typeof(SkeletalMount), typeof(WailingBanshee), typeof(Wraith),
-            typeof(SkeletalDragon), typeof(LichLord), typeof(FleshGolem), typeof(Lich), typeof(SkeletalKnight),
+            /*typeof(MoundOfMaggots), typeof(HellSteed), typeof(SkeletalMount), typeof(WailingBanshee),*/ typeof(Wraith),
+            typeof(SkeletalDragon), typeof(LichLord), /*typeof(FleshGolem),*/ typeof(Lich), typeof(SkeletalKnight),
             typeof(BoneKnight), typeof(Mummy), typeof(SkeletalMage), typeof(BoneMagi)
         };
 

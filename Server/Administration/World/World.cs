@@ -405,8 +405,9 @@ namespace Server
 							{
 								mobiles.Add(new MobileEntry(m, typeID, typeName, pos, length));
 								AddMobile(m);
-							}
-						}
+                            //    Console.WriteLine("\r\n{0} {1}", m.Name, m.GetType().ToString());
+                            }
+                        }
 
 						tdbReader.Close();
 					}
@@ -465,6 +466,7 @@ namespace Server
 							{
 								items.Add(new ItemEntry(item, typeID, typeName, pos, length));
 								AddItem(item);
+                            //    Console.WriteLine("\r\n{0} {1}", item.Name, item.GetType().ToString());
 							}
 						}
 
@@ -557,7 +559,8 @@ namespace Server
 							{
 								data.Add(new DataEntry(saveData, typeID, typeName, pos, length));
 								AddData(saveData);
-							}
+                            //    Console.WriteLine("\r\n{0} {1}", saveData.Name, saveData.GetType().ToString());
+                            }
 						}
 
 						typeReader.Close();

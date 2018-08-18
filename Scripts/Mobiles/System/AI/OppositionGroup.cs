@@ -54,10 +54,10 @@ namespace Server
                 typeof(Pixie),
                 typeof(Silvani),
                 typeof(Unicorn),
-                typeof(Wisp),
-                typeof(Treefellow),
+                typeof(Wisp)/*,
+            //  typeof(Treefellow), //era -Fraz
                 typeof(MLDryad),
-                typeof(Satyr)
+                typeof(Satyr)*/
             },
             new Type[]
             {
@@ -72,9 +72,9 @@ namespace Server
                 typeof(Mummy),
                 typeof(SkeletalKnight),
                 typeof(Skeleton),
-                typeof(Zombie),
-                typeof(RevenantLion),
-                typeof(LadyOfTheSnow),
+                typeof(Zombie),/*
+                typeof(RevenantLion),// era -Fraz
+                typeof(LadyOfTheSnow),*/
                 typeof(RottingCorpse),
                 typeof(SkeletalDragon),
                 typeof(Lich)
