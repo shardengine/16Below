@@ -1,0 +1,33 @@
+overrideid 26
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Moonglow
+##
+*|tailor|weaver|tailorguildmaster||||4458|1060|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|provisioner|cobbler|||||4417|1064|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|innkeeper||||||4401|1165|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|armorer|weaponsmith|||||4440|1162|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|mageguildmaster||||||4545|860|30|1|5|10|5|0|1|1|0|0|0|0|0
+*|butcher|farmer|||||4481|1085|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|butcher||||||4395|1137|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|banker|minter|||||4471|1156|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|herbalist|alchemist|customhairstylist||||4416|1133|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|baker||||||4392|1068|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|carpenter|architect|realestatebroker||||4416|1085|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|armorer|weaponsmith|||||4392|1117|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|fisherman||||||4406|1038|-2|1|5|10|5|0|1|1|0|0|0|0|0
+*|healer|healerguildmaster|||||4394|1083|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|herbalist|alchemist|customhairstylist||||4409|1111|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|innkeeper||||||4484|1064|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|mage|alchemist|mageguildmaster||||4448|1090|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|Towncrier||||||4451|1153|0|2|5|10|5|1|1|1|0|0|0|0|0
+*|ClassicEscortableMage1:ClassicSeekerOfAdventure:ClassicNoble||||||4398|1049|-2|2|5|15|20|10|1|3|0|0|0|0|0
+##
+## Moonglow Town Creatures
+##
+*|Bird|Cat|Dog|Rat|||4438|1115|0|2|5|15|70|70|1|12|12|12|12|0|0
+*|Chicken:Cow:Sheep||||||4634|1302|0|2|5|10|10|10|1|5|0|0|0|0|0
+*|Chicken||||||4567|1476|0|2|5|10|3|3|1|2|0|0|0|0|0
+*|Chicken||||||4422|1451|0|2|5|10|5|5|1|1|0|0|0|0|0

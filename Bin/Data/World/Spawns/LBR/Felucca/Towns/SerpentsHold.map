@@ -1,0 +1,34 @@
+overrideid 44
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Serpents Hold
+##
+*|baker||||||2975|3353|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|butcher||||||2906|3485|10|1|5|10|5|0|1|1|0|0|0|0|0
+*|warriorguildmaster||||||3031|3350|35|1|5|10|5|0|1|1|0|0|0|0|0
+*|armorer|weaponsmith|||||3018|3426|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|banker|minter|||||2880|3472|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|healer|healerguildmaster|||||2997|3428|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|animaltrainer||||||3036|3464|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|mage|alchemist|mageguildmaster||||3003|3355|15|1|5|10|5|0|1|1|1|1|0|0|0
+*|animaltrainer||||||2905|3517|10|1|5|10|5|0|1|1|0|0|0|0|0
+*|bowyer||||||3051|3367|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|tailor|weaver|tailorguildmaster||||2883|3502|10|1|5|10|5|0|1|1|1|1|0|0|0
+*|fisherman||||||2992|3451|16|1|5|10|5|0|1|1|0|0|0|0|0
+*|provisioner|cobbler|||||3008|3389|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|tinker|tinkerguildmaster|||||2940|3500|10|1|5|10|5|0|1|1|1|0|0|0|0
+*|warriorguildmaster||||||3058|3400|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|blacksmith|blacksmithguildmaster|||||3007|3408|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|herbalist|alchemist|customhairstylist||||3013|3353|15|1|5|10|5|0|1|1|1|1|0|0|0
+*|innkeeper||||||2967|3408|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|tavernkeeper|waiter|cook|barkeeper|||2972|3425|15|1|5|10|5|0|1|1|1|1|1|0|0
+*|tavernkeeper|waiter|cook|barkeeper|||3009|3455|15|1|5|10|5|0|1|1|1|1|1|0|0
+*|fisherman||||||2940|3410|1|1|5|10|5|0|1|1|0|0|0|0|0
+*|Towncrier||||||2891|3474|15|2|5|10|5|1|1|1|0|0|0|0|0
+*|Escortablemage:EscortableSeekerOfAdventure:EscortableNoble||||||2994|3451|16|2|5|15|20|10|1|3|0|0|0|0|0
+##
+## Serpents Hold Town Creatures
+##
+*|Bird|Cat|Dog|Rat|||2972|3436|15|2|5|15|100|100|1|12|12|12|12|0|0

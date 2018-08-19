@@ -1,0 +1,38 @@
+overrideid 25
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Minoc
+##
+*|provisioner||||||2450|428|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|cobbler||||||2450|428|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|butcher||||||2438|410|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|animaltrainer||||||2526|375|23|1|5|10|5|0|1|1|0|0|0|0|0
+*|tanner|furtrader|||||2522|524|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|provisioner|cobbler|||||2526|546|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|architect||||||2513|477|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|armorer|weaponsmith|||||2533|572|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|banker|minter|||||2503|552|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|tavernkeeper|waiter|cook|barkeeper|||2475|397|15|1|5|10|5|0|1|1|1|1|1|0|0
+*|blacksmith|blacksmithguildmaster|||||2471|564|5|1|5|10|5|0|1|1|1|0|0|0|0
+*|tinker|tinkerguildmaster|||||2461|457|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|minerguildmaster||||||2505|432|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|healer|healerguildmaster|||||2577|599|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|minerguildmaster||||||2455|487|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|bard|bardguildmaster|||||2424|555|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|warriorguildmaster||||||2478|427|15|1|5|10|5|0|1|1|0|0|0|0|0
+*|carpenter|realestatebroker|||||2513|477|15|1|5|10|5|0|1|1|1|0|0|0|0
+*|Towncrier||||||2515|557|0|2|5|10|5|1|1|1|0|0|0|0|0
+##
+## Minoc Town 1 Creatures
+##
+*|Bird|Cat|Dog|Rat|||2481|542|0|2|5|15|70|70|1|5|5|5|5|0|0
+##
+## Minoc Town 2 Creatures
+##
+*|Bird|Cat|Dog|Rat|||2472|434|15|2|5|15|50|50|1|5|5|5|5|0|0
+##
+## Minoc Town 3 Creatures
+##
+*|Bird|Cat|Dog|Rat|||2566|622|0|2|5|15|50|50|1|3|3|3|3|0|0

@@ -91,7 +91,7 @@
     <Compile Include="Administration\Commands\ConvertPlayers.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\CreateWorld.cs">
+    <Compile Include="Administration\Custom Tools\WorldCreator\CreateWorld.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\Decorate.cs">
@@ -215,7 +215,7 @@
     <Compile Include="Administration\Commands\Properties.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\RunUOSpawnerExporter.cs">
+    <Compile Include="Administration\Commands\16BelowSpawnerExporter.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\ShardTime.cs">
@@ -252,281 +252,288 @@
     <Compile Include="Administration\Commands\Wipe.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Administration\Custom Tools\WorldCreator\WorldCreator.cs" />
+    <Compile Include="Administration\World\CreatureSpawner\CreatureSpawner.cs" />
+    <Compile Include="Administration\World\CreatureSpawner\CreatureSpawnerGump.cs" />
+    <Compile Include="Administration\World\CreatureSpawner\RespawnAtRestart.cs" />
+    <Compile Include="Administration\World\Prime Spawner\PrimeSpawner.cs" />
+    <Compile Include="Administration\World\Prime Spawner\PrimeSpawnerGump.cs" />
+    <Compile Include="Administration\World\Prime Spawner\SpawnsOverseer.cs" />
     <Compile Include="Administration\World\Teleporters.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Extinct\Bogle.cs" />
-    <Compile Include="Systems\ContextMenus\AddToParty.cs">
+    <Compile Include="Game Mechanics\ContextMenus\AddToParty.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\ContextMenus\AddToSpellbookEntry.cs">
+    <Compile Include="Game Mechanics\ContextMenus\AddToSpellbookEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\ContextMenus\EatEntry.cs">
+    <Compile Include="Game Mechanics\ContextMenus\EatEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\ContextMenus\EjectPlayer.cs">
+    <Compile Include="Game Mechanics\ContextMenus\EjectPlayer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\ContextMenus\OpenBankEntry.cs">
+    <Compile Include="Game Mechanics\ContextMenus\OpenBankEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\ContextMenus\TeachEntry.cs">
+    <Compile Include="Game Mechanics\ContextMenus\TeachEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\AddDoorGump.cs">
+    <Compile Include="Game Mechanics\Gumps\AddDoorGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\AddGump.cs">
+    <Compile Include="Game Mechanics\Gumps\AddGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\AdminGump.cs">
+    <Compile Include="Game Mechanics\Gumps\AdminGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\BanDurationGump.cs">
+    <Compile Include="Game Mechanics\Gumps\BanDurationGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\BaseConfirmGump.cs">
+    <Compile Include="Game Mechanics\Gumps\BaseConfirmGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\BaseGridGump.cs">
+    <Compile Include="Game Mechanics\Gumps\BaseGridGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\BaseImageTileButtonsGump.cs">
+    <Compile Include="Game Mechanics\Gumps\BaseImageTileButtonsGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\CategorizedAddGump.cs">
+    <Compile Include="Game Mechanics\Gumps\CategorizedAddGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ClientGump.cs">
+    <Compile Include="Game Mechanics\Gumps\ClientGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ConfirmBreakCrystalGump.cs">
+    <Compile Include="Game Mechanics\Gumps\ConfirmBreakCrystalGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ConfirmHouseResize.cs">
+    <Compile Include="Game Mechanics\Gumps\ConfirmHouseResize.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ConfirmReleaseGump.cs">
+    <Compile Include="Game Mechanics\Gumps\ConfirmReleaseGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\FacetGump.cs">
+    <Compile Include="Game Mechanics\Gumps\FacetGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Go\ChildNode.cs">
+    <Compile Include="Game Mechanics\Gumps\Go\ChildNode.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Go\GoGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Go\GoGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Go\LocationTree.cs">
+    <Compile Include="Game Mechanics\Gumps\Go\LocationTree.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Go\ParentNode.cs">
+    <Compile Include="Game Mechanics\Gumps\Go\ParentNode.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\DeclareFealtyGump.cs">
+    <Compile Include="Game Mechanics\Guilds\DeclareFealtyGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GrantGuildTitleGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GrantGuildTitleGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildAbbrvPrompt.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildAbbrvPrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildAcceptWarGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildAcceptWarGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildAdminCandidatesGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildAdminCandidatesGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildCandidatesGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildCandidatesGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildChangeTypeGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildChangeTypeGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildCharterGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildCharterGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildCharterPrompt.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildCharterPrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildDeclarePeaceGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildDeclarePeaceGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildDeclareWarGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildDeclareWarGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildDeclareWarPrompt.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildDeclareWarPrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildDismissGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildDismissGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildListGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildListGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildmasterGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildmasterGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildMobileListGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildMobileListGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildNamePrompt.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildNamePrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildRejectWarGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildRejectWarGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildRescindDeclarationGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildRescindDeclarationGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildRosterGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildRosterGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildTitlePrompt.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildTitlePrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildWarAdminGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildWarAdminGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildWarGump.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildWarGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\GuildWebsitePrompt.cs">
+    <Compile Include="Game Mechanics\Guilds\GuildWebsitePrompt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\AdvancedSearch.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\AdvancedSearch.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\BaseGuildGump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\BaseGuildGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\BaseGuildListGump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\BaseGuildListGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\Create Guild Gump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\Create Guild Gump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\DiplomacyGump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\DiplomacyGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\GuildInfoGump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\GuildInfoGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\GuildInvitationRequest.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\GuildInvitationRequest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\GuildMemberInfoGump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\GuildMemberInfoGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\GuildRosterGump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\GuildRosterGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\OtherGuildInfo.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\OtherGuildInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\New Guild System\War Declaration gump.cs">
+    <Compile Include="Game Mechanics\Guilds\New Guild System\War Declaration gump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Guilds\RecruitTarget.cs">
+    <Compile Include="Game Mechanics\Guilds\RecruitTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\HonorSelf.cs">
+    <Compile Include="Game Mechanics\Gumps\HonorSelf.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\HouseDemolishGump.cs">
+    <Compile Include="Game Mechanics\Gumps\HouseDemolishGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\HouseGump.cs">
+    <Compile Include="Game Mechanics\Gumps\HouseGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\HouseGumpAOS.cs">
+    <Compile Include="Game Mechanics\Gumps\HouseGumpAOS.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\HouseTransferGump.cs">
+    <Compile Include="Game Mechanics\Gumps\HouseTransferGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\NoticeGump.cs">
+    <Compile Include="Game Mechanics\Gumps\NoticeGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\PetResurrectGump.cs">
+    <Compile Include="Game Mechanics\Gumps\PetResurrectGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\PlayerVendorGumps.cs">
+    <Compile Include="Game Mechanics\Gumps\PlayerVendorGumps.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\PolymorphGump.cs">
+    <Compile Include="Game Mechanics\Gumps\PolymorphGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\PropsConfig.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\PropsConfig.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\PropsGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\PropsGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetBodyGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetBodyGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetColorGump.cs" />
-    <Compile Include="Systems\Gumps\Properties\SetCustomEnumGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetColorGump.cs" />
+    <Compile Include="Game Mechanics\Gumps\Properties\SetCustomEnumGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetDateTimeGump.cs" />
-    <Compile Include="Systems\Gumps\Properties\SetGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetDateTimeGump.cs" />
+    <Compile Include="Game Mechanics\Gumps\Properties\SetGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetListOptionGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetListOptionGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetObjectGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetObjectGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetObjectTarget.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetObjectTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetPoint2DGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetPoint2DGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetPoint3DGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetPoint3DGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\Properties\SetTimeSpanGump.cs">
+    <Compile Include="Game Mechanics\Gumps\Properties\SetTimeSpanGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ReclaimVendorGump.cs">
+    <Compile Include="Game Mechanics\Gumps\ReclaimVendorGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ReportMurderer.cs">
+    <Compile Include="Game Mechanics\Gumps\ReportMurderer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ResurrectGump.cs">
+    <Compile Include="Game Mechanics\Gumps\ResurrectGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\SetSecureLevelGump.cs">
+    <Compile Include="Game Mechanics\Gumps\SetSecureLevelGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\SkillsGump.cs">
+    <Compile Include="Game Mechanics\Gumps\SkillsGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\VendorInventoryGump.cs">
+    <Compile Include="Game Mechanics\Gumps\VendorInventoryGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\VendorRentalGumps.cs">
+    <Compile Include="Game Mechanics\Gumps\VendorRentalGumps.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\ViewHousesGump.cs">
+    <Compile Include="Game Mechanics\Gumps\ViewHousesGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\WarningGump.cs">
+    <Compile Include="Game Mechanics\Gumps\WarningGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\WhoGump.cs">
+    <Compile Include="Game Mechanics\Gumps\WhoGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\YoungGumps.cs">
+    <Compile Include="Game Mechanics\Gumps\YoungGumps.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Addons\BaseAddon.cs">
@@ -1310,31 +1317,31 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Client\CurrentExpansion.cs" />
-    <Compile Include="Systems\Utilities\MathHelper.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Barracoon.cs" />
+    <Compile Include="Utilities\MathHelper.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Barracoon.cs" />
     <Compile Include="Mobiles\Base\BaseChampion.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Harrower\Harrower.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Harrower\HarrowerTentacles.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\LordOaks.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Mephitis.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Neira.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Rikktor.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Semidar.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Serado.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\ServantOfSemidar.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\Mobiles\Silvani.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Harrower\Harrower.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Harrower\HarrowerTentacles.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\LordOaks.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Mephitis.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Neira.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Rikktor.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Semidar.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Serado.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\ServantOfSemidar.cs" />
+    <Compile Include="Game Mechanics\Champion System\Mobiles\Silvani.cs" />
     <Compile Include="Administration\World\Holidays\Halloween\PumpkinHead.cs" />
     <Compile Include="Mobiles\Defined\Custom\Wanderer.cs" />
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Mounts\BaseWarHorse.cs" />
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Mounts\CoMWarHorse.cs" />
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Mounts\MinaxWarHorse.cs" />
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Mounts\SLWarHorse.cs" />
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Mounts\TBWarHorse.cs" />
+    <Compile Include="Game Mechanics\Factions\Mobiles\Mounts\BaseWarHorse.cs" />
+    <Compile Include="Game Mechanics\Factions\Mobiles\Mounts\CoMWarHorse.cs" />
+    <Compile Include="Game Mechanics\Factions\Mobiles\Mounts\MinaxWarHorse.cs" />
+    <Compile Include="Game Mechanics\Factions\Mobiles\Mounts\SLWarHorse.cs" />
+    <Compile Include="Game Mechanics\Factions\Mobiles\Mounts\TBWarHorse.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\AcidElemental.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\AgapiteElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Elementals\AirElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Alligator.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\AncientLich.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\AncientLich.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Dragons\AncientWyrm.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\ArcticOgreLord.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Daemons\Balron.cs" />
@@ -1361,7 +1368,7 @@
     <Compile Include="Mobiles\Defined\Custom\CorruptedSoul.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cougar.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Cow.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\Cursed.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\Cursed.cs" />
     <Compile Include="Mobiles\Defined\Custom\CursedSoul.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Giantkin\Cyclops.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Daemons\Daemon.cs" />
@@ -1436,9 +1443,9 @@
     <Compile Include="Mobiles\Defined\UOTD\Humanoids\JukaMage.cs" />
     <Compile Include="Mobiles\Defined\UOTD\Humanoids\JukaWarrior.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Extinct\Jwilson.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\KhaldunRevenant.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\KhaldunSummoner.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\KhaldunZealot.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\KhaldunRevenant.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\KhaldunSummoner.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\KhaldunZealot.cs" />
     <Compile Include="Mobiles\Defined\UOTD\Creatures\Mounts\Kirin.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Aquatic\Kraken.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\LavaLizard.cs" />
@@ -1485,9 +1492,9 @@
     <Compile Include="Mobiles\Defined\T2A\Creatures\PredatorHellCat.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Rabbit.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Rat.cs" />
-    <Compile Include="Mobiles\Defined\UO\Creatures\Ratman.cs" />
-    <Compile Include="Mobiles\Defined\UO\Creatures\RatmanArcher.cs" />
-    <Compile Include="Mobiles\Defined\UO\Creatures\RatmanMage.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Ratmen\Ratman.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Ratmen\RatmanArcher.cs" />
+    <Compile Include="Mobiles\Defined\UO\Creatures\Ratmen\RatmanMage.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Reaper.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Mounts\RidableLlama.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Mounts\Ridgeback.cs" />
@@ -1504,7 +1511,7 @@
     <Compile Include="Mobiles\Defined\UOTD\Creatures\Dragons\SerpentineDragon.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Animals\SewerRat.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Shade.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\ShadowFiend.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\ShadowFiend.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Elementals\ShadowIronElemental.cs" />
     <Compile Include="Mobiles\Defined\LBR\Creatures\ShadowWisp.cs" />
     <Compile Include="Mobiles\Defined\UOR\Creatures\Dragons\ShadowWyrm.cs" />
@@ -1519,7 +1526,7 @@
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\Snake.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Elementals\SnowElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Animals\SnowLeopard.cs" />
-    <Compile Include="Systems\Game Mechanics\Khaldun\Mobiles\SpectralArmour.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\SpectralArmour.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Undead\Spectre.cs" />
     <Compile Include="Mobiles\Defined\Custom\Spellbinder.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\StoneGargoyle.cs" />
@@ -1656,25 +1663,20 @@
     <Compile Include="Mobiles\Defined\UO\NPCs\WarriorGuildmaster.cs" />
     <Compile Include="Mobiles\Defined\UO\NPCs\Weaponsmith.cs" />
     <Compile Include="Mobiles\Defined\UO\NPCs\Weaver.cs" />
-    <Compile Include="Mobiles\Defined\Summons\AnimatedWeapon.cs" />
+    <Compile Include="Mobiles\Defined\Custom\AnimatedWeapon.cs" />
     <Compile Include="Mobiles\Base\BaseFamiliar.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\BladeSpirits.cs" />
-    <Compile Include="Mobiles\Defined\Summons\DarkWolf.cs" />
-    <Compile Include="Mobiles\Defined\Summons\DeathAdder.cs" />
-    <Compile Include="Mobiles\Defined\Summons\Dummy.cs" />
-    <Compile Include="Mobiles\Defined\Summons\DummySpecific.cs" />
+    <Compile Include="Mobiles\Defined\Custom\Dummy.cs" />
+    <Compile Include="Mobiles\Defined\Custom\DummySpecific.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\EnergyVortex.cs" />
-    <Compile Include="Mobiles\Defined\Summons\GargoylePet.cs" />
-    <Compile Include="Mobiles\Defined\Summons\HordeMinion.cs" />
-    <Compile Include="Mobiles\Defined\Summons\RisingColossus.cs" />
-    <Compile Include="Mobiles\Defined\Summons\ShadowWisp.cs" />
-    <Compile Include="Mobiles\Defined\Summons\SpawnedOrcishLord.cs" />
+    <Compile Include="Mobiles\Defined\Custom\HordeMinion.cs" />
+    <Compile Include="Mobiles\Defined\Custom\RisingColossus.cs" />
+    <Compile Include="Mobiles\Defined\Custom\SpawnedOrcishLord.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedAirElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedDaemon.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedEarthElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedFireElemental.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Summons\SummonedWaterElemental.cs" />
-    <Compile Include="Mobiles\Defined\Summons\VampireBat.cs" />
     <Compile Include="Items\Item Systems\Containers\ScrollBox.cs" />
     <Compile Include="Items\Item Systems\Containers\ScrollBox3.cs" />
     <Compile Include="Items\Item Systems\Containers\BagOfJewels.cs" />
@@ -1688,29 +1690,29 @@
     <Compile Include="Mobiles\Defined\Custom\MilitiaFighter.cs" />
     <Compile Include="Items\Item Systems\Addons\HagCauldron.cs" />
     <Compile Include="Items\Item Systems\Addons\HagStew.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\AcceptDuelGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Arena.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\ArenaGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\BeginGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\DuelContext.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\DuelContextGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\DuelTeleporterAddon.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Games\EventGame.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Ladder.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\LadderGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Participant.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\ParticipantGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\PickRulesetGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Preferences.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\ReadyGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\ReadyUpGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Ruleset.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\RulesetGump.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\RulesetLayout.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\SafeZone.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\StakesContainer.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Tournament.cs" />
-    <Compile Include="Systems\Game Mechanics\Consensual PVP\Trophy.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\AcceptDuelGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Arena.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\ArenaGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\BeginGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\DuelContext.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\DuelContextGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\DuelTeleporterAddon.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Games\EventGame.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Ladder.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\LadderGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Participant.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\ParticipantGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\PickRulesetGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Preferences.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\ReadyGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\ReadyUpGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Ruleset.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\RulesetGump.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\RulesetLayout.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\SafeZone.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\StakesContainer.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Tournament.cs" />
+    <Compile Include="Game Mechanics\Consensual PVP\Trophy.cs" />
     <Compile Include="Administration\World\Holidays\HolidaySettings.cs" />
     <Compile Include="Items\Item Systems\Addons\VendorMallAddon.cs">
       <SubType>Code</SubType>
@@ -3647,7 +3649,7 @@
     <Compile Include="Items\Item Systems\Consumables\HouseRaffleDeed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Gumps\HouseRaffleManagementGump.cs">
+    <Compile Include="Game Mechanics\Gumps\HouseRaffleManagementGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\Regions\HouseRaffleRegion.cs">
@@ -3986,7 +3988,7 @@
     <Compile Include="Items\Item Systems\Tools\BraceletOfBinding.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\MessageHelper.cs">
+    <Compile Include="Utilities\MessageHelper.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Consumables\PowderOfTranslocation.cs">
@@ -4177,13 +4179,13 @@
     </Compile>
     <Compile Include="Items\Item Systems\Tools\MasterSkeletonKey.cs" />
     <Compile Include="Items\Item Systems\Tools\SkeletonKey.cs" />
-    <Compile Include="Systems\Game Mechanics\Combat\Slayer\SlayerEntry.cs">
+    <Compile Include="Game Mechanics\Combat\Slayer\SlayerEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Combat\Slayer\SlayerGroup.cs">
+    <Compile Include="Game Mechanics\Combat\Slayer\SlayerGroup.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Combat\Slayer\SlayerName.cs">
+    <Compile Include="Game Mechanics\Combat\Slayer\SlayerName.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Weapons\Katana.cs">
@@ -4195,7 +4197,7 @@
     <Compile Include="Mobiles\System\Animations.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Combat\AttackMessage.cs">
+    <Compile Include="Game Mechanics\Combat\AttackMessage.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\AutoRestart.cs">
@@ -4225,16 +4227,16 @@
     <Compile Include="Administration\Console\Timestamp.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\CrashGuard.cs">
+    <Compile Include="Utilities\CrashGuard.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\DataPath.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\DispellableAttribute.cs">
+    <Compile Include="Game Mechanics\Magic\DispellableAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\DispellableFieldAttribute.cs">
+    <Compile Include="Game Mechanics\Magic\DispellableFieldAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\DoorGenerator.cs">
@@ -4243,16 +4245,16 @@
     <Compile Include="Administration\Email.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\Emitter.cs">
+    <Compile Include="Utilities\Emitter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\Fastwalk.cs">
+    <Compile Include="Utilities\Fastwalk.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\FoodDecay.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\Geometry.cs">
+    <Compile Include="Utilities\Geometry.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Decorative\DecorativeTopiary.cs">
@@ -4285,7 +4287,7 @@
     <Compile Include="Administration\Client\HardwareInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\IDynamicEnum.cs">
+    <Compile Include="Utilities\IDynamicEnum.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\AI\InhumanSpeech.cs">
@@ -4294,7 +4296,7 @@
     <Compile Include="Mobiles\Players\Keywords.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\LanguageStatistics.cs">
+    <Compile Include="Utilities\LanguageStatistics.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\LightCycle.cs">
@@ -4324,7 +4326,7 @@
     <Compile Include="Mobiles\System\Paperdoll.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\Point4D.cs" />
+    <Compile Include="Utilities\Point4D.cs" />
     <Compile Include="Mobiles\System\Poison.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4364,7 +4366,7 @@
     <Compile Include="Administration\SocketOptions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\TextDefinition.cs">
+    <Compile Include="Utilities\TextDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\Titles.cs">
@@ -4376,10 +4378,10 @@
     <Compile Include="Administration\World\Regions\TreasureMapProtection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\ValidationQueue.cs">
+    <Compile Include="Utilities\ValidationQueue.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Utilities\WeakEntityCollection.cs" />
+    <Compile Include="Utilities\WeakEntityCollection.cs" />
     <Compile Include="Administration\World\Weather.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4660,69 +4662,69 @@
     <Compile Include="Items\System\BulkOrders\SmallTailorBOD.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionAltar.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionAltar.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionPlatform.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionPlatform.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSkull.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSkull.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSkullBrazier.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSkullBrazier.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSkullPlatform.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSkullPlatform.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSkullType.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSkullType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSpawn.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSpawn.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\SpawnController\ChampionSpawnController.cs">
+    <Compile Include="Game Mechanics\Champion System\SpawnController\ChampionSpawnController.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSpawnType.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSpawnType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\ChampionSystem.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\GoldShower.cs" />
-    <Compile Include="Systems\Game Mechanics\Champion System\HarrowerGate.cs">
+    <Compile Include="Game Mechanics\Champion System\ChampionSystem.cs" />
+    <Compile Include="Game Mechanics\Champion System\GoldShower.cs" />
+    <Compile Include="Game Mechanics\Champion System\HarrowerGate.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\RestartTimer.cs">
+    <Compile Include="Game Mechanics\Champion System\RestartTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\SliceTimer.cs">
+    <Compile Include="Game Mechanics\Champion System\SliceTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Champion System\StarRoomGate.cs">
+    <Compile Include="Game Mechanics\Champion System\StarRoomGate.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\Channel.cs">
+    <Compile Include="Game Mechanics\Chat\Channel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\Chat.cs">
+    <Compile Include="Game Mechanics\Chat\Chat.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\ChatActionHandler.cs">
+    <Compile Include="Game Mechanics\Chat\ChatActionHandler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\ChatActionHandlers.cs">
+    <Compile Include="Game Mechanics\Chat\ChatActionHandlers.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\ChatCommand.cs">
+    <Compile Include="Game Mechanics\Chat\ChatCommand.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\Chatold.cs">
+    <Compile Include="Game Mechanics\Chat\Chatold.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\ChatUser.cs">
+    <Compile Include="Game Mechanics\Chat\ChatUser.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Chat\Packets.cs">
+    <Compile Include="Game Mechanics\Chat\Packets.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\Craft\Core\AutoCraft.cs" />
@@ -4819,368 +4821,368 @@
     <Compile Include="Mobiles\System\Craft\DefTinkering.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Core\Ethic.cs">
+    <Compile Include="Game Mechanics\Ethics\Core\Ethic.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Core\Persistance.cs">
+    <Compile Include="Game Mechanics\Ethics\Core\Persistance.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Core\Player.cs">
+    <Compile Include="Game Mechanics\Ethics\Core\Player.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Core\Power.cs">
+    <Compile Include="Game Mechanics\Ethics\Core\Power.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Definitions\EthicDefinition.cs">
+    <Compile Include="Game Mechanics\Ethics\Definitions\EthicDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Definitions\PowerDefinition.cs">
+    <Compile Include="Game Mechanics\Ethics\Definitions\PowerDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Ethic.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Ethic.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Mobiles\UnholyFamiliar.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Mobiles\UnholyFamiliar.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Mobiles\UnholySteed.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Mobiles\UnholySteed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\Blight.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\Blight.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\SummonFamiliar.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\SummonFamiliar.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\UnholyItem.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\UnholyItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\UnholySense.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\UnholySense.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\UnholyShield.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\UnholyShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\UnholySteed.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\UnholySteed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\UnholyWord.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\UnholyWord.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Evil\Powers\VileBlade.cs">
+    <Compile Include="Game Mechanics\Ethics\Evil\Powers\VileBlade.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Ethic.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Ethic.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Mobiles\HolyFamiliar.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Mobiles\HolyFamiliar.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Mobiles\HolySteed.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Mobiles\HolySteed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\Bless.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\Bless.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\HolyBlade.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\HolyBlade.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\HolyItem.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\HolyItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\HolySense.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\HolySense.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\HolyShield.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\HolyShield.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\HolySteed.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\HolySteed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\HolyWord.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\HolyWord.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Ethics\Hero\Powers\SummonFamiliar.cs">
+    <Compile Include="Game Mechanics\Ethics\Hero\Powers\SummonFamiliar.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Election.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Election.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Faction.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Faction.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\FactionItem.cs">
+    <Compile Include="Game Mechanics\Factions\Core\FactionItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\FactionState.cs">
+    <Compile Include="Game Mechanics\Factions\Core\FactionState.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Generator.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Generator.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\GuardList.cs">
+    <Compile Include="Game Mechanics\Factions\Core\GuardList.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Keywords.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Keywords.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\MerchantTitles.cs">
+    <Compile Include="Game Mechanics\Factions\Core\MerchantTitles.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Persistance.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Persistance.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\PlayerState.cs">
+    <Compile Include="Game Mechanics\Factions\Core\PlayerState.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Reflector.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Reflector.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\SilverGivenEntry.cs">
+    <Compile Include="Game Mechanics\Factions\Core\SilverGivenEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\StrongholdRegion.cs">
+    <Compile Include="Game Mechanics\Factions\Core\StrongholdRegion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\Town.cs">
+    <Compile Include="Game Mechanics\Factions\Core\Town.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\TownState.cs">
+    <Compile Include="Game Mechanics\Factions\Core\TownState.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Core\VendorList.cs">
+    <Compile Include="Game Mechanics\Factions\Core\VendorList.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\FactionDefinition.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\FactionDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\FactionItemDefinition.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\FactionItemDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\GuardDefinition.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\GuardDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\RankDefinition.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\RankDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\StrongholdDefintion.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\StrongholdDefintion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\TownDefinition.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\TownDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Definitions\VendorDefinition.cs">
+    <Compile Include="Game Mechanics\Factions\Definitions\VendorDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\ElectionGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\ElectionGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\ElectionManagementGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\ElectionManagementGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\FactionGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\FactionGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\FactionImbueGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\FactionImbueGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\FactionStoneGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\FactionStoneGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\FinanceGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\FinanceGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\HorseBreederGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\HorseBreederGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\JoinStoneGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\JoinStoneGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\LeaveFactionGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\LeaveFactionGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\SheriffGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\SheriffGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\TownStoneGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\TownStoneGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Gumps\VoteGump.cs">
+    <Compile Include="Game Mechanics\Factions\Gumps\VoteGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Factions\CouncilOfMages.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Factions\CouncilOfMages.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Factions\Minax.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Factions\Minax.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Factions\Shadowlords.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Factions\Shadowlords.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Factions\TrueBritannians.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Factions\TrueBritannians.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Britain.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Britain.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Magincia.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Magincia.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Minoc.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Minoc.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Moonglow.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Moonglow.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\SkaraBrae.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\SkaraBrae.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Trinsic.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Trinsic.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Vesper.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Vesper.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Instances\Towns\Yew.cs">
+    <Compile Include="Game Mechanics\Factions\Instances\Towns\Yew.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\BaseMonolith.cs">
+    <Compile Include="Game Mechanics\Factions\Items\BaseMonolith.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\BaseSystemController.cs">
+    <Compile Include="Game Mechanics\Factions\Items\BaseSystemController.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\FactionStone.cs">
+    <Compile Include="Game Mechanics\Factions\Items\FactionStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\JoinStone.cs">
+    <Compile Include="Game Mechanics\Factions\Items\JoinStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Sigil.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Sigil.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Silver.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Silver.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\StrongholdMonolith.cs">
+    <Compile Include="Game Mechanics\Factions\Items\StrongholdMonolith.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\TownMonolith.cs">
+    <Compile Include="Game Mechanics\Factions\Items\TownMonolith.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\TownStone.cs">
+    <Compile Include="Game Mechanics\Factions\Items\TownStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\BaseFactionTrap.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\BaseFactionTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\BaseFactionTrapDeed.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\BaseFactionTrapDeed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\FactionExplosionTrap.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\FactionExplosionTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\FactionGasTrap.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\FactionGasTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\FactionSawTrap.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\FactionSawTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\FactionSpikeTrap.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\FactionSpikeTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Items\Traps\FactionTrapRemovalKit.cs">
+    <Compile Include="Game Mechanics\Factions\Items\Traps\FactionTrapRemovalKit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Mounts\FactionWarHorse.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Mounts\FactionWarHorse.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\BaseFactionGuard.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\BaseFactionGuard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\GuardAI.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\GuardAI.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Orders.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Orders.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionBerserker.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionBerserker.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionDeathKnight.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionDeathKnight.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionDragoon.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionDragoon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionHenchman.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionHenchman.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionKnight.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionKnight.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionMercenary.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionMercenary.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionNecromancer.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionNecromancer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionPaladin.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionPaladin.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionSorceress.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionSorceress.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Guards\Types\FactionWizard.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Guards\Types\FactionWizard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Vendors\BaseFactionVendor.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Vendors\BaseFactionVendor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Vendors\FactionBoardVendor.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Vendors\FactionBoardVendor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Vendors\FactionBottleVendor.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Vendors\FactionBottleVendor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Vendors\FactionHorseVendor.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Vendors\FactionHorseVendor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Vendors\FactionOreVendor.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Vendors\FactionOreVendor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Factions\Mobiles\Vendors\FactionReagentVendor.cs">
+    <Compile Include="Game Mechanics\Factions\Mobiles\Vendors\FactionReagentVendor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\BonusHarvestResource.cs">
+    <Compile Include="Game Mechanics\Harvest\BonusHarvestResource.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestBank.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestBank.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestDefinition.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestDefinition.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestResource.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestResource.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestSoundTimer.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestSoundTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestSystem.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestSystem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestTarget.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestTimer.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Harvest\HarvestVein.cs">
+    <Compile Include="Game Mechanics\Harvest\HarvestVein.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\Honesty.cs" />
-    <Compile Include="Systems\Game Mechanics\Virtues\Humility.cs" />
+    <Compile Include="Game Mechanics\Virtues\Honesty.cs" />
+    <Compile Include="Game Mechanics\Virtues\Humility.cs" />
     <Compile Include="Mobiles\System\Skills\Fishing.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -5227,19 +5229,19 @@
     <Compile Include="Items\Item Systems\Books\TavarasJournal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Khaldun\KhaldunGen.cs">
+    <Compile Include="Game Mechanics\Khaldun\KhaldunGen.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Khaldun\KhaldunPitTeleporter.cs">
+    <Compile Include="Game Mechanics\Khaldun\KhaldunPitTeleporter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Khaldun\PuzzleChest.cs">
+    <Compile Include="Game Mechanics\Khaldun\PuzzleChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Khaldun\RaisableItem.cs">
+    <Compile Include="Game Mechanics\Khaldun\RaisableItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Khaldun\RaiseSwitch.cs">
+    <Compile Include="Game Mechanics\Khaldun\RaiseSwitch.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Custom Tools\MyShard\Config.cs">
@@ -5258,28 +5260,28 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\Paragon.cs" />
-    <Compile Include="Systems\Game Mechanics\Party\AddPartyTarget.cs">
+    <Compile Include="Game Mechanics\Party\AddPartyTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\DeclineTimer.cs">
+    <Compile Include="Game Mechanics\Party\DeclineTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\Packets.cs">
+    <Compile Include="Game Mechanics\Party\Packets.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\Party.cs">
+    <Compile Include="Game Mechanics\Party\Party.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\PartyCommands.cs">
+    <Compile Include="Game Mechanics\Party\PartyCommands.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\PartyMemberInfo.cs">
+    <Compile Include="Game Mechanics\Party\PartyMemberInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\RemoveFromParty.cs">
+    <Compile Include="Game Mechanics\Party\RemoveFromParty.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Party\RemovePartyTarget.cs">
+    <Compile Include="Game Mechanics\Party\RemovePartyTarget.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\Pathing\FastAStarAlgorithm.cs">
@@ -5306,10 +5308,10 @@
     <Compile Include="Mobiles\System\Pathing\SlowAStarAlgorithm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\EmptyTheBowlGump.cs">
+    <Compile Include="Game Mechanics\Plants\EmptyTheBowlGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\MainPlantGump.cs">
+    <Compile Include="Game Mechanics\Plants\MainPlantGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\FertileDirt.cs">
@@ -5324,40 +5326,40 @@
     <Compile Include="Items\Item Systems\Consumables\RedLeaves.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\DisplayHelpTopic.cs">
+    <Compile Include="Game Mechanics\Plants\DisplayHelpTopic.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantBowl.cs">
+    <Compile Include="Game Mechanics\Plants\PlantBowl.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantHue.cs">
+    <Compile Include="Game Mechanics\Plants\PlantHue.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantItem.cs">
+    <Compile Include="Game Mechanics\Plants\PlantItem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantPourTarget.cs">
+    <Compile Include="Game Mechanics\Plants\PlantPourTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantResources.cs">
+    <Compile Include="Game Mechanics\Plants\PlantResources.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantSystem.cs">
+    <Compile Include="Game Mechanics\Plants\PlantSystem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PlantType.cs">
+    <Compile Include="Game Mechanics\Plants\PlantType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\PollinateTarget.cs">
+    <Compile Include="Game Mechanics\Plants\PollinateTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\ReproductionGump.cs">
+    <Compile Include="Game Mechanics\Plants\ReproductionGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\Seed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Plants\SetToDecorativeGump.cs">
+    <Compile Include="Game Mechanics\Plants\SetToDecorativeGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\Holidays\Halloween\PlayerZombies.cs" />
@@ -5556,73 +5558,73 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\Holidays\Halloween\TrickOrTreat.cs" />
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\Character Statue Maker\CharacterStatue.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\Character Statue Maker\CharacterStatue.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\Character Statue Maker\CharacterStatueMaker.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\Character Statue Maker\CharacterStatueMaker.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\Character Statue Maker\CharacterStatuePlinth.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\Character Statue Maker\CharacterStatuePlinth.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\Character Statue Maker\Gumps\CharacterStatueGump.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\Character Statue Maker\Gumps\CharacterStatueGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\Character Statue Maker\Packets.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\Character Statue Maker\Packets.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardCategory.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardCategory.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardChoiceGump.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardChoiceGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardConfirmGump.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardConfirmGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardDemolitionGump.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardDemolitionGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardEntry.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardEntry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardList.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardList.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardNoticeGump.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardNoticeGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardOptionGump.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardOptionGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\VeteranRewards\RewardSystem.cs">
+    <Compile Include="Game Mechanics\VeteranRewards\RewardSystem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\Compassion.cs">
+    <Compile Include="Game Mechanics\Virtues\Compassion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\Honor.cs">
+    <Compile Include="Game Mechanics\Virtues\Honor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\Justice.cs">
+    <Compile Include="Game Mechanics\Virtues\Justice.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\Sacrifice.cs">
+    <Compile Include="Game Mechanics\Virtues\Sacrifice.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\Valor.cs">
+    <Compile Include="Game Mechanics\Virtues\Valor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\VirtueGump.cs">
+    <Compile Include="Game Mechanics\Virtues\VirtueGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\VirtueHelper.cs">
+    <Compile Include="Game Mechanics\Virtues\VirtueHelper.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\VirtueInfoGump.cs">
+    <Compile Include="Game Mechanics\Virtues\VirtueInfoGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Virtues\VirtueStatusGump.cs">
+    <Compile Include="Game Mechanics\Virtues\VirtueStatusGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\XmlSpawner\XmlSpawner Core\BaseXmlSpawner.cs">
@@ -6043,241 +6045,241 @@
     <Compile Include="Items\Item Systems\Containers\TailorBag.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\DisturbType.cs">
+    <Compile Include="Game Mechanics\Magic\DisturbType.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\MagerySpell.cs">
+    <Compile Include="Game Mechanics\Magic\MagerySpell.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\SpecialMove.cs">
+    <Compile Include="Game Mechanics\Magic\SpecialMove.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spell.cs">
+    <Compile Include="Game Mechanics\Magic\Spell.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\SpellCircle.cs">
+    <Compile Include="Game Mechanics\Magic\SpellCircle.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\SpellHelper.cs">
+    <Compile Include="Game Mechanics\Magic\SpellHelper.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\SpellInfo.cs">
+    <Compile Include="Game Mechanics\Magic\SpellInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\SpellRegistry.cs">
+    <Compile Include="Game Mechanics\Magic\SpellRegistry.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\SpellState.cs">
+    <Compile Include="Game Mechanics\Magic\SpellState.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\AirElemental.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\AirElemental.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\EarthElemental.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\EarthElemental.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\Earthquake.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\Earthquake.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\EnergyVortex.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\EnergyVortex.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\FireElemental.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\FireElemental.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\Resurrection.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\Resurrection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\SummonDaemon.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\SummonDaemon.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Eighth\WaterElemental.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\WaterElemental.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\BladeSpirits.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\BladeSpirits.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\DispelField.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\DispelField.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\Incognito.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\Incognito.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\MagicReflect.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\MagicReflect.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\MindBlast.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\MindBlast.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\Paralyze.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\Paralyze.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\PoisonField.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\PoisonField.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fifth\SummonCreature.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\SummonCreature.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\Clumsy.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\Clumsy.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\CreateFood.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\CreateFood.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\Feeblemind.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\Feeblemind.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\Heal.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\Heal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\MagicArrow.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\MagicArrow.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\NightSight.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\NightSight.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\ReactiveArmor.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\ReactiveArmor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\First\Weaken.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\First\Weaken.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\ArchCure.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ArchCure.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\ArchProtection.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ArchProtection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\Curse.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Curse.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\FireField.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\FireField.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\GreaterHeal.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\GreaterHeal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\Lightning.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Lightning.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\ManaDrain.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ManaDrain.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Fourth\Recall.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Recall.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Initializer.cs">
+    <Compile Include="Game Mechanics\Magic\Initializer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Reagent.cs">
+    <Compile Include="Game Mechanics\Magic\Reagent.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\Agility.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Agility.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\Cunning.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Cunning.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\Cure.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Cure.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\Harm.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Harm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\MagicTrap.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\MagicTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\Protection.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Protection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\RemoveTrap.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\RemoveTrap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Second\Strength.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Strength.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\ChainLightning.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\ChainLightning.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\EnergyField.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\EnergyField.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\FlameStrike.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\FlameStrike.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\GateTravel.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\GateTravel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\ManaVampire.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\ManaVampire.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\MassDispel.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\MassDispel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\MeteorSwarm.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\MeteorSwarm.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Seventh\Polymorph.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\Polymorph.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\Dispel.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Dispel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\EnergyBolt.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\EnergyBolt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\Explosion.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Explosion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\Invisibility.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Invisibility.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\Mark.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Mark.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\MassCurse.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\MassCurse.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\ParalyzeField.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\ParalyzeField.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Sixth\Reveal.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Reveal.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\Bless.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Bless.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\Fireball.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Fireball.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\MagicLock.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\MagicLock.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\Poison.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Poison.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\Telekinesis.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Telekinesis.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\Teleport.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Teleport.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\Unlock.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Unlock.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\Spells\Third\WallOfStone.cs">
+    <Compile Include="Game Mechanics\Magic\Spells\Third\WallOfStone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Game Mechanics\Magic\UnsummonTimer.cs">
+    <Compile Include="Game Mechanics\Magic\UnsummonTimer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Targeting\BladedItemTarget.cs">
+    <Compile Include="Game Mechanics\Targeting\BladedItemTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Targeting\MoveTarget.cs">
+    <Compile Include="Game Mechanics\Targeting\MoveTarget.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Systems\Targeting\PickMoveTarget.cs">
+    <Compile Include="Game Mechanics\Targeting\PickMoveTarget.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\System\VendorInfo\AnimalBuy.cs" />
@@ -6372,6 +6374,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Administration\Custom Tools\Ultimate Admin\" />
     <Folder Include="Administration\World\Holidays\LBR\" />
     <Folder Include="Administration\World\Holidays\T2A\" />
     <Folder Include="Administration\World\Holidays\UOR\" />

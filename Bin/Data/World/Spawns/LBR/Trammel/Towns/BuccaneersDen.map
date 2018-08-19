@@ -1,0 +1,25 @@
+overrideid 34
+overridemap 2
+overridemintime 5
+overridemaxtime 10
+##
+## Buccaneers Den
+##
+*|innkeeper||||||2715|2098|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|thiefguildmaster||||||2659|2194|4|1|5|10|5|0|1|1|0|0|0|0|0
+*|tavernkeeper|waiter|cook|barkeeper|||2680|2238|2|1|5|10|5|0|1|1|1|1|1|0|0
+*|provisioner|cobbler|||||2737|2250|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|banker|minter|||||2731|2192|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|carpenter|architect|realestatebroker||||2627|2100|10|1|5|10|5|0|1|1|1|1|0|0|0
+*|fisherman||||||2752|2155|-2|1|5|10|5|0|1|1|0|0|0|0|0
+*|tanner|furtrader|||||2707|2178|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|blacksmith|blacksmithguildmaster|||||2634|2083|10|1|5|10|5|0|1|1|1|0|0|0|0
+*|healer|healerguildmaster|||||2709|2130|0|1|5|10|5|0|1|1|1|0|0|0|0
+##
+## Buccaneers Den Town 1 Creatures
+##
+*|Bird|Cat|Dog|Rat|||2682|2118|0|2|5|15|50|50|1|5|5|5|5|0|0
+##
+## Buccaneers Den Town 2 Creatures
+##
+*|Bird|Cat|Dog|Rat|||2687|2218|0|2|5|15|50|50|1|4|4|4|4|0|0

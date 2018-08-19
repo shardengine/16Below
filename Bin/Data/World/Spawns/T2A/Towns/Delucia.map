@@ -1,0 +1,21 @@
+overrideid 22
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Delucia
+##
+*|provisioner|cobbler|||||5219|4012|37|1|5|10|5|0|1|1|1|0|0|0|0
+*|banker|minter|||||5275|3977|37|1|5|10|5|0|1|1|1|0|0|0|0
+*|blacksmith|blacksmithguildmaster|||||5225|4000|38|1|5|10|5|0|1|1|1|0|0|0|0
+*|innkeeper||||||5197|4060|37|1|5|10|5|0|1|1|0|0|0|0|0
+*|animaltrainer||||||5297|4007|40|1|5|10|5|0|1|1|0|0|0|0|0
+*|tailor|weaver|tailorguildmaster||||5234|4025|37|1|5|10|5|0|1|1|1|1|0|0|0
+*|healer|healerguildmaster|||||5191|3989|37|1|5|10|5|0|1|1|1|0|0|0|0
+*|mage|alchemist|mageguildmaster||||5296|3978|37|1|5|10|5|0|1|1|1|1|0|0|0
+*|Towncrier||||||5290|3987|37|2|5|10|5|1|1|1|0|0|0|0|0
+##
+## Delucia Town Creatures
+##
+*|Bird|Cat|Dog|Rat|||5255|4000|37|2|5|15|80|80|1|6|6|6|6|0|0
+*|Chicken:Sheep:Cow:Bull||||||5267|4012|40|2|5|10|15|15|1|5|0|0|0|0|0

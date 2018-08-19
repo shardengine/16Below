@@ -1,0 +1,28 @@
+overrideid 41
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Nujel'm
+##
+*|blacksmith|blacksmithguildmaster|||||3554|1202|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|innkeeper||||||3731|1320|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|shipwright|mapmaker|||||3700|1214|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|tavernkeeper|waiter|cook|barkeeper|||3729|1258|0|1|5|10|5|0|1|1|1|1|1|0|0
+*|tailor|weaver|tailorguildmaster||||3774|1265|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|tanner||||||3545|1178|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|banker|minter|||||3764|1317|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|bardguildmaster||||||3740|1197|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|jeweler||||||3778|1172|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|tavernkeeper|waiter|cook|barkeeper|||3769|1218|0|1|5|10|5|0|1|1|1|1|1|0|0
+*|blacksmith|blacksmithguildmaster|||||3546|1185|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|bowyer||||||3546|1194|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|butcher||||||3555|1171|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|furtrader||||||3545|1178|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|Towncrier||||||3773|1308|0|2|5|10|5|1|1|1|0|0|0|0|0
+*|Escortablemage:EscortableSeekerOfAdventure:EscortableNoble||||||3815|1217|0|2|5|15|20|10|1|3|0|0|0|0|0
+*|Escortablemage:EscortableSeekerOfAdventure:EscortableNoble||||||3749|1404|0|2|5|15|20|10|1|3|0|0|0|0|0
+##
+## Nujel'm Town Creatures
+##
+*|Bird|Cat|Dog|Rat|||3699|1238|0|2|5|15|160|160|1|18|18|18|18|0|0

@@ -1020,6 +1020,11 @@ namespace Server
 						Console.WriteLine("Warning: {0}\n{1}", t, warningSb);
 						Utility.PopColor();
 					}
+                    else // debug
+                    {
+                     //   Console.WriteLine();
+                     //   Console.WriteLine("{0}", t.FullName.ToString());
+                    }
 				}
 				catch
 				{

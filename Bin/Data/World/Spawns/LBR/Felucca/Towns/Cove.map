@@ -1,0 +1,17 @@
+overrideid 35
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Cove
+##
+*|armorer|weaponsmith|||||2216|1167|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|fisherman||||||2256|1181|-2|1|5|10|5|0|1|1|0|0|0|0|0
+*|provisioner|cobbler|||||2216|1192|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|healer|healerguildmaster|||||2245|1231|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|Towncrier||||||2254|1207|0|2|5|10|5|1|1|1|0|0|0|0|0
+##
+## Cove Town Creatures
+##
+*|Bird|Cat|Dog|Rat|||2242|1197|0|2|5|15|50|50|1|4|4|4|4|0|0
+*|Chicken||||||2223|1151|0|2|5|10|5|5|1|1|0|0|0|0|0

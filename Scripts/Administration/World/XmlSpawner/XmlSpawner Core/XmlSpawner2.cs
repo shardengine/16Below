@@ -4769,6 +4769,7 @@ public static void _TraceEnd(int index)
 								SpawnMap = Map.Ilshenar;
 								IlshenarCount++;
 							}
+                            /*
                             else if (string.Compare(XmlMapName, Map.Malas.Name, true) == 0 || XmlMapName == "Malas")
 							{
                                 SpawnMap = Map.Malas;
@@ -4779,6 +4780,7 @@ public static void _TraceEnd(int index)
                                 SpawnMap = Map.Tokuno;
                                 TokunoCount++;
 							}
+                            */
 							else
 							{
 								try

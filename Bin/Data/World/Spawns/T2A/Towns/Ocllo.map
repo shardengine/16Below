@@ -1,0 +1,33 @@
+overrideid 28
+overridemap 1
+overridemintime 5
+overridemaxtime 10
+##
+## Ocllo
+##
+*|fisherman||||||3647|2681|-2|1|5|10|5|0|1|1|0|0|0|0|0
+*|scribe||||||3612|2466|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|mage|alchemist|mageguildmaster||||3628|2541|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|tailor|weaver|tailorguildmaster||||3667|2586|0|1|5|10|5|0|1|1|1|1|0|0|0
+*|butcher||||||3708|2649|20|1|5|10|5|0|1|1|0|0|0|0|0
+*|innkeeper||||||3672|2654|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|shipwright|mapmaker|||||3632|2640|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|banker|minter|||||3695|2511|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|bardguildmaster||||||3665|2531|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|tanner|furtrader|||||3602|2615|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|innkeeper||||||3673|2614|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|armorer|weaponsmith|||||3632|2595|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|healer|healerguildmaster|||||3629|2608|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|provisioner|cobbler|||||3636|2565|0|1|5|10|5|0|1|1|1|0|0|0|0
+*|baker||||||3610|2577|0|1|5|10|5|0|1|1|0|0|0|0|0
+*|Towncrier||||||3652|2619|0|2|5|10|5|1|1|1|0|0|0|0|0
+*|ClassicEscortableMage1:ClassicSeekerOfAdventure:ClassicNoble||||||3645|2661|-2|2|5|15|20|10|1|3|0|0|0|0|0
+##
+## Haven/Occlo Town 1 Creatures
+##
+*|Bird|Cat|Dog|Rat|||3674|2624|0|2|5|15|80|80|1|10|10|10|10|0|0
+*|Chicken||||||3726|2647|0|2|5|10|25|25|1|10|0|0|0|0|0
+##
+## Haven/Occlo Town 2 Creatures
+##
+*|Bird|Cat|Dog|Rat|||3652|2511|0|2|5|15|50|50|1|4|4|4|4|0|0

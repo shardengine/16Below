@@ -51,9 +51,10 @@ namespace Server.Items
 
             int count = 0;
 
-            //count += MoonGen(PMList.Trammel);
+            count += MoonGen(PMList.Trammel);
             count += MoonGen(PMList.Felucca);
-            //count += MoonGen(PMList.Ilshenar);
+            count += MoonGen(PMList.Ilshenar);
+
             //count += MoonGen(PMList.Malas);
             //count += MoonGen(PMList.Tokuno);
             //count += MoonGen(PMList.TerMur);

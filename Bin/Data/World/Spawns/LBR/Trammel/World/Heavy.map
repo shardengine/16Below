@@ -1,0 +1,30 @@
+overrideid 28
+overridemap 2
+overridemintime 5
+overridemaxtime 10
+##
+## Heavy
+##
+*|airelemental:ettin:gargoyle:gazer:orc:troll:waterelemental||||||423|1595|0|2|5|10|30|30|1|7|0|0|0|0|0
+*|airelemental:ettin:gargoyle:gazer:orc:troll:waterelemental||||||418|1665|0|2|5|10|30|30|1|7|0|0|0|0|0
+*|airelemental:ettin:gargoyle:gazer:orc:troll:waterelemental||||||480|1641|0|2|5|10|30|30|1|7|0|0|0|0|0
+*|airelemental:ettin:gargoyle:gazer:orc:troll:waterelemental||||||516|1585|0|2|5|10|30|30|1|7|0|0|0|0|0
+*|airelemental:ettin:gargoyle:gazer:orc:troll:waterelemental||||||541|1645|0|2|5|10|30|30|1|7|0|0|0|0|0
+*|timberwolf||||||4504|1458|8|2|5|10|30|30|1|7|0|0|0|0|0
+*|timberwolf||||||4494|1426|8|2|5|10|30|30|1|7|0|0|0|0|0
+*|timberwolf||||||4455|1434|10|2|5|10|30|30|1|7|0|0|0|0|0
+*|timberwolf||||||4456|1405|8|2|5|10|30|30|1|7|0|0|0|0|0
+*|timberwolf||||||4455|1358|10|2|5|10|30|30|1|7|0|0|0|0|0
+*|greathart|hind|||||4550|1409|8|2|5|10|30|30|1|2|5|0|0|0|0
+*|greathart|hind|||||4552|1447|10|2|5|10|30|30|1|2|5|0|0|0|0
+*|greathart|hind|||||4615|1469|0|2|5|10|30|30|1|2|5|0|0|0|0
+*|greathart|hind|||||4612|1418|0|2|5|10|30|30|1|2|5|0|0|0|0
+*|greathart|hind|||||4605|1365|0|2|5|10|30|30|1|2|5|0|0|0|0
+*|greathart|hind|||||4566|1359|8|2|5|10|30|30|1|2|5|0|0|0|0
+*|ettin:harpy:headlessone:lizardman:ogre:orc:skeleton:troll:zombie|wisp|||||2372|210|0|2|5|10|30|30|1|9|1|0|0|0|0
+*|ettin:harpy:headlessone:lizardman:ogre:orc:skeleton:troll:zombie|wisp|||||2355|179|0|2|5|10|30|30|1|9|1|0|0|0|0
+*|ettin:harpy:headlessone:lizardman:ogre:orc:skeleton:troll:zombie|wisp|||||2351|148|0|2|5|10|30|30|1|9|1|0|0|0|0
+*|ettin:harpy:headlessone:lizardman:ogre:orc:skeleton:troll:zombie|wisp|||||2345|112|0|2|5|10|30|30|1|9|1|0|0|0|0
+*|ettin:harpy:headlessone:lizardman:ogre:orc:skeleton:troll:zombie|wisp|||||2328|67|0|2|5|10|30|30|1|9|1|0|0|0|0
+*|ettin:ogre:orc:ratman:skeleton:spectre:zombie||||||2177|3034|0|2|5|10|30|30|1|7|0|0|0|0|0
+*|ettin:ogre:orc:ratman:skeleton:spectre:zombie||||||2143|3068|20|2|5|10|30|30|1|7|0|0|0|0|0
