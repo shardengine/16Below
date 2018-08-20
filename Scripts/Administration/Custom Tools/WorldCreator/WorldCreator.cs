@@ -14,10 +14,13 @@ using Server.Engines.Quests.Haven;
 
 namespace Server.Gumps
 {
-    public class WorldCreator : Gump
+    /*
+    public class Ultimate : Gump
     {
         public static void Initialize()
-        {
+        {       
+            //    EventSink.OnEnterRegion += OnEnterRegion;// use for region edits?? no prob not
+            EventSink.Login += OnLogin;
             CommandSystem.Register("WorldCreator", AccessLevel.GameMaster, new CommandEventHandler(WorldCreator_OnCommand));
             CommandSystem.Register("WC", AccessLevel.Administrator, new CommandEventHandler(WorldCreator_OnCommand));
         }
@@ -30,6 +33,126 @@ namespace Server.Gumps
             Mobile from = e.Mobile;
             from.CloseGump(typeof(WorldCreator));
             from.SendGump(new WorldCreator(from));
+        }
+
+        static void OnEnterRegion(OnEnterRegionEventArgs args)
+        {
+            Mobile from = args.From;
+            if (args.Region != null) from.SendMessage("Enter Region {0}", args.Region.Name);
+            else from.SendMessage("NULL REGION");
+
+            //     from.CloseGump(typeof(UltimateAdmin));
+            //     from.CloseGump(typeof(UltimateAdminMini));
+            //     from.SendGump(new UltimateAdminMini(from));
+        }
+
+        static void OnLogin(LoginEventArgs args)
+        {
+            Mobile from = args.Mobile;
+            if (from == null) return;
+            if (from.AccessLevel < AccessLevel.GameMaster) return;
+
+            from.CloseGump(typeof(UltimateAdmin));
+            from.CloseGump(typeof(UltimateAdminMini));
+            from.SendGump(new UltimateAdmin(from));
+        }
+
+        static string Center(string text)
+        {
+            return String.Format("<CENTER>{0}</CENTER>", text);
+        }
+
+        static string Color(string text, int color)
+        {
+            return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
+        }
+
+        static string Label(string text, string value)
+        {
+            return String.Format("{0}: {1}", text, value);
+        }
+
+
+
+        public NewWorldCreator(Mobile from) 
+            : base(0, 0)
+        {
+            NetState ns = from.NetState;
+            if (ns == null)
+            {
+                return;
+            }
+
+            this.Closable = true;
+            this.Disposable = true;
+            this.Dragable = true;
+            this.Resizable = false;
+
+            AddPage(1);
+            AddBackground(110, 38, 600, 509, 9200);
+
+
+
+
+
+
+
+
+
+        }
+    }
+    */
+
+
+
+    public class WorldCreator : Gump
+    {
+        public static void Initialize()
+        {
+            EventSink.Login += OnLogin;
+            CommandSystem.Register("WorldCreator", AccessLevel.GameMaster, new CommandEventHandler(WorldCreator_OnCommand));
+            CommandSystem.Register("WC", AccessLevel.Administrator, new CommandEventHandler(WorldCreator_OnCommand));
+        }
+
+        [Usage("WorldCreator")]
+        [Aliases("WC")]
+        [Description("Brings up the World Creator Menu")]
+        private static void WorldCreator_OnCommand(CommandEventArgs e)
+        {
+            Mobile from = e.Mobile;
+            if (from != null)
+            {
+                from.CloseGump(typeof(WorldCreator));
+                from.SendGump(new WorldCreator(from));
+            }
+
+
+        }
+
+        static void OnLogin(LoginEventArgs args)
+        {
+            Mobile from = args.Mobile;
+            if (from == null) return;
+            if (from.AccessLevel < AccessLevel.GameMaster) return;
+
+            // CHECK WORLD CREATED STATE OR FORST TIME LOGIN
+            from.CloseGump(typeof(WorldCreator));
+            from.SendGump(new WorldCreator(from));
+        }
+
+        static string Center(string text)
+        {
+            return String.Format("<CENTER>{0}</CENTER>", text);
+        }
+
+        static string Color(string text, int color)
+        {
+            return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
+        }
+
+        static string Label(string text, string value)
+        {
+            return String.Format("{0}: {1}", text, value);
         }
 
         public WorldCreator(Mobile from)
@@ -45,6 +168,27 @@ namespace Server.Gumps
             this.Dragable = true;
             this.Resizable = false;
 
+            AddPage(0);
+            AddBackground(50, 10, 600, 400, 9270);
+            AddAlphaRegion(60, 20, 580, 380);
+
+            AddImage(0, 0, 10440, 2424);            // dragon1
+            AddImage(620, 0, 10441, 2424);          // dragon2
+
+            AddImage(610, 370, 0x71, 2424);         // fraz pentagram hue 2424
+
+            AddHtml(100, 25, 505, 18, String.Format("<basefont color = #DD00DD><center>{0}</center></basefont>", "SHARD ENGINE"), false, false);
+            AddHtml(100, 45, 505, 18, String.Format("<basefont color = #00DD00><center>{0}</center></basefont>", "ULTIMATE ADMINSTRATOR"), false, false);
+            AddPage(1);
+
+            AddLabel(178, 178, 2728, @"Configuration Management");
+
+
+
+
+
+
+            /*
             AddPage(1);
             AddBackground(110, 38, 600, 509, 9200);
 
@@ -123,11 +267,12 @@ namespace Server.Gumps
             AddLabel(174, 359, 2728, @"Champion Spawn");
             AddLabel(174, 381, 2728, @"Gauntlet Spawn");
             AddButton(131, 509, 2466, 2468, 0, GumpButtonType.Page, 1);//back
+            */
         }
 
         public static void DoThis(Mobile from, string command)
         {
-            string prefix = Server.Commands.CommandSystem.Prefix;
+            string prefix = CommandSystem.Prefix;
             CommandSystem.Handle(from, String.Format("{0}{1}", prefix, command));
         }
 

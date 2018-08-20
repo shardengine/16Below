@@ -86,6 +86,7 @@ namespace Server.Misc
 
             //ClientVersion.Required = null;
             Required = new ClientVersion( "3.0.6j" );
+            Required = new ClientVersion( "3.0.8r");
 
             if (m_DetectClientRequirement)
             {

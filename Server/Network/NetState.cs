@@ -168,10 +168,16 @@ namespace Server.Network
                 {
                     _ProtocolChanges = ProtocolChanges.Version306j;
                 }
+                else if (value == m_Version306j)
+                {
+                    _ProtocolChanges = ProtocolChanges.Version308r;
+                }
+
             }
 		}
 
         private static readonly ClientVersion m_Version306j = new ClientVersion("3.0.6j");
+        private static readonly ClientVersion m_Version308r = new ClientVersion("3.0.8r");
         private static readonly ClientVersion m_Version400a = new ClientVersion("4.0.0a");
 		private static readonly ClientVersion m_Version407a = new ClientVersion("4.0.7a");
 		private static readonly ClientVersion m_Version500a = new ClientVersion("5.0.0a");
@@ -207,7 +213,8 @@ namespace Server.Network
 			NewSecureTrading = 0x00002000,
 
             Version306j = 0,
-			Version400a = NewSpellbook,
+            Version308r = 0,
+            Version400a = NewSpellbook,
 			Version407a = Version400a | DamagePacket,
 			Version500a = Version407a | Unpack,
 			Version502b = Version500a | BuffIcon,
