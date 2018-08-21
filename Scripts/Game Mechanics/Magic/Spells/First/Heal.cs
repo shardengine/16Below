@@ -81,7 +81,7 @@ namespace Server.Spells.First
                 else
                 {
                     toHeal = (int)(this.Caster.Skills[SkillName.Magery].Value * 0.1);
-                    toHeal += Utility.Random(1, 5);
+                    toHeal += 1 + Utility.Random(0, 5);
                 }
 
                 //m.Heal( toHeal, Caster );

@@ -38,7 +38,8 @@ namespace Server.Spells.Fifth
                 }
 
                 m_Table.Remove(m);
-                BuffInfo.RemoveBuff(m, BuffIcon.MagicReflection);
+                if(Core.ML)
+                    BuffInfo.RemoveBuff(m, BuffIcon.MagicReflection);
             }
         }
 
@@ -99,9 +100,11 @@ namespace Server.Spells.Fifth
                         for (int i = 0; i < mods.Length; ++i)
                             targ.AddResistanceMod(mods[i]);
 
-                        string buffFormat = String.Format("{0}\t+{1}\t+{1}\t+{1}\t+{1}", physiMod, otherMod);
-
-                        BuffInfo.AddBuff(targ, new BuffInfo(BuffIcon.MagicReflection, 1075817, buffFormat, true));
+                        if (Core.ML)
+                        {
+                            string buffFormat = String.Format("{0}\t+{1}\t+{1}\t+{1}\t+{1}", physiMod, otherMod);
+                            BuffInfo.AddBuff(targ, new BuffInfo(BuffIcon.MagicReflection, 1075817, buffFormat, true));
+                        }
                     }
                     else
                     {
@@ -113,7 +116,8 @@ namespace Server.Spells.Fifth
                         for (int i = 0; i < mods.Length; ++i)
                             targ.RemoveResistanceMod(mods[i]);
 
-                        BuffInfo.RemoveBuff(targ, BuffIcon.MagicReflection);
+                        if(Core.ML)
+                            BuffInfo.RemoveBuff(targ, BuffIcon.MagicReflection);
                     }
                 }
 

@@ -68,7 +68,7 @@ namespace Server.Spells.First
 
                 damage *= this.GetDamageScalar(m);
 
-                source.MovingParticles(m, 0x36E4, 5, 0, false, false, 3006, 0, 0);
+                source.MovingParticles(m, 0x36E4, 5, 0, false, false, 3006, 0, 0);//4006
                 source.PlaySound(0x1E5);
 
                 SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);

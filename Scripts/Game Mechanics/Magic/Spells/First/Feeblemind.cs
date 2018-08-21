@@ -41,9 +41,15 @@ namespace Server.Spells.First
                 SpellHelper.CheckReflect((int)this.Circle, this.Caster, ref m);
 
 				SpellHelper.AddStatCurse(this.Caster, m, StatType.Int);
-				int percentage = (int)(SpellHelper.GetOffsetScalar(this.Caster, m, true) * 100);
-				TimeSpan length = SpellHelper.GetDuration(this.Caster, m);
-				BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.FeebleMind, 1075833, length, m, percentage.ToString()));
+
+                TimeSpan length = SpellHelper.GetDuration(this.Caster, m);
+
+                if (Core.ML)
+                {
+                    int percentage = (int)(SpellHelper.GetOffsetScalar(this.Caster, m, true) * 100);
+
+                    BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.FeebleMind, 1075833, length, m, percentage.ToString()));
+                }
 
 				if (m.Spell != null)
                     m.Spell.OnCasterHurt();

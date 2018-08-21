@@ -23,6 +23,15 @@ namespace Server.Spells.Sixth
                 return SpellCircle.Sixth;
             }
         }
+
+        public override TimeSpan GetCastDelay()
+        {
+            if (Core.AOS)
+                return TimeSpan.FromTicks(base.GetCastDelay().Ticks * ((Core.SE) ? 3 : 5));
+
+            return base.GetCastDelay() + TimeSpan.FromSeconds(2.0);
+        }
+
         public override bool DelayedDamageStacking
         {
             get
@@ -70,7 +79,7 @@ namespace Server.Spells.Sixth
             private readonly Mobile m_Attacker;
             private readonly Mobile m_Defender;
             public InternalTimer(MagerySpell spell, Mobile attacker, Mobile defender, Mobile target)
-                : base(TimeSpan.FromSeconds(Core.AOS ? 3.0 : 2.5))
+                : base(TimeSpan.FromSeconds(Core.AOS ? 3.0 : 3.0))
             {
                 this.m_Spell = spell;
                 this.m_Attacker = attacker;

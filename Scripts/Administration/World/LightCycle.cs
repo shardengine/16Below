@@ -113,7 +113,8 @@ namespace Server
             {
                 this.m_Owner.EndAction(typeof(LightCycle));
                 this.m_Owner.LightLevel = 0;
-                BuffInfo.RemoveBuff(this.m_Owner, BuffIcon.NightSight);
+                if(Core.ML)
+                    BuffInfo.RemoveBuff(this.m_Owner, BuffIcon.NightSight);
             }
         }
 

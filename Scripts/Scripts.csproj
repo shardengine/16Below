@@ -252,7 +252,6 @@
     <Compile Include="Administration\Commands\Wipe.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Custom Tools\WorldCreator\WorldCreator.cs" />
     <Compile Include="Administration\World\CreatureSpawner\CreatureSpawner.cs" />
     <Compile Include="Administration\World\CreatureSpawner\CreatureSpawnerGump.cs" />
     <Compile Include="Administration\World\CreatureSpawner\RespawnAtRestart.cs" />
@@ -260,6 +259,84 @@
     <Compile Include="Administration\World\Prime Spawner\PrimeSpawnerGump.cs" />
     <Compile Include="Administration\World\Prime Spawner\SpawnsOverseer.cs" />
     <Compile Include="Administration\World\Teleporters.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\AirElemental.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\EarthElemental.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\Earthquake.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\EnergyVortex.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\FireElemental.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\Resurrection.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\SummonDaemon.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Eighth\WaterElemental.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\BladeSpirits.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\DispelField.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\Incognito.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\MagicReflect.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\MindBlast.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\Paralyze.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\PoisonField.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fifth\SummonCreature.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\Clumsy.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\CreateFood.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\Feeblemind.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\Heal.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\MagicArrow.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\NightSight.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\ReactiveArmor.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\First\Weaken.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ArchCure.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ArchProtection.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Curse.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\FireField.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\GreaterHeal.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Lightning.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ManaDrain.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Recall.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Agility.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Cunning.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Cure.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Harm.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\MagicTrap.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Protection.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\RemoveTrap.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Second\Strength.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\ChainLightning.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\EnergyField.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\FlameStrike.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\GateTravel.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\ManaVampire.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\MassDispel.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\MeteorSwarm.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Seventh\Polymorph.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Dispel.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\EnergyBolt.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Explosion.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Invisibility.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Mark.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\MassCurse.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\ParalyzeField.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Reveal.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Bless.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Fireball.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\MagicLock.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Poison.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Telekinesis.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Teleport.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\Unlock.cs" />
+    <Compile Include="Game Mechanics\Magic\Spells\Third\WallOfStone.cs" />
+    <Compile Include="Game Mechanics\Magic\DispellableAttribute.cs" />
+    <Compile Include="Game Mechanics\Magic\DispellableFieldAttribute.cs" />
+    <Compile Include="Game Mechanics\Magic\DisturbType.cs" />
+    <Compile Include="Game Mechanics\Magic\Initializer.cs" />
+    <Compile Include="Game Mechanics\Magic\MagerySpell.cs" />
+    <Compile Include="Game Mechanics\Magic\Reagent.cs" />
+    <Compile Include="Game Mechanics\Magic\SpecialMove.cs" />
+    <Compile Include="Game Mechanics\Magic\Spell.cs" />
+    <Compile Include="Game Mechanics\Magic\SpellCircle.cs" />
+    <Compile Include="Game Mechanics\Magic\SpellHelper.cs" />
+    <Compile Include="Game Mechanics\Magic\SpellInfo.cs" />
+    <Compile Include="Game Mechanics\Magic\SpellRegistry.cs" />
+    <Compile Include="Game Mechanics\Magic\SpellState.cs" />
+    <Compile Include="Game Mechanics\Magic\UnsummonTimer.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Extinct\Bogle.cs" />
     <Compile Include="Game Mechanics\ContextMenus\AddToParty.cs">
       <SubType>Code</SubType>
@@ -4233,12 +4310,6 @@
     <Compile Include="Administration\DataPath.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Magic\DispellableAttribute.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\DispellableFieldAttribute.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Administration\Commands\DoorGenerator.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6045,234 +6116,6 @@
     <Compile Include="Items\Item Systems\Containers\TailorBag.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Magic\DisturbType.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\MagerySpell.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\SpecialMove.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spell.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\SpellCircle.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\SpellHelper.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\SpellInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\SpellRegistry.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\SpellState.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\AirElemental.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\EarthElemental.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\Earthquake.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\EnergyVortex.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\FireElemental.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\Resurrection.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\SummonDaemon.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Eighth\WaterElemental.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\BladeSpirits.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\DispelField.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\Incognito.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\MagicReflect.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\MindBlast.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\Paralyze.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\PoisonField.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fifth\SummonCreature.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\Clumsy.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\CreateFood.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\Feeblemind.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\Heal.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\MagicArrow.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\NightSight.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\ReactiveArmor.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\First\Weaken.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ArchCure.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ArchProtection.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Curse.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\FireField.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\GreaterHeal.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Lightning.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\ManaDrain.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Fourth\Recall.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Initializer.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Reagent.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\Agility.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\Cunning.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\Cure.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\Harm.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\MagicTrap.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\Protection.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\RemoveTrap.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Second\Strength.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\ChainLightning.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\EnergyField.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\FlameStrike.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\GateTravel.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\ManaVampire.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\MassDispel.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\MeteorSwarm.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Seventh\Polymorph.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Dispel.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\EnergyBolt.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Explosion.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Invisibility.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Mark.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\MassCurse.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\ParalyzeField.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Sixth\Reveal.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\Bless.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\Fireball.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\MagicLock.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\Poison.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\Telekinesis.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\Teleport.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\Unlock.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\Spells\Third\WallOfStone.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Game Mechanics\Magic\UnsummonTimer.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Game Mechanics\Targeting\BladedItemTarget.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6374,7 +6217,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Administration\Custom Tools\Ultimate Admin\" />
     <Folder Include="Administration\World\Holidays\LBR\" />
     <Folder Include="Administration\World\Holidays\T2A\" />
     <Folder Include="Administration\World\Holidays\UOR\" />

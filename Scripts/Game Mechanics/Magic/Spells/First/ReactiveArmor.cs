@@ -38,7 +38,9 @@ namespace Server.Spells.First
                 }
 
                 m_Table.Remove(m);
-                BuffInfo.RemoveBuff(m, BuffIcon.ReactiveArmor);
+
+                if(Core.ML)
+                    BuffInfo.RemoveBuff(m, BuffIcon.ReactiveArmor);
             }
         }
 
@@ -100,7 +102,8 @@ namespace Server.Spells.First
                         int physresist = 15 + (int)(targ.Skills[SkillName.Inscribe].Value / 20);
                         string args = String.Format("{0}\t{1}\t{2}\t{3}\t{4}", physresist, 5, 5, 5, 5);
 
-                        BuffInfo.AddBuff(this.Caster, new BuffInfo(BuffIcon.ReactiveArmor, 1075812, 1075813, args.ToString()));
+                        if(Core.ML)
+                            BuffInfo.AddBuff(this.Caster, new BuffInfo(BuffIcon.ReactiveArmor, 1075812, 1075813, args.ToString()));
                     }
                     else
                     {
@@ -112,7 +115,8 @@ namespace Server.Spells.First
                         for (int i = 0; i < mods.Length; ++i)
                             targ.RemoveResistanceMod(mods[i]);
 
-                        BuffInfo.RemoveBuff(this.Caster, BuffIcon.ReactiveArmor);
+                        if (Core.ML)
+                            BuffInfo.RemoveBuff(this.Caster, BuffIcon.ReactiveArmor);
                     }
                 }
 
@@ -132,6 +136,8 @@ namespace Server.Spells.First
                 {
                     if (this.Caster.BeginAction(typeof(DefensiveSpell)))
                     {
+                        // UOR Formula: Magery + Meditation + Inscription / 3.With a max damage absorbption of 75 points
+
                         int value = (int)(this.Caster.Skills[SkillName.Magery].Value + this.Caster.Skills[SkillName.Meditation].Value + this.Caster.Skills[SkillName.Inscribe].Value);
                         value /= 3;
 
@@ -144,17 +150,38 @@ namespace Server.Spells.First
 
                         this.Caster.FixedParticles(0x376A, 9, 32, 5008, EffectLayer.Waist);
                         this.Caster.PlaySound(0x1F2);
+
+                        new InternalTimer(Caster).Start();
                     }
                     else
                     {
                         this.Caster.SendLocalizedMessage(1005385); // The spell will not adhere to you at this time.
                     }
                 }
-
                 this.FinishSequence();
             }
         }
 
+        private class InternalTimer : Timer
+        {
+            private readonly Mobile m_Caster;
+
+            public InternalTimer(Mobile caster)
+                : base(TimeSpan.FromSeconds(0))
+            {
+                double time = 25 + (caster.Skills[SkillName.Magery].Value / 2.0);
+
+                Delay = TimeSpan.FromSeconds(time);
+                Priority = TimerPriority.OneSecond;
+                m_Caster = caster;
+            }
+
+            protected override void OnTick()
+            {
+                m_Caster.MeleeDamageAbsorb = 0;
+            }
+        }
+        
         #region SA
         public static bool HasArmor(Mobile m)
         {

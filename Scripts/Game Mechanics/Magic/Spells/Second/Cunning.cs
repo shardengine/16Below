@@ -11,6 +11,7 @@ namespace Server.Spells.Second
             9061,
             Reagent.MandrakeRoot,
             Reagent.Nightshade);
+
         public CunningSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {
@@ -50,9 +51,14 @@ namespace Server.Spells.Second
                 SpellHelper.Turn(this.Caster, m);
 
 				SpellHelper.AddStatBonus(this.Caster, m, StatType.Int);
-				int percentage = (int)(SpellHelper.GetOffsetScalar(this.Caster, m, false) * 100);
+
 				TimeSpan length = SpellHelper.GetDuration(this.Caster, m);
-				BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Cunning, 1075843, length, m, percentage.ToString()));
+
+                if (Core.ML)
+                {
+                    int percentage = (int)(SpellHelper.GetOffsetScalar(this.Caster, m, false) * 100);
+                    BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Cunning, 1075843, length, m, percentage.ToString()));
+                }
 
 				m.FixedParticles(0x375A, 10, 15, 5011, EffectLayer.Head);
                 m.PlaySound(0x1EB);
