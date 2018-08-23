@@ -147,7 +147,7 @@ namespace Server.Mobiles
             }
             else
             {
-                from.SendMessage("Players cannot ride this. Sorry, BALEETED!");
+                from.SendMessage("Players cannot ride this.");
                 this.Delete();
             }
         }

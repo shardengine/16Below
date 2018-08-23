@@ -76,7 +76,10 @@ namespace Server.Items
             this.AddImageTiled(10, 10, 250, 125, 2624);
             this.AddAlphaRegion(10, 10, 250, 125);
 
-            this.AddHtmlLocalized(10, 10, 250, 20, 1060239, LabelColor, false, false); // <CENTER>HOUSE PLACEMENT TOOL</CENTER>
+            if(Core.AOS)
+                this.AddHtmlLocalized(10, 10, 250, 20, 1060239, LabelColor, false, false); // 
+            else
+                this.AddHtml(10, 10, 250, 20, this.Color("<CENTER>HOUSE PLACEMENT TOOL</CENTER>", 0xFFFFFF), false, false);
 
             this.AddButton(10, 110, 4017, 4019, 0, GumpButtonType.Reply, 0);
             this.AddHtmlLocalized(45, 110, 150, 20, 3000363, LabelColor, false, false); // Close
@@ -84,11 +87,24 @@ namespace Server.Items
             this.AddButton(10, 40, 4005, 4007, 1, GumpButtonType.Reply, 0);
             this.AddHtmlLocalized(45, 40, 200, 20, 1060390, LabelColor, false, false); // Classic Houses
 
-            this.AddButton(10, 60, 4005, 4007, 2, GumpButtonType.Reply, 0);
-            this.AddHtmlLocalized(45, 60, 200, 20, 1060391, LabelColor, false, false); // 2-Story Customizable Houses
+            if (Core.AOS)
+            {
+                this.AddButton(10, 60, 4005, 4007, 2, GumpButtonType.Reply, 0);//was2
+                this.AddHtmlLocalized(45, 60, 200, 20, 1060391, LabelColor, false, false); // 2-Story Customizable Houses
 
-            this.AddButton(10, 80, 4005, 4007, 3, GumpButtonType.Reply, 0);
-            this.AddHtmlLocalized(45, 80, 200, 20, 1060392, LabelColor, false, false); // 3-Story Customizable Houses
+                this.AddButton(10, 80, 4005, 4007, 3, GumpButtonType.Reply, 0);//was3
+                this.AddHtmlLocalized(45, 80, 200, 20, 1060392, LabelColor, false, false); // 3-Story Customizable Houses
+            }
+            else
+            {
+                this.AddButton(10, 60, 4005, 4007, 4, GumpButtonType.Reply, 0);
+             //   this.AddHtmlLocalized(45, 60, 200, 20, 1060391, LabelColor, false, false); // 2-Story Customizable Houses
+                this.AddHtml(45, 60, 200, 20, this.Color("2-story custom - coming soon", 0xFFFFFF), false, false);
+
+                this.AddButton(10, 80, 4005, 4007, 4, GumpButtonType.Reply, 0);
+            //    this.AddHtmlLocalized(45, 80, 200, 20, 1060392, LabelColor, false, false); // 3-Story Customizable Houses
+                this.AddHtml(45, 80, 200, 20, this.Color("3-story custom - coming soon", 0xFFFFFF), false, false);
+            }
         }
 
         public override void OnResponse(Server.Network.NetState sender, RelayInfo info)
@@ -115,6 +131,17 @@ namespace Server.Items
                     }
             }
         }
+
+        public string Color(string text, int color)
+        {
+            return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
+        }
+
+        public string Center(string text)
+        {
+            return String.Format("<CENTER>{0}</CENTER>", text);
+        }
+
     }
 
     public class HousePlacementListGump : Gump
