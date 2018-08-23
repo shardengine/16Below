@@ -79,7 +79,7 @@ namespace Server.Mobiles
         {
             base.OnDeath(c);
 
-            SARegionDrops.GetSADrop(c);
+        //    SARegionDrops.GetSADrop(c); // Lava lizards are T2A? no SA drops regardless -Fraz
         }
 
         public override void Serialize(GenericWriter writer)

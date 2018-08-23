@@ -75,7 +75,7 @@ namespace Server.Mobiles
         {
             base.OnDeath(c);
 
-            SARegionDrops.GetSADrop(c);
+        //    SARegionDrops.GetSADrop(c);// era -Fraz
         }
 
         public override void Serialize(GenericWriter writer)

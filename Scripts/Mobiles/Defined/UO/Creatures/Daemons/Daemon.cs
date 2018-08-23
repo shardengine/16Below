@@ -106,7 +106,7 @@ namespace Server.Mobiles
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);
-            SARegionDrops.GetSADrop(c);
+        //    SARegionDrops.GetSADrop(c); //era -Fraz
         }
 
         public override void Serialize(GenericWriter writer)

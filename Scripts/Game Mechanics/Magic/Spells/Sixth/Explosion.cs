@@ -28,8 +28,7 @@ namespace Server.Spells.Sixth
         {
             if (Core.AOS)
                 return TimeSpan.FromTicks(base.GetCastDelay().Ticks * ((Core.SE) ? 3 : 5));
-
-            return base.GetCastDelay() + TimeSpan.FromSeconds(2.0);
+            return TimeSpan.FromSeconds(2.5);
         }
 
         public override bool DelayedDamageStacking

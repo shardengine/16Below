@@ -290,7 +290,7 @@ namespace Server.Engines.Craft
 			new[] {typeof(YewBoard), typeof(YewLog)}, new[] {typeof(Leather), typeof(Hides)},
 			new[] {typeof(SpinedLeather), typeof(SpinedHides)}, new[] {typeof(HornedLeather), typeof(HornedHides)},
 			new[] {typeof(BarbedLeather), typeof(BarbedHides)}, new[] {typeof(BlankMap), typeof(BlankScroll)},
-			new[] {typeof(Cloth), typeof(UncutCloth), typeof(AbyssalCloth)}, new[] {typeof(CheeseWheel), typeof(CheeseWedge)},
+			/*new[] {typeof(Cloth), typeof(UncutCloth), typeof(AbyssalCloth)},// era -Fraz*/ new[] {typeof(CheeseWheel), typeof(CheeseWedge)},
 			new[] {typeof(Pumpkin), typeof(SmallPumpkin)}, new[] {typeof(WoodenBowlOfPeas), typeof(PewterBowlOfPeas)},
             new[] { typeof( RedScales ), typeof( BlueScales ), typeof( BlackScales ), typeof( YellowScales ), typeof( GreenScales ), typeof( WhiteScales ), typeof( MedusaDarkScales ), typeof( MedusaLightScales ) }
 		};
@@ -304,7 +304,7 @@ namespace Server.Engines.Craft
 
 		private static readonly Type[] m_ColoredResourceTable = new[]
 		{
-			typeof(BaseIngot), typeof(BaseOre), typeof(BaseLeather), typeof(BaseHides), typeof(AbyssalCloth), typeof(UncutCloth), typeof(Cloth),
+			typeof(BaseIngot), typeof(BaseOre), typeof(BaseLeather), typeof(BaseHides), /*typeof(AbyssalCloth),*/ typeof(UncutCloth), typeof(Cloth),
 			typeof(BaseGranite), typeof(BaseScales), typeof(PlantClippings),
 			typeof(BaseContainer)
 		};
