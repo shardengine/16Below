@@ -91,7 +91,7 @@ namespace Server.Engines.Harvest
 
             fish.Resources = res;
             fish.Veins = veins;
-
+            /* era -Fraz
             if (Core.ML)
             {
                 fish.BonusResources = new BonusHarvestResource[]
@@ -101,7 +101,7 @@ namespace Server.Engines.Harvest
                 	new BonusHarvestResource(80.0, .3, 1072597, typeof(WhitePearl))
                 };
             }
-
+            */
             this.m_Definition = fish;
             this.Definitions.Add(fish);
             #endregion

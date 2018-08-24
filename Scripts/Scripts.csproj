@@ -918,9 +918,6 @@
     <Compile Include="Items\Item Systems\Resource\CrystallineBlackrock.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\CrystalShards.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Item Systems\Resource\DaemonClaw.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -942,43 +939,7 @@
     <Compile Include="Items\Item Systems\Consumables\EngravingTools.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceAchievement.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceBalance.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceControl.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceDiligence.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceDirection.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceFeeling.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceOrder.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssencePassion.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssencePersistence.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssencePrecision.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\EssenceSingularity.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Item Systems\Decorative\ExecutionersCap.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\FaeryDust.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\FeyWings.cs">
@@ -2065,9 +2026,6 @@
     <Compile Include="Items\Item Systems\Decorative\Corpses\Head.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\LavaSerpenCrust.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Item Systems\Decorative\Corpses\LeftArm.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -2361,34 +2319,34 @@
     <Compile Include="Items\Item Systems\Internal\Hair.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableCabbage.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableCabbage.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableCarrot.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableCarrot.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableCotton.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableCotton.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Resources\FarmableCrop.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableFlax.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableFlax.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableLettuce.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableLettuce.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableOnion.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableOnion.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmablePumpkin.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmablePumpkin.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableTurnip.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableTurnip.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Farmable\FarmableWheat.cs">
+    <Compile Include="Items\Defined\UO\Resources\Farming\FarmableWheat.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Base\Consumables\BaseMagicalFood.cs">
@@ -2505,34 +2463,34 @@
     <Compile Include="Items\Defined\UO\Provisions\Games\Mahjong\Packets.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Amber.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Amber.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Amethyst.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Amethyst.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Citrine.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Citrine.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Diamond.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Diamond.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Emerald.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Emerald.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\IGem.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Ruby.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Ruby.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Sapphire.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Sapphire.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\StarSapphire.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\StarSapphire.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Gemstones\Tourmaline.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Gemstones\Tourmaline.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Consumables\GuildDeed.cs">
@@ -2646,7 +2604,7 @@
     <Compile Include="Items\Defined\UO\Provisions\Maps\LocalMap.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Tools\MapItem.cs">
+    <Compile Include="Items\Base\Provisions\MapItem.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Provisions\Maps\PresetMap.cs">
@@ -2679,16 +2637,16 @@
     <Compile Include="Items\Defined\UO\Provisions\Bolt.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Feather.cs">
+    <Compile Include="Items\Defined\UO\Resources\Fletching\Feather.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Shaft.cs">
+    <Compile Include="Items\Defined\UO\Resources\Fletching\Shaft.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Ingots.cs">
+    <Compile Include="Items\Defined\UO\Resources\Blacksmithy\Ingots.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Ore.cs">
+    <Compile Include="Items\Defined\UO\Resources\Mining\Ore.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\Scales.cs">
@@ -2697,19 +2655,16 @@
     <Compile Include="Items\Item Systems\Resource\DragonBlood.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\BigFish.cs">
+    <Compile Include="Items\Defined\UO\Resources\Fishing\BigFish.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Fish.cs">
+    <Compile Include="Items\Defined\UO\Resources\Fishing\Fish.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\MagicFish.cs">
+    <Compile Include="Items\Defined\UO\Resources\Fishing\MagicFish.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\Granite.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Resource\MiscMLResources.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\PlantClippings.cs">
@@ -2730,13 +2685,13 @@
     <Compile Include="Items\Defined\UO\Resources\Reagents\Magery\Bloodmoss.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\DaemonBlood.cs">
+    <Compile Include="Items\Defined\UO\Resources\Reagents\Rare\DaemonBlood.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\DaemonBone.cs">
+    <Compile Include="Items\Defined\UO\Resources\Reagents\Rare\DaemonBone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\DeadWood.cs">
+    <Compile Include="Items\Defined\UO\Resources\Reagents\Rare\DeadWood.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Reagents\Magery\Garlic.cs">
@@ -2745,7 +2700,7 @@
     <Compile Include="Items\Defined\UO\Resources\Reagents\Magery\Ginseng.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\GraveDust.cs">
+    <Compile Include="Items\Defined\UO\Resources\Reagents\Rare\GraveDust.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Reagents\Magery\MandrakeRoot.cs">
@@ -2754,7 +2709,7 @@
     <Compile Include="Items\Defined\UO\Resources\Reagents\Magery\Nightshade.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\NoxCrystal.cs">
+    <Compile Include="Items\Defined\UO\Resources\Reagents\Rare\NoxCrystal.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Reagents\Rare\PigIron.cs">
@@ -2766,34 +2721,34 @@
     <Compile Include="Items\Defined\UO\Resources\Reagents\Magery\SulfurousAsh.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\BoltOfCloth.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\BoltOfCloth.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\Bone.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Cloth.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\Cloth.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Cotton.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\Cotton.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Flax.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\Flax.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Hides.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\Hides.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Leathers.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\Leathers.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Resource\UncutCloth.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Resources\Wool.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\Wool.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\YarnsAndThreads.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tailor\YarnsAndThreads.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Equipment\Armor\Shields\LargePlateShield.cs">
@@ -2868,7 +2823,7 @@
     <Compile Include="Items\Defined\UO\Resources\Food\Fish Steak.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Tools\BegFishingPole.cs">
+    <Compile Include="Items\Defined\Custom\BegFishingPole.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Consumables\FlowerGarland.cs">
@@ -2892,7 +2847,7 @@
     <Compile Include="Items\Item Systems\Functional\LargeForge.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Defined\UO\Tools\BegBedroll.cs">
+    <Compile Include="Items\Defined\Custom\BegBedroll.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Functional\Campfire.cs">
@@ -2901,7 +2856,7 @@
     <Compile Include="Items\Defined\UO\Provisions\Kindling.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Board.cs">
+    <Compile Include="Items\Defined\UO\Resources\Carpentry\Board.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Consumables\TaxidermyKit.cs">
@@ -2943,7 +2898,7 @@
     <Compile Include="Items\Item Systems\Addons\MiniSoulForge.cs" />
     <Compile Include="Items\Item Systems\Addons\RoyalSoulForge.cs" />
     <Compile Include="Items\Item Systems\Addons\SoulForge.cs" />
-    <Compile Include="Items\Defined\UO\Resources\Log.cs">
+    <Compile Include="Items\Defined\UO\Resources\Carpentry\Log.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Consumables\HealingStone.cs">
@@ -3327,7 +3282,7 @@
     <Compile Include="Items\Defined\UO\Tools\Scissors.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Tools\DisguiseKit.cs">
+    <Compile Include="Items\Defined\UO\Tools\DisguiseKit.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Mobiles\Players\DisguisePersistence.cs">
@@ -3363,7 +3318,7 @@
     <Compile Include="Items\Defined\UO\Resources\Tinker\SextantParts.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Resource\Springs.cs">
+    <Compile Include="Items\Defined\UO\Resources\Tinker\Springs.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Provisions\Spyglass.cs">
@@ -3396,13 +3351,13 @@
     <Compile Include="Items\Defined\UO\Tools\Inshave.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Tools\JointingPlane.cs">
+    <Compile Include="Items\Defined\UO\Tools\JointingPlane.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Tools\MalletAndChisel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Tools\MapmakersPen.cs">
+    <Compile Include="Items\Defined\UO\Tools\MapmakersPen.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Tools\MortarPestle.cs">
@@ -3474,7 +3429,7 @@
     <Compile Include="Items\Item Systems\Addons\StandingBrokenChair.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Item Systems\Tools\AncientSmithyHammer.cs">
+    <Compile Include="Items\Defined\UO\Tools\AncientSmithyHammer.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Addons\ColoredAnvil.cs">

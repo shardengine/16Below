@@ -230,6 +230,7 @@ namespace Server.Engines.Craft
             AddCraft(typeof(Hinge), 1044047, 1024181, 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
             AddCraft(typeof(BolaBall), 1044047, 1023699, 45.0, 95.0, typeof(IronIngot), 1044036, 10, 1044037);
             
+            /* era -Fraz
             if (Core.ML)
             {
                 index = AddCraft(typeof(JeweledFiligree), 1044047, 1072894, 70.0, 110.0, typeof(IronIngot), 1044036, 2, 1044037);
@@ -246,7 +247,7 @@ namespace Server.Engines.Craft
 				SetNeededExpansion(index, Expansion.SA);
 				ForceNonExceptional(index);
 			}
-            
+            */
             #endregion
 
             #region Utensils

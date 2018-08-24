@@ -282,7 +282,8 @@ namespace Server.Items
                                     gems = new Tourmaline();
                                     break;
                                     // Mondain's Legacy gems
-                                case 9:
+                                case 9: // era -Fraz
+                                    /*
                                     gems = new PerfectEmerald();
                                     break;
                                 case 10:
@@ -299,6 +300,7 @@ namespace Server.Items
                                     break;
                                 case 14:
                                     gems = new BlueDiamond();
+                                    */
                                     break;
                             }
 

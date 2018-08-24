@@ -160,8 +160,10 @@ namespace Server.Engines.Craft
             index = this.AddCraft(typeof(UnbakedPumpkinPie), 1044496, 1041342, 0.0, 100.0, typeof(Dough), 1044469, 1, 1044253);
             this.AddRes(index, typeof(Pumpkin), 1044484, 1, 1044253);
 
+            /* era -Fraz
             index = this.AddCraft(typeof(WoodPulp), 1044496, 1113136, 60.0, 100.0, typeof(BarkFragment), 1032687, 1, 1044253);
             this.AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
+            */
 
             index = this.AddCraft(typeof(TribalPaint), 1044496, 1040000, Core.ML ? 55.0 : 80.0, Core.ML ? 105.0 : 80.0, typeof(SackFlour), 1044468, 1, 1044253);
             this.AddRes(index, typeof(TribalBerry), 1046460, 1, 1044253);

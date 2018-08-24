@@ -322,8 +322,9 @@ namespace Server.Engines.Craft
 			AddSpell( typeof( SummonFireElementalScroll ), Reg.Bloodmoss, Reg.MandrakeRoot, Reg.SpidersSilk, Reg.SulfurousAsh );
 			AddSpell( typeof( SummonWaterElementalScroll ), Reg.Bloodmoss, Reg.MandrakeRoot, Reg.SpidersSilk );
 
+			/* era -Fraz
             int index;
-			
+
             if (Core.ML)
             {
                 index = AddCraft(typeof(EnchantedSwitch), 1044294, 1072893, 45.0, 95.0, typeof(BlankScroll), 1044377, 1, 1044378);
@@ -340,7 +341,7 @@ namespace Server.Engines.Craft
                 ForceNonExceptional(index);
                 SetNeededExpansion(index, Expansion.ML);
             }
-			
+			*/
             MarkOption = true;
         }
     }

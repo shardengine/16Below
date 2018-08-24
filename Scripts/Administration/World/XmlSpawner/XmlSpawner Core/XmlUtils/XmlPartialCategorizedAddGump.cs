@@ -96,17 +96,34 @@ namespace Server.Gumps
 			else
 				AddImage( 10, 249, 4014 );
 
-			AddHtmlLocalized( 44, 250, 170, 20, 1061028, m_Page > 0 ? 0x7FFF : 0x5EF7, false, false ); // Previous page
+            if (Core.AOS)
+            {
+                AddHtmlLocalized(44, 250, 170, 20, 1061028, m_Page > 0 ? 0x7FFF : 0x5EF7, false, false); // Previous page
+                AddHtmlLocalized(244, 250, 170, 20, 1061027, ((m_Page + 1) * 10) < searchResults.Count ? 0x7FFF : 0x5EF7, false, false); // Next page
+            }
+            else
+            {
+                AddHtml(44, 250, 170, 20, this.Color("Previous", m_Page > 0 ? 0x7FFF : 0x5EF7), false, false); // Previous page
+                AddHtml(244, 250, 170, 20, this.Color("Next", ((m_Page + 1) * 10) < searchResults.Count ? 0x7FFF : 0x5EF7), false, false); // Next page
+            }
 
 			if ( ((m_Page + 1) * 10) < searchResults.Count )
 				AddButton( 210, 249, 4005, 4007, 3, GumpButtonType.Reply, 0 );
 			else
-				AddImage( 210, 249, 4005 );
-
-			AddHtmlLocalized( 244, 250, 170, 20, 1061027, ((m_Page + 1) * 10) < searchResults.Count ? 0x7FFF : 0x5EF7, false, false ); // Next page
+				AddImage( 210, 249, 4005 );	
 		}
 
-		private static Type typeofItem = typeof( Item ), typeofMobile = typeof( Mobile );
+        public string Color(string text, int color)
+        {
+            return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
+        }
+
+        public string Center(string text)
+        {
+            return String.Format("<CENTER>{0}</CENTER>", text);
+        }
+
+        private static Type typeofItem = typeof( Item ), typeofMobile = typeof( Mobile );
 
 		private class SearchEntry
 		{

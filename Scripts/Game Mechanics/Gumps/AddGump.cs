@@ -64,14 +64,31 @@ namespace Server.Gumps
             else
                 this.AddImage(10, 249, 4014);
 
-            this.AddHtmlLocalized(44, 250, 170, 20, 1061028, this.m_Page > 0 ? 0x7FFF : 0x5EF7, false, false); // Previous page
+            if(Core.AOS)
+            {
+                this.AddHtmlLocalized(44, 250, 170, 20, 1061028, this.m_Page > 0 ? 0x7FFF : 0x5EF7, false, false); // Previous page
+                this.AddHtmlLocalized(244, 250, 170, 20, 1061027, ((this.m_Page + 1) * 10) < searchResults.Length ? 0x7FFF : 0x5EF7, false, false); // Next page
+            }
+            else
+            {
+                this.AddHtml(44, 250, 160, 20, this.Color("Previous", this.m_Page > 0 ? 0x7FFF : 0x5EF7), false, false);
+                this.AddHtml(244, 250, 170, 20, this.Color("Next", ((this.m_Page + 1) * 10) < searchResults.Length ? 0x7FFF : 0x5EF7), false, false);
+            }
 
             if (((this.m_Page + 1) * 10) < searchResults.Length)
                 this.AddButton(210, 249, 4005, 4007, 3, GumpButtonType.Reply, 0);
             else
                 this.AddImage(210, 249, 4005);
+        }
 
-            this.AddHtmlLocalized(244, 250, 170, 20, 1061027, ((this.m_Page + 1) * 10) < searchResults.Length ? 0x7FFF : 0x5EF7, false, false); // Next page
+        public string Color(string text, int color)
+        {
+            return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
+        }
+
+        public string Center(string text)
+        {
+            return String.Format("<CENTER>{0}</CENTER>", text);
         }
 
         public static void Initialize()

@@ -82,8 +82,8 @@ namespace Server.Mobiles
         }
         public override void OnDeath(Container c)
         {
-
             base.OnDeath(c);
+            /* era -Fraz
             Region reg = Region.Find(c.GetWorldLocation(), c.Map);
             if (0.25 > Utility.RandomDouble() && reg.Name == "Fire Temple Ruins")
             {
@@ -95,6 +95,7 @@ namespace Server.Mobiles
                 if (Utility.RandomDouble() < 0.6)
                     c.DropItem(new EssencePassion());
             }
+            */
         }
         public override void Serialize(GenericWriter writer)
         {

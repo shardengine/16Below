@@ -101,14 +101,15 @@ namespace Server.Mobiles
         }
         public override void OnDeath(Container c)
         {
-
             base.OnDeath(c);
+            /* era -Fraz
             Region reg = Region.Find(c.GetWorldLocation(), c.Map);
             if (0.25 > Utility.RandomDouble() && reg.Name == "Abyssal Lair Entrance")
             {
                 if (Utility.RandomDouble() < 0.6)
                     c.DropItem(new EssenceAchievement());
             }
+            */
         }
         public override void Serialize(GenericWriter writer)
         {

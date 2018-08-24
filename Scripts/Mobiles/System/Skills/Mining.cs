@@ -117,6 +117,7 @@ namespace Server.Engines.Harvest
             oreAndStone.Resources = res;
             oreAndStone.Veins = veins;
 
+            /* era -Fraz
             if (Core.ML)
             {
                 oreAndStone.BonusResources = new BonusHarvestResource[]
@@ -131,6 +132,7 @@ namespace Server.Engines.Harvest
 					new BonusHarvestResource(100, .1, 1113344, typeof(CrystallineBlackrock), Map.TerMur)
 				};
             }
+            */
 
             oreAndStone.RaceBonus = Core.ML;
             oreAndStone.RandomizeVeins = Core.ML;
