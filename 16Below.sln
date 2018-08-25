@@ -239,6 +239,117 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Config", "Config\Config.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin", "Bin", "{1FE546D7-19B4-486F-8544-1003E9CB4E51}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "World", "World", "{B7516CF6-1DD6-4B9D-A555-55859A81181F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "T2A", "T2A", "{A38CFB8C-8515-4FEF-8867-81D6E97C3596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorations", "Decorations", "{0A7660B9-553E-417A-A07B-4681CF757512}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UOR", "UOR", "{4FD9DEC9-D92D-4975-92FB-3E080035BCA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UOTD", "UOTD", "{444A01A4-756C-4794-80EA-A4F31F7D50B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LBR", "LBR", "{DD544C5E-5B38-49BE-95FF-FDDEC05E8083}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ilshenar", "Ilshenar", "{79A5DA37-87F4-4CFE-B731-DB36E7B45257}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_blood.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_blood.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_central.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_central.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_exodus.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_exodus.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_gwenno.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_gwenno.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_ratcave.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_ratcave.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_regvolom.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_regvolom.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_serpentine.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_serpentine.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_sheepfarm.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_sheepfarm.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_sorcerers.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_sorcerers.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_terortskitas.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_terortskitas.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\_twinoaks.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\_twinoaks.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\camp.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\camp.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\camp2.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\camp2.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\enslavedgargs.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\enslavedgargs.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\ilshenardeco.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\ilshenardeco.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\lakeshire.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\lakeshire.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\meercatacombs.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\meercatacombs.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\misc.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\misc.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\Misc_quests.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\Misc_quests.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\mistas.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\mistas.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\patches.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\patches.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\ratfortress.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\ratfortress.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\savagecamp.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\savagecamp.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\shrines.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\shrines.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\Twisted Weald.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\Twisted Weald.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\vinculuminn.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\vinculuminn.cfg
+		Bin\Data\World\Decorations\UOTD\Ilshenar\wispdungeon.cfg = Bin\Data\World\Decorations\UOTD\Ilshenar\wispdungeon.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Britannia", "Britannia", "{AC601EF9-E9C0-48D6-AC67-DFDE945270BC}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\World\Decorations\T2A\Britannia\_covetous.cfg = Bin\Data\World\Decorations\T2A\Britannia\_covetous.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_deceit.cfg = Bin\Data\World\Decorations\T2A\Britannia\_deceit.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_despise.cfg = Bin\Data\World\Decorations\T2A\Britannia\_despise.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_destard.cfg = Bin\Data\World\Decorations\T2A\Britannia\_destard.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_fire.cfg = Bin\Data\World\Decorations\T2A\Britannia\_fire.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_hedgemaze.cfg = Bin\Data\World\Decorations\T2A\Britannia\_hedgemaze.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_hythloth.cfg = Bin\Data\World\Decorations\T2A\Britannia\_hythloth.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_ice.cfg = Bin\Data\World\Decorations\T2A\Britannia\_ice.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_orccave.cfg = Bin\Data\World\Decorations\T2A\Britannia\_orccave.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_shame.cfg = Bin\Data\World\Decorations\T2A\Britannia\_shame.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_terathankeep.cfg = Bin\Data\World\Decorations\T2A\Britannia\_terathankeep.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\_wrong.cfg = Bin\Data\World\Decorations\T2A\Britannia\_wrong.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\BritainFarmlands1.cfg = Bin\Data\World\Decorations\T2A\Britannia\BritainFarmlands1.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\Britainfarmlands2.cfg = Bin\Data\World\Decorations\T2A\Britannia\Britainfarmlands2.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\Britainfarmlands3.cfg = Bin\Data\World\Decorations\T2A\Britannia\Britainfarmlands3.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\britainsewers.cfg = Bin\Data\World\Decorations\T2A\Britannia\britainsewers.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\bucs.cfg = Bin\Data\World\Decorations\T2A\Britannia\bucs.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\bucsportal.cfg = Bin\Data\World\Decorations\T2A\Britannia\bucsportal.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\cove.cfg = Bin\Data\World\Decorations\T2A\Britannia\cove.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\delucia.cfg = Bin\Data\World\Decorations\T2A\Britannia\delucia.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\despise.cfg = Bin\Data\World\Decorations\T2A\Britannia\despise.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\destard.cfg = Bin\Data\World\Decorations\T2A\Britannia\destard.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\EastBritain.cfg = Bin\Data\World\Decorations\T2A\Britannia\EastBritain.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\Heartwood.cfg = Bin\Data\World\Decorations\T2A\Britannia\Heartwood.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\hythloth.cfg = Bin\Data\World\Decorations\T2A\Britannia\hythloth.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\jhelom.cfg = Bin\Data\World\Decorations\T2A\Britannia\jhelom.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\LordBritishCastle.cfg = Bin\Data\World\Decorations\T2A\Britannia\LordBritishCastle.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\magincia.cfg = Bin\Data\World\Decorations\T2A\Britannia\magincia.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\minoc.cfg = Bin\Data\World\Decorations\T2A\Britannia\minoc.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\moonglow.cfg = Bin\Data\World\Decorations\T2A\Britannia\moonglow.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\NorthBritain.cfg = Bin\Data\World\Decorations\T2A\Britannia\NorthBritain.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\nujelm.cfg = Bin\Data\World\Decorations\T2A\Britannia\nujelm.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\papua.cfg = Bin\Data\World\Decorations\T2A\Britannia\papua.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\patches.cfg = Bin\Data\World\Decorations\T2A\Britannia\patches.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\serpent pillars.cfg = Bin\Data\World\Decorations\T2A\Britannia\serpent pillars.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\serpentshold.cfg = Bin\Data\World\Decorations\T2A\Britannia\serpentshold.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\shame.cfg = Bin\Data\World\Decorations\T2A\Britannia\shame.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\shrines.cfg = Bin\Data\World\Decorations\T2A\Britannia\shrines.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\skara.cfg = Bin\Data\World\Decorations\T2A\Britannia\skara.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\SouthBritain.cfg = Bin\Data\World\Decorations\T2A\Britannia\SouthBritain.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\trinsic.cfg = Bin\Data\World\Decorations\T2A\Britannia\trinsic.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\vesper.cfg = Bin\Data\World\Decorations\T2A\Britannia\vesper.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\wind.cfg = Bin\Data\World\Decorations\T2A\Britannia\wind.cfg
+		Bin\Data\World\Decorations\T2A\Britannia\yew.cfg = Bin\Data\World\Decorations\T2A\Britannia\yew.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trammel", "Trammel", "{6C17D6DE-22AD-403E-A7C0-7C8D4B4D2E53}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\World\Decorations\UOR\Trammel\_haven additions.cfg = Bin\Data\World\Decorations\UOR\Trammel\_haven additions.cfg
+		Bin\Data\World\Decorations\UOR\Trammel\_minoc camp.cfg = Bin\Data\World\Decorations\UOR\Trammel\_minoc camp.cfg
+		Bin\Data\World\Decorations\UOR\Trammel\ambitious solen queen quest.cfg = Bin\Data\World\Decorations\UOR\Trammel\ambitious solen queen quest.cfg
+		Bin\Data\World\Decorations\UOR\Trammel\collector quest.cfg = Bin\Data\World\Decorations\UOR\Trammel\collector quest.cfg
+		Bin\Data\World\Decorations\UOR\Trammel\haven.cfg = Bin\Data\World\Decorations\UOR\Trammel\haven.cfg
+		Bin\Data\World\Decorations\UOR\Trammel\solen matriarch quest.cfg = Bin\Data\World\Decorations\UOR\Trammel\solen matriarch quest.cfg
+		Bin\Data\World\Decorations\UOR\Trammel\yew.cfg = Bin\Data\World\Decorations\UOR\Trammel\yew.cfg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Felucca", "Felucca", "{6A7077F0-7023-4624-B5A5-2F242A8BEE0F}"
+	ProjectSection(SolutionItems) = preProject
+		Bin\Data\World\Decorations\UOR\Felucca\_champion teleporters.cfg = Bin\Data\World\Decorations\UOR\Felucca\_champion teleporters.cfg
+		Bin\Data\World\Decorations\UOR\Felucca\_star room.cfg = Bin\Data\World\Decorations\UOR\Felucca\_star room.cfg
+		Bin\Data\World\Decorations\UOR\Felucca\khaldun entrance.cfg = Bin\Data\World\Decorations\UOR\Felucca\khaldun entrance.cfg
+		Bin\Data\World\Decorations\UOR\Felucca\khaldun.cfg = Bin\Data\World\Decorations\UOR\Felucca\khaldun.cfg
+		Bin\Data\World\Decorations\UOR\Felucca\ocllo.cfg = Bin\Data\World\Decorations\UOR\Felucca\ocllo.cfg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -332,5 +443,15 @@ Global
 		{A4D44630-5D1E-48B2-9583-945018518DFC} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
 		{38E20955-4372-40A4-A044-540C35917EAF} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
 		{1FE546D7-19B4-486F-8544-1003E9CB4E51} = {EF956787-B078-4D19-B03B-4A8F2A4841AD}
+		{B7516CF6-1DD6-4B9D-A555-55859A81181F} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
+		{A38CFB8C-8515-4FEF-8867-81D6E97C3596} = {0A7660B9-553E-417A-A07B-4681CF757512}
+		{0A7660B9-553E-417A-A07B-4681CF757512} = {B7516CF6-1DD6-4B9D-A555-55859A81181F}
+		{4FD9DEC9-D92D-4975-92FB-3E080035BCA1} = {0A7660B9-553E-417A-A07B-4681CF757512}
+		{444A01A4-756C-4794-80EA-A4F31F7D50B4} = {0A7660B9-553E-417A-A07B-4681CF757512}
+		{DD544C5E-5B38-49BE-95FF-FDDEC05E8083} = {0A7660B9-553E-417A-A07B-4681CF757512}
+		{79A5DA37-87F4-4CFE-B731-DB36E7B45257} = {444A01A4-756C-4794-80EA-A4F31F7D50B4}
+		{AC601EF9-E9C0-48D6-AC67-DFDE945270BC} = {A38CFB8C-8515-4FEF-8867-81D6E97C3596}
+		{6C17D6DE-22AD-403E-A7C0-7C8D4B4D2E53} = {4FD9DEC9-D92D-4975-92FB-3E080035BCA1}
+		{6A7077F0-7023-4624-B5A5-2F242A8BEE0F} = {4FD9DEC9-D92D-4975-92FB-3E080035BCA1}
 	EndGlobalSection
 EndGlobal

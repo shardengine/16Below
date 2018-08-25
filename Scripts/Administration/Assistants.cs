@@ -226,9 +226,12 @@ namespace Server.Misc
 				}
 				else if (m.NetState != null && m.NetState.Running)
 				{
-					m.SendGump(new WarningGump(1060635, 30720, Settings.WarningMessage, 0xFFC000, 420, 250, null, null));
+                    if (Core.AOS)
+                        m.SendGump(new WarningGump(1060635, 30720, Settings.WarningMessage, 0xFFC000, 420, 250, null, null));
+                    else
+                        m.SendGump(new WarningGump(0, 30720, Settings.WarningMessage, 32512, 420, 250, null, null));
 
-					if (m.AccessLevel <= AccessLevel.Player)
+                    if (m.AccessLevel <= AccessLevel.Player)
 					{
 						_Dictionary[m] = Timer.DelayCall(Settings.DisconnectDelay, OnForceDisconnect, m);
 					}

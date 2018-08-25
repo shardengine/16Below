@@ -5,6 +5,7 @@ using Server.Items;
 using Server.Targeting;
 using Server.Gumps;
 using Server.Network;
+using Server.Configuration;
 
 namespace Server.Commands
 {
@@ -16,6 +17,7 @@ namespace Server.Commands
             CommandSystem.Register("SignGen", AccessLevel.Administrator, new CommandEventHandler(SignGen_OnCommand));
 			CommandSystem.Register("SignSave", AccessLevel.Administrator, new CommandEventHandler(SignSave_OnCommand));
 			CommandSystem.Register("SignRemove", AccessLevel.Administrator, new CommandEventHandler(SignRemove_OnCommand));
+        //    if (Config.Decoration.VirtualDecoration) Parse(null); for later -Fraz
 		}
 
 		[Usage("SignRemove")]
@@ -41,14 +43,15 @@ namespace Server.Commands
 
         public static void Parse(Mobile from)
         {
-            from.SendMessage("Generating signs, please wait.");
+            if(from!=null) from.SendMessage("Generating signs, please wait.");
 			List<SignEntry> list = SignEntry.LoadConfig("Data/signs.cfg");
 
             Map[] brit = new Map[] { Map.Felucca, Map.Trammel };
             Map[] fel = new Map[] { Map.Felucca };
             Map[] tram = new Map[] { Map.Trammel };
             Map[] ilsh = new Map[] { Map.Ilshenar };
-            /* not for LBR -Fraz
+
+            /* era -Fraz
             Map[] malas = new Map[] { Map.Malas };
             Map[] tokuno = new Map[] { Map.Tokuno };
             */
@@ -86,7 +89,7 @@ namespace Server.Commands
                     Add_Static(e.m_ItemID, e.m_Location, maps[j], e.m_Text);
             }
 
-            from.SendMessage("Sign generating complete.");
+            if (from != null) from.SendMessage("Sign generating complete.");
         }
 
         public static void Add_Static(int itemID, Point3D location, Map map, string name)
@@ -125,6 +128,7 @@ namespace Server.Commands
                     sign.Hue = 0x44E;
             }
 
+       //     sign.IsVirtual = true; // for later -Fraz
             sign.MoveToWorld(location, map);
         }
 

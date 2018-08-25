@@ -46,8 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Champions.cs" />
-    <Compile Include="Server.cs" />
+    <Compile Include="ServerSettings.cs" />
     <Compile Include="VetRewards.cs" />
+    <Compile Include="WorldSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj">
