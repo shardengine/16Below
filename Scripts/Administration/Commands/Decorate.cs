@@ -24,10 +24,10 @@ namespace Server.Commands
 
 			m_Mobile.SendMessage( "Generating world decoration, please wait." );
 
-			Generate("Data/Decoration/Britannia", Map.Trammel, Map.Felucca );
-			Generate("Data/Decoration/Trammel", Map.Trammel );
-			Generate("Data/Decoration/Felucca", Map.Felucca );
-			Generate("Data/Decoration/Ilshenar", Map.Ilshenar );
+			Generate("Data/World/Decorations/T2A/Britannia", Map.Trammel, Map.Felucca );
+			Generate("Data/World/Decorations/UOR/Trammel", Map.Trammel );
+			Generate("Data/World/Decorations/UOR/Felucca", Map.Felucca );
+			Generate("Data/World/Decorations/UOTD/Ilshenar", Map.Ilshenar );
 
 			m_Mobile.SendMessage( "World generating complete. {0} items were generated.", m_Count );
 		}

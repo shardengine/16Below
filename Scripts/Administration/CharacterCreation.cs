@@ -222,13 +222,13 @@ namespace Server.Misc
 
             CityInfo city = GetStartLocation(args, young); 
 
-            if (Core.bEnforceExpansionClient && Core.LBR) // Temp Fix -Fraz (LBR has no selection?) or netstate is old client?
+            if (Core.bEnforceExpansionClient && Core.LBR)
             {
-                city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca);
+                if (city == null) city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca);
             }
 
             newChar.MoveToWorld(city.Location, city.Map);
-
+            
             Utility.PushColor(ConsoleColor.Green);
             Console.WriteLine("Login: {0}: New character being created (account={1})", state, args.Account.Username);
             Utility.PopColor();

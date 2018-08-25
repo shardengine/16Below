@@ -219,16 +219,16 @@
     <Compile Include="Administration\Commands\16BelowSpawnerExporter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\ShardTime.cs">
+    <Compile Include="Administration\World\ShardTime.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\SHTelGenDelete.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\SignGenDelete.cs">
+    <Compile Include="Administration\World\SignGenDelete.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\SignParser.cs">
+    <Compile Include="Administration\World\SignParser.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\Skills.cs">
@@ -260,6 +260,10 @@
     <Compile Include="Administration\World\Prime Spawner\PrimeSpawnerGump.cs" />
     <Compile Include="Administration\World\Prime Spawner\SpawnsOverseer.cs" />
     <Compile Include="Administration\World\Teleporters.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\GrimmochDrummel.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\LysanderGathenwale.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\MorgBergen.cs" />
+    <Compile Include="Game Mechanics\Khaldun\Mobiles\TavaraSewel.cs" />
     <Compile Include="Game Mechanics\Magic\Spells\Eighth\AirElemental.cs" />
     <Compile Include="Game Mechanics\Magic\Spells\Eighth\EarthElemental.cs" />
     <Compile Include="Game Mechanics\Magic\Spells\Eighth\Earthquake.cs" />
@@ -338,7 +342,27 @@
     <Compile Include="Game Mechanics\Magic\SpellRegistry.cs" />
     <Compile Include="Game Mechanics\Magic\SpellState.cs" />
     <Compile Include="Game Mechanics\Magic\UnsummonTimer.cs" />
-    <Compile Include="Mobiles\Defined\UO\Creatures\Extinct\Bogle.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\Bogling.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\BogThing.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\ChaosDragoon.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\ChaosDragoonElite.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\PlagueBeast.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\PlagueBeastLord.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Plague of Despair\PlagueSpawn.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\Pub 16\Bogle.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\AntLion.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Beetle.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\BlackSolenInfiltratorQueen.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\BlackSolenInfiltratorWarrior.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\BlackSolenQueen.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\BlackSolenWarrior.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\BlackSolenWorker.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\RedSolenInfiltratorQueen.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\RedSolenInfiltratorWarrior.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\RedSolenQueen.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\RedSolenWarrior.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\RedSolenWorker.cs" />
+    <Compile Include="Mobiles\Defined\Special Pubs\When Ants Attack\Solen\SolenHelper.cs" />
     <Compile Include="Game Mechanics\ContextMenus\AddToParty.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -1489,7 +1513,7 @@
     <Compile Include="Mobiles\Defined\T2A\Creatures\Mounts\Nightmare.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Giantkin\Ogre.cs" />
     <Compile Include="Mobiles\Defined\UO\Creatures\Giantkin\OgreLord.cs" />
-    <Compile Include="Mobiles\Defined\T2A\Creatures\Ophidians\OphidianArchmage.cs" />
+    <Compile Include="Mobiles\Defined\UOR\Creatures\Unsure\OphidianArchmage.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Ophidians\OphidianKnight.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Ophidians\OphidianMage.cs" />
     <Compile Include="Mobiles\Defined\T2A\Creatures\Ophidians\OphidianMatriarch.cs" />

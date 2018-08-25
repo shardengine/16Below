@@ -9,6 +9,7 @@ namespace Server.Gumps
         private readonly WarningGumpCallback m_Callback;
         private readonly object m_State;
         private readonly bool m_CancelButton;
+
         public WarningGump(int header, int headerColor, object content, int contentColor, int width, int height, WarningGumpCallback callback, object state)
             : this(header, headerColor, content, contentColor, width, height, callback, state, true)
         {
@@ -29,7 +30,13 @@ namespace Server.Gumps
 
             this.AddImageTiled(10, 10, width - 20, 20, 2624);
             this.AddAlphaRegion(10, 10, width - 20, 20);
-            this.AddHtmlLocalized(10, 10, width - 20, 20, header, headerColor, false, false);
+
+            if(header==0)
+            {
+                this.AddHtml((width / 2 - 40), 10, width - 20, 20, String.Format("<BASEFONT COLOR={0}>{1}</BASEFONT>", headerColor, "WARNING"), false, false);
+            }
+            else
+                this.AddHtmlLocalized(10, 10, width - 20, 20, header, headerColor, false, false);
 
             this.AddImageTiled(10, 40, width - 20, height - 80, 2624);
             this.AddAlphaRegion(10, 40, width - 20, height - 80);
@@ -37,7 +44,7 @@ namespace Server.Gumps
             if (content is int)
                 this.AddHtmlLocalized(10, 40, width - 20, height - 80, (int)content, contentColor, false, true);
             else if (content is string)
-                this.AddHtml(10, 40, width - 20, height - 80, String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", contentColor, content), false, true);
+                this.AddHtml(10, 40, width - 20, height - 80, String.Format("<BASEFONT COLOR={0}>{1}</BASEFONT>", contentColor, content), false, true);//#{0:X6}
 
             this.AddImageTiled(10, height - 30, width - 20, 20, 2624);
             this.AddAlphaRegion(10, height - 30, width - 20, 20);

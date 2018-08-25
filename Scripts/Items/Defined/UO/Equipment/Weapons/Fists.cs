@@ -4,15 +4,32 @@ namespace Server.Items
 {
     public class Fists : BaseMeleeWeapon
     {
+        public static Serial FistsSerial = 0;
+
         public static void Initialize()
         {
-            Mobile.DefaultWeapon = new Fists();
+            CreateFists();
+         //   Mobile.DefaultWeapon = new Fists();
 
             EventSink.DisarmRequest += new DisarmRequestEventHandler(EventSink_DisarmRequest);
             EventSink.StunRequest += new StunRequestEventHandler(EventSink_StunRequest);
         }
 
-		public override int OldStrengthReq
+        public static void CreateFists()
+        {
+            Item fists = World.FindItem(FistsSerial);
+
+            if (fists == null)
+            {
+                Mobile.DefaultWeapon = new Fists();
+            }
+            else
+            {
+                Mobile.DefaultWeapon = (IWeapon)fists;
+            }
+        }
+
+        public override int OldStrengthReq
         {
             get
             {
@@ -233,6 +250,8 @@ namespace Server.Items
             base.Deserialize(reader);
 
             int version = reader.ReadInt();
+
+            FistsSerial = this.Serial;
         }
 
         /* Wrestling moves */
