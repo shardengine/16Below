@@ -209,7 +209,7 @@ namespace Server.Items
             private readonly StaffOrb m_Item;
             private readonly Mobile m_Mobile;
             public GoHomeEntry(Mobile from, Item item)
-                : base(5134)// uses "Goto Loc" entry
+                : base(10006, 1)// uses "Goto Loc" entry (Go! more friendly -Fraz)
             {
                 this.m_Item = (StaffOrb)item;
                 this.m_Mobile = from;

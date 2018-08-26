@@ -5,6 +5,7 @@ using Server.Mobiles;
 using Server.Multis;
 using Server.Regions;
 using Server.Targeting;
+using Server.Configuration;
 
 namespace Server.Items
 {
@@ -29,13 +30,20 @@ namespace Server.Items
             {
                 return 1060651;
             }
-        }// a house placement tool
+        }// a house placement tool preAOS -Fraz
         public override void OnDoubleClick(Mobile from)
         {
-            if (this.IsChildOf(from.Backpack))
-                from.SendGump(new HousePlacementCategoryGump(from));
+            if(!Core.AOS && !Config.EraMods.AOSHousePlacementTool)
+            {
+                from.SendMessage("Pub16Below HousePlacementTool in Development.");
+            }
             else
-                from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
+            {
+                if (this.IsChildOf(from.Backpack))
+                    from.SendGump(new HousePlacementCategoryGump(from));
+                else
+                    from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
+            }
         }
 
         public override void Serialize(GenericWriter writer)

@@ -13,7 +13,7 @@ namespace Server.Misc
                 Console.WriteLine(new String('_', Console.BufferWidth));
                 Console.WriteLine("                            Account Administration:");
                 Utility.PushColor(ConsoleColor.White);
-                Console.Write("                Do you want to create the owner account now? ");
+                Console.Write("               Do you want to create the owner account now? ");
                 Utility.PushColor(ConsoleColor.Cyan);
                 Console.Write("(y/n)");
                 Utility.PopColor();

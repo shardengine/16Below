@@ -6,10 +6,12 @@
 
 #region References
 using Server.Accounting;
+using Server.Configuration;
 using Server.Guilds;
 using Server.Items;
 using Server.Multis;
 using Server.Network;
+using System;
 #endregion
 
 namespace Server.Gumps
@@ -36,19 +38,31 @@ namespace Server.Gumps
 			AddImageTiled(10, 10, 400, 20, 2624);
 			AddAlphaRegion(10, 10, 400, 20);
 
-			AddHtmlLocalized(10, 10, 400, 20, 1060635, 30720, false, false); // <CENTER>WARNING</CENTER>
+            if(Core.AOS)
+			    AddHtmlLocalized(10, 10, 400, 20, 1060635, 30720, false, false); // <CENTER>WARNING</CENTER>
+            else
+                this.AddHtml(10, 10, 400, 20, this.Color("<CENTER>WARNING</CENTER>", 0xFF0000), false, false);
 
-			AddImageTiled(10, 40, 400, 200, 2624);
+            AddImageTiled(10, 40, 400, 200, 2624);
 			AddAlphaRegion(10, 40, 400, 200);
 
-			AddHtmlLocalized(10, 40, 400, 200, 1061795, 32512, false, true); 
-			/* You are about to demolish your house.
-            * You will be refunded the house's value directly to your bank box.
-            * All items in the house will remain behind and can be freely picked up by anyone.
-            * Once the house is demolished, anyone can attempt to place a new house on the vacant land.
-            * This action will not un-condemn any other houses on your account, nor will it end your 7-day waiting period (if it applies to you).
-            * Are you sure you wish to continue?
-            */
+            if (Core.AOS)
+                AddHtmlLocalized(10, 40, 400, 200, 1061795, 32512, false, true); 
+            else
+            {
+			    /* You are about to demolish your house.
+                * You will be refunded the house's value directly to your bank box.
+                * All items in the house will remain behind and can be freely picked up by anyone.
+                * Once the house is demolished, anyone can attempt to place a new house on the vacant land.
+                * This action will not un-condemn any other houses on your account, nor will it end your 7-day waiting period (if it applies to you).
+                * Are you sure you wish to continue?
+                */
+               // string text = string.Format("{0}", text)
+               //     "You are about to demolish your house. You will be refunded the house's value directly to your bank box. All items in the house will remain behind and can be freely picked up by anyone. Once the house is demolished, anyone can attempt to place a new house on the vacant land. This action will not un - condemn any other houses on your account, nor will it end your 7 - day waiting period (if it applies to you). Are you sure you wish to continue?";
+
+                AddHtml(10, 40, 400, 200, this.Color("You are about to demolish your house. You will be refunded the house's value directly to your bank box. All items in the house will remain behind and can be freely picked up by anyone. Once the house is demolished, anyone can attempt to place a new house on the vacant land. This action will not un - condemn any other houses on your account, nor will it end your 7 - day waiting period (if it applies to you).\r\n\r\nAre you sure you wish to continue?", 0xFFFF00), false, true);
+            }
+
 
 			AddImageTiled(10, 250, 400, 20, 2624);
 			AddAlphaRegion(10, 250, 400, 20);
@@ -60,7 +74,19 @@ namespace Server.Gumps
 			AddHtmlLocalized(240, 250, 170, 20, 1011012, 32767, false, false); // CANCEL
 		}
 
-		public override void OnResponse(NetState state, RelayInfo info)
+
+        public string Color(string text, int color)
+        {
+            return String.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", color, text);
+        }
+
+        public string Center(string text)
+        {
+            return String.Format("<CENTER>{0}</CENTER>", text);
+        }
+
+
+        public override void OnResponse(NetState state, RelayInfo info)
 		{
 			if (info.ButtonID == 1 && !m_House.Deleted)
 			{
@@ -114,7 +140,7 @@ namespace Server.Gumps
 					{
 						Item toGive;
 
-						if (m_House.IsAosRules)
+						if (m_House.IsAosRules || Config.EraMods.AOSHousePlacementTool)
 						{
 							if (m_House.Price > 0)
 							{
@@ -122,7 +148,8 @@ namespace Server.Gumps
 							}
 							else
 							{
-								toGive = m_House.GetDeed();
+                                m_Mobile.SendMessage("The house had no value so you received a deed.");
+                                toGive = m_House.GetDeed();
 							}
 						}
 						else
