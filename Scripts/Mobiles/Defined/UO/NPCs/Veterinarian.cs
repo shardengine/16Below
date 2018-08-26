@@ -1,5 +1,3 @@
-// https://raw.githubusercontent.com/x16Below/x16Below/fb47846ac232194065eba29479439d56cfc47a0f/Scripts/Distro/Mobiles/Vendors/NPC/Veterinarian.cs
-// Thanks to x16Below. Modified for 16Below
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -212,8 +210,15 @@ namespace Server.Mobiles
 									for (int j = 0; j < pet.Skills.Length; ++j) // Decrease all skills on pet.
 										pet.Skills[j].Base -= 0.2;
 
-									from.SendLocalizedMessage(1060398, fee.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
-									from.SendLocalizedMessage(1060022, Banker.GetBalance(from).ToString(), 0x16); // You have ~1_AMOUNT~ gold in cash remaining in your bank box.
+                                    if (Core.AOS || !Core.bEnforceExpansionClient)
+                                        from.SendLocalizedMessage(1060398, fee.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                                    else
+                                    {
+                                        string temp = string.Format("{0} Gold has been withdrawn from your bank box.", fee.ToString());
+                                        from.SendMessage(temp);
+                                    }
+
+                                    from.SendLocalizedMessage(1060022, Banker.GetBalance(from).ToString(), 0x16); // You have ~1_AMOUNT~ gold in cash remaining in your bank box.
 								}
 								else
 									from.SendLocalizedMessage(1060020); // Unfortunately, you do not have enough cash in your bank to cover the cost of the healing.

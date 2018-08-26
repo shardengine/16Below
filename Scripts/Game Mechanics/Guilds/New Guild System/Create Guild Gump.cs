@@ -78,7 +78,14 @@ namespace Server.Guilds
                             pm.SendLocalizedMessage(1063001, Guild.RegistrationFee.ToString()); // You do not possess the ~1_val~ gold piece fee required to create a guild.
                         else
                         {
-                            pm.SendLocalizedMessage(1060398, Guild.RegistrationFee.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                            if (Core.AOS || !Core.bEnforceExpansionClient)
+                                pm.SendLocalizedMessage(1060398, Guild.RegistrationFee.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                            else
+                            {
+                                string temp = string.Format("{0} gold has been withdrawn from your bank box.", Guild.RegistrationFee.ToString());
+                                pm.SendMessage(temp);
+                            }
+
                             pm.SendLocalizedMessage(1063238); // Your new guild has been founded.
                             pm.Guild = new Guild(pm, guildName, guildAbbrev);
                         }

@@ -2,14 +2,14 @@ using System;
 
 namespace Server.Commands
 {
-    public class TimeStamp
+    public class RealTime
     {
         public static void Initialize()
         {
-            CommandSystem.Register("TimeStamp", AccessLevel.Player, new CommandEventHandler(CheckTime_OnCommand));
+            CommandSystem.Register("RealTime", AccessLevel.Player, new CommandEventHandler(CheckTime_OnCommand));
         }
 
-        [Usage("TimeStamp")]
+        [Usage("RealTime")]
         [Description("Check's Your Servers Current Date And Time")]
         public static void CheckTime_OnCommand(CommandEventArgs e)
         {

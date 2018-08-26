@@ -12034,7 +12034,6 @@ namespace Server
                 if (!Core.bEnforceExpansionClient && (m_NetState != null && m_NetState.SupportsExpansion(Expansion.AOS)))
                 {
                     Send(new SkillUpdate(m_Skills));
-
                 }
                 else
                 {

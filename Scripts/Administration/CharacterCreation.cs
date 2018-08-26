@@ -227,7 +227,7 @@ namespace Server.Misc
                 if (city == null) city = new CityInfo("Britain", "Sweet Dreams Inn", 1496, 1628, 10, Map.Felucca);
             }
 
-            newChar.MoveToWorld(city.Location, city.Map);
+            newChar.MoveToWorld(city.Location, (Config.EraMods.NewCharacterStartinFelucca ? Map.Felucca : city.Map));
             
             Utility.PushColor(ConsoleColor.Green);
             Console.WriteLine("Login: {0}: New character being created (account={1})", state, args.Account.Username);

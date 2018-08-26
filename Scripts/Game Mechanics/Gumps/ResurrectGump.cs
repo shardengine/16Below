@@ -180,7 +180,14 @@ namespace Server.Gumps
                     {
                         if (Banker.Withdraw(from, this.m_Price))
                         {
-                            from.SendLocalizedMessage(1060398, this.m_Price.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                            if (Core.AOS || !Core.bEnforceExpansionClient)
+                                from.SendLocalizedMessage(1060398, this.m_Price.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                            else
+                            {
+                                string temp = string.Format("{0} gold has been withdrawn from your bank box.", this.m_Price.ToString());
+                                from.SendMessage(temp);
+                            }
+
                             from.SendLocalizedMessage(1060022, Banker.GetBalance(from).ToString()); // You have ~1_AMOUNT~ gold in cash remaining in your bank box.
                         }
                         else

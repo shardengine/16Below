@@ -10,6 +10,7 @@ namespace Server.Configuration
     {
         public class EraMods
         {
+            public static bool NewCharacterStartinFelucca = true;
             public static bool AOSHousePlacementTool = true;
         }
     }

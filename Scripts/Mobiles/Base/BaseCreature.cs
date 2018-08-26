@@ -4444,6 +4444,7 @@ namespace Server.Mobiles
                     }
                 }
 
+                /* era -Fraz
                 if (m_Paragon && Paragon.ChocolateIngredientChance > Utility.RandomDouble())
                 {
                     switch (Utility.Random(4))
@@ -4462,6 +4463,7 @@ namespace Server.Mobiles
                             break;
                     }
                 }
+                */
             }
 
             if (!Summoned && !NoKillAwards && !m_HasGeneratedLoot)

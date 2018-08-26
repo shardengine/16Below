@@ -119,6 +119,7 @@ namespace Server.Engines.Craft
             index = this.AddCraft(typeof(CookieMix), 1044495, 1024159, 0.0, 100.0, typeof(JarHoney), 1044472, 1, 1044253);
             this.AddRes(index, typeof(SweetDough), 1044475, 1, 1044253);
 
+            /* era -Fraz
             if (Core.ML)
             {
                 index = this.AddCraft(typeof(CocoaButter), 1044495, 1079998, 0.0, 100.0, typeof(CocoaPulp), 1080530, 1, 1044253);
@@ -132,7 +133,8 @@ namespace Server.Engines.Craft
                 this.SetNeededExpansion(index, Expansion.ML);
                 this.SetNeedOven(index, true);
             }
-            /* End Ingredients */
+            // End Ingredients
+            */
 
             /* Begin Preparations */
             index = this.AddCraft(typeof(UnbakedQuiche), 1044496, 1041339, 0.0, 100.0, typeof(Dough), 1044469, 1, 1044253);

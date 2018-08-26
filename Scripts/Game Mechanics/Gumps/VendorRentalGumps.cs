@@ -382,7 +382,13 @@ namespace Server.Gumps
             {
                 if (Banker.Withdraw(from, price))
                 {
-                    from.SendLocalizedMessage(1060398, price.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                    if (Core.AOS || !Core.bEnforceExpansionClient)
+                        from.SendLocalizedMessage(1060398, price.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                    else
+                    {
+                        string temp = string.Format("{0} gold has been withdrawn from your bank box.", price.ToString());
+                        from.SendMessage(temp);
+                    }
 
                     int depositedGold = Banker.DepositUpTo(this.m_Landlord, price);
                     goldToGive = price - depositedGold;
@@ -578,8 +584,13 @@ namespace Server.Gumps
             {
                 if (Banker.Withdraw(this.m_Landlord, this.m_RefundAmount))
                 {
-                    this.m_Landlord.SendLocalizedMessage(1060398, this.m_RefundAmount.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
-
+                    if (Core.AOS || !Core.bEnforceExpansionClient)
+                        this.m_Landlord.SendLocalizedMessage(1060398, this.m_RefundAmount.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                    else
+                    {
+                        string temp = string.Format("{0}  gold has been withdrawn from your bank box.", this.m_RefundAmount.ToString());
+                        m_Landlord.SendMessage(temp);
+                    }
                     int depositedGold = Banker.DepositUpTo(from, this.m_RefundAmount);
 
                     if (depositedGold > 0)

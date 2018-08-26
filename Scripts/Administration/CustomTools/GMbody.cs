@@ -12,8 +12,10 @@ namespace Server.Commands
         public static void Initialize()
         {
             CommandSystem.Register("GMbody", AccessLevel.Counselor, new CommandEventHandler(GM_OnCommand));
+            CommandSystem.Register("MakeGM", AccessLevel.Counselor, new CommandEventHandler(GM_OnCommand));
         }
 
+        [Aliases("MakeGM")]
         [Usage("GMbody")]
         [Description("Helps staff members get going.")]
         public static void GM_OnCommand(CommandEventArgs e)

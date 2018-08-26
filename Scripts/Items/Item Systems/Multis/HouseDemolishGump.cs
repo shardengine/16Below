@@ -38,7 +38,7 @@ namespace Server.Gumps
 			AddImageTiled(10, 10, 400, 20, 2624);
 			AddAlphaRegion(10, 10, 400, 20);
 
-            if(Core.AOS)
+            if(Core.AOS || !Core.bEnforceExpansionClient)
 			    AddHtmlLocalized(10, 10, 400, 20, 1060635, 30720, false, false); // <CENTER>WARNING</CENTER>
             else
                 this.AddHtml(10, 10, 400, 20, this.Color("<CENTER>WARNING</CENTER>", 0xFF0000), false, false);
@@ -46,7 +46,7 @@ namespace Server.Gumps
             AddImageTiled(10, 40, 400, 200, 2624);
 			AddAlphaRegion(10, 40, 400, 200);
 
-            if (Core.AOS)
+            if (Core.AOS || !Core.bEnforceExpansionClient)
                 AddHtmlLocalized(10, 40, 400, 200, 1061795, 32512, false, true); 
             else
             {

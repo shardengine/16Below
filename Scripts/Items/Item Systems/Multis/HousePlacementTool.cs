@@ -84,26 +84,26 @@ namespace Server.Items
             this.AddImageTiled(10, 10, 250, 125, 2624);
             this.AddAlphaRegion(10, 10, 250, 125);
 
-            if(Core.AOS)
+            if(Core.AOS || !Core.bEnforceExpansionClient)
                 this.AddHtmlLocalized(10, 10, 250, 20, 1060239, LabelColor, false, false); // 
             else
                 this.AddHtml(10, 10, 250, 20, this.Color("<CENTER>HOUSE PLACEMENT TOOL</CENTER>", 0xFFFFFF), false, false);
 
             this.AddButton(10, 110, 4017, 4019, 0, GumpButtonType.Reply, 0);
 
-            if(Core.AOS)
+            if(Core.AOS || !Core.bEnforceExpansionClient)
                 this.AddHtmlLocalized(45, 110, 150, 20, 3000363, LabelColor, false, false); // Close
             else
                 this.AddHtml(45, 110, 150, 20, this.Color("Close", 0xFFFFFF), false, false);
 
             this.AddButton(10, 40, 4005, 4007, 1, GumpButtonType.Reply, 0);
 
-            if(Core.AOS)
+            if(Core.AOS || !Core.bEnforceExpansionClient)
                 this.AddHtmlLocalized(45, 40, 200, 20, 1060390, LabelColor, false, false); // Classic Houses
             else
                 this.AddHtml(45, 40, 200, 20, this.Color("Classic Houses", 0xFFFFFF), false, false);
 
-            if (Core.AOS)
+            if (Core.AOS || !Core.bEnforceExpansionClient)
             {
                 this.AddButton(10, 60, 4005, 4007, 2, GumpButtonType.Reply, 0);//was2
                 this.AddHtmlLocalized(45, 60, 200, 20, 1060391, LabelColor, false, false); // 2-Story Customizable Houses
@@ -190,7 +190,7 @@ namespace Server.Items
             this.AddImageTiled(10, 390, 500, 20, 2624);
             this.AddAlphaRegion(10, 390, 500, 20);
 
-            if (Core.AOS)
+            if (Core.AOS || !Core.bEnforceExpansionClient)
             {
                 this.AddHtmlLocalized(10, 10, 500, 20, 1060239, LabelColor, false, false); // <CENTER>HOUSE PLACEMENT TOOL</CENTER>
 
@@ -696,7 +696,13 @@ namespace Server.Items
                             {
                                 if (Banker.Withdraw(from, this.m_Cost))
                                 {
-                                    from.SendLocalizedMessage(1060398, this.m_Cost.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                                    if (Core.AOS || !Core.bEnforceExpansionClient)
+                                        from.SendLocalizedMessage(1060398, this.m_Cost.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                                    else
+                                    {
+                                        string temp = string.Format("{0} gold has been withdrawn from your bank box.", this.m_Cost.ToString());
+                                        from.SendMessage(temp);
+                                    }
                                 }
                                 else
                                 {
@@ -826,7 +832,7 @@ namespace Server.Items
                             */
 
                             // replacing all cliloc 1060635 , 1060637, ect
-                            if (Core.AOS)
+                            if (Core.AOS || !Core.bEnforceExpansionClient)
                                 from.SendGump(new WarningGump(1060635, 30720, 1049583, 32512, 420, 280, new WarningGumpCallback(PlacementWarning_Callback), prev));
                             else
                             {

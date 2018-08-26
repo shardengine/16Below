@@ -95,13 +95,13 @@
     <Compile Include="Administration\CustomTools\WorldCreator\CreateWorld.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\Decorate.cs">
+    <Compile Include="Administration\CustomTools\WorldCreator\Decorate.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\Docs.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\DoorGenDelete.cs">
+    <Compile Include="Administration\CustomTools\WorldCreator\DoorGenDelete.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\Dupe.cs">
@@ -195,10 +195,10 @@
     <Compile Include="Administration\Commands\Generic\Implementors\SingleCommandImplementor.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\GenTeleporter.cs">
+    <Compile Include="Administration\CustomTools\WorldCreator\GenTeleporter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\GMbody.cs">
+    <Compile Include="Administration\CustomTools\GMbody.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\Handlers.cs">
@@ -240,8 +240,8 @@
     <Compile Include="Administration\Commands\Statics.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\Test.cs" />
-    <Compile Include="Administration\Commands\TimeStamp.cs">
+    <Compile Include="Administration\CustomTools\Test.cs" />
+    <Compile Include="Administration\CustomTools\RealTime.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Commands\UnloadMaps.cs">
@@ -411,7 +411,7 @@
     <Compile Include="Game Mechanics\Gumps\ConfirmBreakCrystalGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\ConfirmHouseResize.cs">
+    <Compile Include="Items\Item Systems\Multis\ConfirmHouseResize.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Game Mechanics\Gumps\ConfirmReleaseGump.cs">
@@ -546,16 +546,16 @@
     <Compile Include="Game Mechanics\Gumps\HonorSelf.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\HouseDemolishGump.cs">
+    <Compile Include="Items\Item Systems\Multis\HouseDemolishGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\HouseGump.cs">
+    <Compile Include="Items\Item Systems\Multis\HouseGump.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\HouseGumpAOS.cs">
+    <Compile Include="Items\Item Systems\Multis\HouseGumpAOS.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\HouseTransferGump.cs">
+    <Compile Include="Items\Item Systems\Multis\HouseTransferGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Game Mechanics\Gumps\NoticeGump.cs">
@@ -626,7 +626,7 @@
     <Compile Include="Game Mechanics\Gumps\VendorRentalGumps.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\ViewHousesGump.cs">
+    <Compile Include="Items\Item Systems\Multis\ViewHousesGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Game Mechanics\Gumps\WarningGump.cs">
@@ -1175,12 +1175,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Addons\LargeGargoyleBedSouthAddon.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Addons\TerMurDresserEastAddon.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Addons\TerMurDresserSouthAddon.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\Custom\Misc\SwarmOfFlies.cs">
@@ -2383,9 +2377,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Item Systems\Consumables\Bowls.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Item Systems\Consumables\Chocolatiering.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Defined\UO\Resources\Food\CookableFood.cs">
@@ -3690,7 +3681,7 @@
     <Compile Include="Items\Item Systems\Consumables\HouseRaffleDeed.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Game Mechanics\Gumps\HouseRaffleManagementGump.cs">
+    <Compile Include="Items\Item Systems\Multis\HouseRaffleManagementGump.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\World\Regions\HouseRaffleRegion.cs">
@@ -4274,7 +4265,7 @@
     <Compile Include="Administration\DataPath.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Administration\Commands\DoorGenerator.cs">
+    <Compile Include="Administration\CustomTools\WorldCreator\DoorGenerator.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Administration\Email.cs">

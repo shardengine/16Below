@@ -1168,7 +1168,6 @@ namespace Server.Multis
             int newPrice = oldPrice + this.CustomizationCost + ((this.DesignState.Components.List.Length - (this.CurrentState.Components.List.Length + this.CurrentState.Fixtures.Length)) * 500);
             int cost = newPrice - oldPrice;
 
-
             if (!this.Deleted)
             {
 				// Temporary Fix. We should be booting a client out of customization mode in the delete handler.
@@ -1182,7 +1181,13 @@ namespace Server.Multis
                     {
                         if (Banker.Withdraw(from, cost))
                         {
-                            from.SendLocalizedMessage(1060398, cost.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                            if (Core.AOS || !Core.bEnforceExpansionClient)
+                                from.SendLocalizedMessage(1060398, cost.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
+                            else
+                            {
+                                string temp = string.Format("{0} gold has been withdrawn from your bank box.", cost.ToString());
+                                from.SendMessage(temp);
+                            }
                         }
                         else
                         {

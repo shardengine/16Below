@@ -715,6 +715,7 @@ namespace Server.Gumps
                     {
                         if (Banker.Withdraw(from, cost))
                         {
+                            // Should already be AOS only no change yet -Fraz
                             from.SendLocalizedMessage(1060398, cost.ToString()); // ~1_AMOUNT~ gold has been withdrawn from your bank box.
                         }
                         else

@@ -94,105 +94,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", 
 		Bin\Data\Components\walls.txt = Bin\Data\Components\walls.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decoration", "Decoration", "{E1A1751B-A017-496D-914F-0822E6E5763A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Britannia", "Britannia", "{8C79F7D9-AECF-40AC-80F0-D3C48D864640}"
-	ProjectSection(SolutionItems) = preProject
-		Bin\Data\Decoration\Britannia\_covetous.cfg = Bin\Data\Decoration\Britannia\_covetous.cfg
-		Bin\Data\Decoration\Britannia\_deceit.cfg = Bin\Data\Decoration\Britannia\_deceit.cfg
-		Bin\Data\Decoration\Britannia\_despise.cfg = Bin\Data\Decoration\Britannia\_despise.cfg
-		Bin\Data\Decoration\Britannia\_destard.cfg = Bin\Data\Decoration\Britannia\_destard.cfg
-		Bin\Data\Decoration\Britannia\_fire.cfg = Bin\Data\Decoration\Britannia\_fire.cfg
-		Bin\Data\Decoration\Britannia\_hedgemaze.cfg = Bin\Data\Decoration\Britannia\_hedgemaze.cfg
-		Bin\Data\Decoration\Britannia\_hythloth.cfg = Bin\Data\Decoration\Britannia\_hythloth.cfg
-		Bin\Data\Decoration\Britannia\_ice.cfg = Bin\Data\Decoration\Britannia\_ice.cfg
-		Bin\Data\Decoration\Britannia\_orccave.cfg = Bin\Data\Decoration\Britannia\_orccave.cfg
-		Bin\Data\Decoration\Britannia\_shame.cfg = Bin\Data\Decoration\Britannia\_shame.cfg
-		Bin\Data\Decoration\Britannia\_terathankeep.cfg = Bin\Data\Decoration\Britannia\_terathankeep.cfg
-		Bin\Data\Decoration\Britannia\_wrong.cfg = Bin\Data\Decoration\Britannia\_wrong.cfg
-		Bin\Data\Decoration\Britannia\britain.cfg = Bin\Data\Decoration\Britannia\britain.cfg
-		Bin\Data\Decoration\Britannia\bucs.cfg = Bin\Data\Decoration\Britannia\bucs.cfg
-		Bin\Data\Decoration\Britannia\bucsportal.cfg = Bin\Data\Decoration\Britannia\bucsportal.cfg
-		Bin\Data\Decoration\Britannia\cove.cfg = Bin\Data\Decoration\Britannia\cove.cfg
-		Bin\Data\Decoration\Britannia\delucia.cfg = Bin\Data\Decoration\Britannia\delucia.cfg
-		Bin\Data\Decoration\Britannia\despise.cfg = Bin\Data\Decoration\Britannia\despise.cfg
-		Bin\Data\Decoration\Britannia\destard.cfg = Bin\Data\Decoration\Britannia\destard.cfg
-		Bin\Data\Decoration\Britannia\hythloth.cfg = Bin\Data\Decoration\Britannia\hythloth.cfg
-		Bin\Data\Decoration\Britannia\jhelom.cfg = Bin\Data\Decoration\Britannia\jhelom.cfg
-		Bin\Data\Decoration\Britannia\magincia.cfg = Bin\Data\Decoration\Britannia\magincia.cfg
-		Bin\Data\Decoration\Britannia\minoc.cfg = Bin\Data\Decoration\Britannia\minoc.cfg
-		Bin\Data\Decoration\Britannia\moonglow.cfg = Bin\Data\Decoration\Britannia\moonglow.cfg
-		Bin\Data\Decoration\Britannia\nujelm.cfg = Bin\Data\Decoration\Britannia\nujelm.cfg
-		Bin\Data\Decoration\Britannia\papua.cfg = Bin\Data\Decoration\Britannia\papua.cfg
-		Bin\Data\Decoration\Britannia\patches.cfg = Bin\Data\Decoration\Britannia\patches.cfg
-		Bin\Data\Decoration\Britannia\serpent pillars.cfg = Bin\Data\Decoration\Britannia\serpent pillars.cfg
-		Bin\Data\Decoration\Britannia\serpentshold.cfg = Bin\Data\Decoration\Britannia\serpentshold.cfg
-		Bin\Data\Decoration\Britannia\shame.cfg = Bin\Data\Decoration\Britannia\shame.cfg
-		Bin\Data\Decoration\Britannia\shrines.cfg = Bin\Data\Decoration\Britannia\shrines.cfg
-		Bin\Data\Decoration\Britannia\skara.cfg = Bin\Data\Decoration\Britannia\skara.cfg
-		Bin\Data\Decoration\Britannia\solen matriarch quest.cfg = Bin\Data\Decoration\Britannia\solen matriarch quest.cfg
-		Bin\Data\Decoration\Britannia\study of solen quest.cfg = Bin\Data\Decoration\Britannia\study of solen quest.cfg
-		Bin\Data\Decoration\Britannia\trinsic.cfg = Bin\Data\Decoration\Britannia\trinsic.cfg
-		Bin\Data\Decoration\Britannia\vesper.cfg = Bin\Data\Decoration\Britannia\vesper.cfg
-		Bin\Data\Decoration\Britannia\wind.cfg = Bin\Data\Decoration\Britannia\wind.cfg
-		Bin\Data\Decoration\Britannia\witch apprentice quest.cfg = Bin\Data\Decoration\Britannia\witch apprentice quest.cfg
-		Bin\Data\Decoration\Britannia\yew.cfg = Bin\Data\Decoration\Britannia\yew.cfg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Felucca", "Felucca", "{C07413F9-65C4-4E58-B77D-A6A8375FE15E}"
-	ProjectSection(SolutionItems) = preProject
-		Bin\Data\Decoration\Felucca\_champion teleporters.cfg = Bin\Data\Decoration\Felucca\_champion teleporters.cfg
-		Bin\Data\Decoration\Felucca\_star room.cfg = Bin\Data\Decoration\Felucca\_star room.cfg
-		Bin\Data\Decoration\Felucca\ambitious solen queen quest.cfg = Bin\Data\Decoration\Felucca\ambitious solen queen quest.cfg
-		Bin\Data\Decoration\Felucca\khaldun entrance.cfg = Bin\Data\Decoration\Felucca\khaldun entrance.cfg
-		Bin\Data\Decoration\Felucca\khaldun.cfg = Bin\Data\Decoration\Felucca\khaldun.cfg
-		Bin\Data\Decoration\Felucca\ocllo.cfg = Bin\Data\Decoration\Felucca\ocllo.cfg
-		Bin\Data\Decoration\Felucca\solen matriarch quest.cfg = Bin\Data\Decoration\Felucca\solen matriarch quest.cfg
-		Bin\Data\Decoration\Felucca\yew.cfg = Bin\Data\Decoration\Felucca\yew.cfg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ilshenar", "Ilshenar", "{56CF4545-A736-4F90-8907-4073C8C4230B}"
-	ProjectSection(SolutionItems) = preProject
-		Bin\Data\Decoration\Ilshenar\_blood.cfg = Bin\Data\Decoration\Ilshenar\_blood.cfg
-		Bin\Data\Decoration\Ilshenar\_central.cfg = Bin\Data\Decoration\Ilshenar\_central.cfg
-		Bin\Data\Decoration\Ilshenar\_exodus.cfg = Bin\Data\Decoration\Ilshenar\_exodus.cfg
-		Bin\Data\Decoration\Ilshenar\_gwenno.cfg = Bin\Data\Decoration\Ilshenar\_gwenno.cfg
-		Bin\Data\Decoration\Ilshenar\_ratcave.cfg = Bin\Data\Decoration\Ilshenar\_ratcave.cfg
-		Bin\Data\Decoration\Ilshenar\_regvolom.cfg = Bin\Data\Decoration\Ilshenar\_regvolom.cfg
-		Bin\Data\Decoration\Ilshenar\_serpentine.cfg = Bin\Data\Decoration\Ilshenar\_serpentine.cfg
-		Bin\Data\Decoration\Ilshenar\_sheepfarm.cfg = Bin\Data\Decoration\Ilshenar\_sheepfarm.cfg
-		Bin\Data\Decoration\Ilshenar\_sorcerers.cfg = Bin\Data\Decoration\Ilshenar\_sorcerers.cfg
-		Bin\Data\Decoration\Ilshenar\_terortskitas.cfg = Bin\Data\Decoration\Ilshenar\_terortskitas.cfg
-		Bin\Data\Decoration\Ilshenar\_twinoaks.cfg = Bin\Data\Decoration\Ilshenar\_twinoaks.cfg
-		Bin\Data\Decoration\Ilshenar\camp.cfg = Bin\Data\Decoration\Ilshenar\camp.cfg
-		Bin\Data\Decoration\Ilshenar\camp2.cfg = Bin\Data\Decoration\Ilshenar\camp2.cfg
-		Bin\Data\Decoration\Ilshenar\enslavedgargs.cfg = Bin\Data\Decoration\Ilshenar\enslavedgargs.cfg
-		Bin\Data\Decoration\Ilshenar\gargoylecity.cfg = Bin\Data\Decoration\Ilshenar\gargoylecity.cfg
-		Bin\Data\Decoration\Ilshenar\golemsandjukas.cfg = Bin\Data\Decoration\Ilshenar\golemsandjukas.cfg
-		Bin\Data\Decoration\Ilshenar\lakeshire.cfg = Bin\Data\Decoration\Ilshenar\lakeshire.cfg
-		Bin\Data\Decoration\Ilshenar\meercatacombs.cfg = Bin\Data\Decoration\Ilshenar\meercatacombs.cfg
-		Bin\Data\Decoration\Ilshenar\misc.cfg = Bin\Data\Decoration\Ilshenar\misc.cfg
-		Bin\Data\Decoration\Ilshenar\mistas.cfg = Bin\Data\Decoration\Ilshenar\mistas.cfg
-		Bin\Data\Decoration\Ilshenar\patches.cfg = Bin\Data\Decoration\Ilshenar\patches.cfg
-		Bin\Data\Decoration\Ilshenar\ratfortress.cfg = Bin\Data\Decoration\Ilshenar\ratfortress.cfg
-		Bin\Data\Decoration\Ilshenar\savagecamp.cfg = Bin\Data\Decoration\Ilshenar\savagecamp.cfg
-		Bin\Data\Decoration\Ilshenar\shrines.cfg = Bin\Data\Decoration\Ilshenar\shrines.cfg
-		Bin\Data\Decoration\Ilshenar\vinculuminn.cfg = Bin\Data\Decoration\Ilshenar\vinculuminn.cfg
-		Bin\Data\Decoration\Ilshenar\wispdungeon.cfg = Bin\Data\Decoration\Ilshenar\wispdungeon.cfg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Trammel", "Trammel", "{2FB2CDFA-B4A7-4540-98F5-10FEA05C284A}"
-	ProjectSection(SolutionItems) = preProject
-		Bin\Data\Decoration\Trammel\_haven additions.cfg = Bin\Data\Decoration\Trammel\_haven additions.cfg
-		Bin\Data\Decoration\Trammel\_minoc camp.cfg = Bin\Data\Decoration\Trammel\_minoc camp.cfg
-		Bin\Data\Decoration\Trammel\ambitious solen queen quest.cfg = Bin\Data\Decoration\Trammel\ambitious solen queen quest.cfg
-		Bin\Data\Decoration\Trammel\collector quest.cfg = Bin\Data\Decoration\Trammel\collector quest.cfg
-		Bin\Data\Decoration\Trammel\haven.cfg = Bin\Data\Decoration\Trammel\haven.cfg
-		Bin\Data\Decoration\Trammel\magincia.cfg = Bin\Data\Decoration\Trammel\magincia.cfg
-		Bin\Data\Decoration\Trammel\solen matriarch quest.cfg = Bin\Data\Decoration\Trammel\solen matriarch quest.cfg
-		Bin\Data\Decoration\Trammel\yew.cfg = Bin\Data\Decoration\Trammel\yew.cfg
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Guide", "Guide", "{3EC11591-4C48-43CB-95D3-C284DD7A0021}"
 	ProjectSection(SolutionItems) = preProject
 		Bin\Data\Guide\Britain.graph = Bin\Data\Guide\Britain.graph
@@ -434,11 +335,6 @@ Global
 		{8CBB59F7-4A5C-446B-9B2C-3FC0B890314D} = {766611FA-14D8-4711-8346-275A30C30173}
 		{CA2AE348-361A-4546-A40D-5B1B7D7340BC} = {766611FA-14D8-4711-8346-275A30C30173}
 		{9B4E9C39-1E75-40BD-88AF-19561330E896} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
-		{E1A1751B-A017-496D-914F-0822E6E5763A} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
-		{8C79F7D9-AECF-40AC-80F0-D3C48D864640} = {E1A1751B-A017-496D-914F-0822E6E5763A}
-		{C07413F9-65C4-4E58-B77D-A6A8375FE15E} = {E1A1751B-A017-496D-914F-0822E6E5763A}
-		{56CF4545-A736-4F90-8907-4073C8C4230B} = {E1A1751B-A017-496D-914F-0822E6E5763A}
-		{2FB2CDFA-B4A7-4540-98F5-10FEA05C284A} = {E1A1751B-A017-496D-914F-0822E6E5763A}
 		{3EC11591-4C48-43CB-95D3-C284DD7A0021} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
 		{A4D44630-5D1E-48B2-9583-945018518DFC} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
 		{38E20955-4372-40A4-A044-540C35917EAF} = {C5617425-8E28-4835-8C1C-80F43E47BCA6}
