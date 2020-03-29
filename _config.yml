@@ -3,3 +3,5 @@ baseurl: "https://servuox.com/index.md"
 
 google_analytics: "UA-162076921-1"
 
+
+theme: jekyll-theme-slate
