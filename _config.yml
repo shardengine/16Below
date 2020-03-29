@@ -1,7 +1,4 @@
-url: "https://servuox.com/index.md"
-baseurl: ""
-
-google_analytics: "UA-162076921-1"
-
+#url: "https://servuox.com/index.md"
+#baseurl: ""
 
 theme: jekyll-theme-slate
