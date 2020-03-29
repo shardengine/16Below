@@ -6,3 +6,12 @@
 
 16Below is a community driven Ultima Online server emulator written in c# aimed at publish 16 and below.
 
+<html>
+
+<frameset cols="30%, 70%">
+<frame src="https://shardengine.boards.net/index">
+<frame src="https://servuox.forumotion.com/index.php">
+</frameset>
+
+</html>
+
